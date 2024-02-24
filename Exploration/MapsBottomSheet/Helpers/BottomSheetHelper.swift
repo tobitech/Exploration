@@ -72,5 +72,5 @@ fileprivate extension UIView {
 }
 
 #Preview {
-	ContentView ()
+	MapsBottomSheetContentView()
 }

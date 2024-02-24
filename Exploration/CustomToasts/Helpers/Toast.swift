@@ -195,6 +195,6 @@ struct ToastView: View {
 
 #Preview {
 	RootView {
-		ContentView()
+		CustomToastsContentView()
 	}
 }
