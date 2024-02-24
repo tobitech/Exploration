@@ -7,7 +7,7 @@ struct PokemonCell: View {
 	
 	var body: some View {
 		HStack {
-			AsyncImage(url: pokemon.url) { phase in
+			CacheAsyncImage(url: pokemon.url) { phase in
 				switch phase {
 				case let .success(image):
 					HStack {
