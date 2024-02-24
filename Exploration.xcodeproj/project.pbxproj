@@ -19,6 +19,8 @@
 		0A55A0A82B89F75100FB6C1E /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55A0A42B89F75100FB6C1E /* Tab.swift */; };
 		0A55A0A92B89F75100FB6C1E /* BottomSheetHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55A0A62B89F75100FB6C1E /* BottomSheetHelper.swift */; };
 		0A55A0AB2B89F79100FB6C1E /* CachingImagesContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55A0AA2B89F79100FB6C1E /* CachingImagesContentView.swift */; };
+		0A55A0B12B89F96900FB6C1E /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55A0AE2B89F96900FB6C1E /* Toast.swift */; };
+		0A55A0B22B89F96900FB6C1E /* CustomToastsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55A0AF2B89F96900FB6C1E /* CustomToastsContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		0A55A0A42B89F75100FB6C1E /* Tab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		0A55A0A62B89F75100FB6C1E /* BottomSheetHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheetHelper.swift; sourceTree = "<group>"; };
 		0A55A0AA2B89F79100FB6C1E /* CachingImagesContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CachingImagesContentView.swift; sourceTree = "<group>"; };
+		0A55A0AE2B89F96900FB6C1E /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		0A55A0AF2B89F96900FB6C1E /* CustomToastsContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomToastsContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0A55A0AC2B89F88600FB6C1E /* CustomToasts */,
 				0A55A0A12B89F70300FB6C1E /* MapsBottomSheet */,
 				0A55A0952B89F66100FB6C1E /* CachingImages */,
 				0A55A0872B89F5FD00FB6C1E /* ExplorationApp.swift */,
@@ -127,6 +132,23 @@
 			isa = PBXGroup;
 			children = (
 				0A55A0A62B89F75100FB6C1E /* BottomSheetHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0A55A0AC2B89F88600FB6C1E /* CustomToasts */ = {
+			isa = PBXGroup;
+			children = (
+				0A55A0AF2B89F96900FB6C1E /* CustomToastsContentView.swift */,
+				0A55A0AD2B89F96900FB6C1E /* Helpers */,
+			);
+			path = CustomToasts;
+			sourceTree = "<group>";
+		};
+		0A55A0AD2B89F96900FB6C1E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0A55A0AE2B89F96900FB6C1E /* Toast.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -203,12 +225,14 @@
 			files = (
 				0A55A0A02B89F6A300FB6C1E /* URLImage.swift in Sources */,
 				0A55A09F2B89F6A300FB6C1E /* Photo.swift in Sources */,
+				0A55A0B22B89F96900FB6C1E /* CustomToastsContentView.swift in Sources */,
 				0A55A0A92B89F75100FB6C1E /* BottomSheetHelper.swift in Sources */,
 				0A55A0A72B89F75100FB6C1E /* MapsBottomSheetContentView.swift in Sources */,
 				0A55A0A82B89F75100FB6C1E /* Tab.swift in Sources */,
 				0A55A0882B89F5FD00FB6C1E /* ExplorationApp.swift in Sources */,
 				0A55A0AB2B89F79100FB6C1E /* CachingImagesContentView.swift in Sources */,
 				0A55A09D2B89F6A300FB6C1E /* WebService.swift in Sources */,
+				0A55A0B12B89F96900FB6C1E /* Toast.swift in Sources */,
 				0A55A09E2B89F6A300FB6C1E /* PhotoListViewModel.swift in Sources */,
 				0A55A09C2B89F6A300FB6C1E /* ImageLoader.swift in Sources */,
 			);
@@ -269,7 +293,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -326,7 +350,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;

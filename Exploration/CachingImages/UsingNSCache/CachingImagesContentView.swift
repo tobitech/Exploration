@@ -1,9 +1,4 @@
-//
-//  ContentView.swift
-//  CachingImages
-//
-//  Created by Oluwatobi Omotayo on 22/02/2024.
-//
+// Reference - https://youtu.be/KhGyiOk3Yzk?si=IL2M2E0zOPHwWEIt
 
 import SwiftUI
 

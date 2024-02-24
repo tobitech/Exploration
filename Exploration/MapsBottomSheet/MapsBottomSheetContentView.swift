@@ -1,9 +1,4 @@
-//
-//  ContentView.swift
-//  MapsBottomSheet
-//
-//  Created by Oluwatobi Omotayo on 21/02/2024.
-//
+// Reference - https://youtu.be/CA6GOKDiK0M?si=sZxLhPVU5NIEMYJJ
 
 import MapKit
 import SwiftUI
