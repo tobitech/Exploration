@@ -32,6 +32,8 @@
 		0A55A0EC2B89FD1E00FB6C1E /* ToggleStateIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55A0E82B89FD1E00FB6C1E /* ToggleStateIntent.swift */; };
 		0A55A0F22B8A003100FB6C1E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55A0EF2B8A003100FB6C1E /* ContentView.swift */; };
 		0A55A0F32B8A003100FB6C1E /* ThemeChangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55A0F12B8A003100FB6C1E /* ThemeChangeView.swift */; };
+		0A55A0F82B8A019300FB6C1E /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55A0F62B8A019300FB6C1E /* LockView.swift */; };
+		0A55A0F92B8A019300FB6C1E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55A0F72B8A019300FB6C1E /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +88,8 @@
 		0A55A0E82B89FD1E00FB6C1E /* ToggleStateIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleStateIntent.swift; sourceTree = "<group>"; };
 		0A55A0EF2B8A003100FB6C1E /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0A55A0F12B8A003100FB6C1E /* ThemeChangeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeChangeView.swift; sourceTree = "<group>"; };
+		0A55A0F62B8A019300FB6C1E /* LockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
+		0A55A0F72B8A019300FB6C1E /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0A55A0F42B8A016700FB6C1E /* BiometricPINLock */,
 				0A55A0ED2B89FFEC00FB6C1E /* CustomModals */,
 				0A55A0B42B89FAA000FB6C1E /* Widgets */,
 				0A55A0AC2B89F88600FB6C1E /* CustomToasts */,
@@ -269,6 +274,23 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		0A55A0F42B8A016700FB6C1E /* BiometricPINLock */ = {
+			isa = PBXGroup;
+			children = (
+				0A55A0F72B8A019300FB6C1E /* ContentView.swift */,
+				0A55A0F52B8A019300FB6C1E /* View */,
+			);
+			path = BiometricPINLock;
+			sourceTree = "<group>";
+		};
+		0A55A0F52B8A019300FB6C1E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A55A0F62B8A019300FB6C1E /* LockView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -378,12 +400,14 @@
 				0A55A0B22B89F96900FB6C1E /* CustomToastsContentView.swift in Sources */,
 				0A55A0A92B89F75100FB6C1E /* BottomSheetHelper.swift in Sources */,
 				0A55A0A72B89F75100FB6C1E /* MapsBottomSheetContentView.swift in Sources */,
+				0A55A0F92B8A019300FB6C1E /* ContentView.swift in Sources */,
 				0A55A0A82B89F75100FB6C1E /* Tab.swift in Sources */,
 				0A55A0882B89F5FD00FB6C1E /* ExplorationApp.swift in Sources */,
 				0A55A0AB2B89F79100FB6C1E /* CachingImagesContentView.swift in Sources */,
 				0A55A09D2B89F6A300FB6C1E /* WebService.swift in Sources */,
 				0A55A0B12B89F96900FB6C1E /* Toast.swift in Sources */,
 				0A55A0E42B89FCC800FB6C1E /* InteractiveWidgetsContentView.swift in Sources */,
+				0A55A0F82B8A019300FB6C1E /* LockView.swift in Sources */,
 				0A55A09E2B89F6A300FB6C1E /* PhotoListViewModel.swift in Sources */,
 				0A55A09C2B89F6A300FB6C1E /* ImageLoader.swift in Sources */,
 			);
