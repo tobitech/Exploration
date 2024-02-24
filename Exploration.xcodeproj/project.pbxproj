@@ -30,6 +30,8 @@
 		0A55A0EA2B89FD1E00FB6C1E /* TaskWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55A0E62B89FD1D00FB6C1E /* TaskWidgetBundle.swift */; };
 		0A55A0EB2B89FD1E00FB6C1E /* TaskWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55A0E72B89FD1D00FB6C1E /* TaskWidget.swift */; };
 		0A55A0EC2B89FD1E00FB6C1E /* ToggleStateIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55A0E82B89FD1E00FB6C1E /* ToggleStateIntent.swift */; };
+		0A55A0F22B8A003100FB6C1E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55A0EF2B8A003100FB6C1E /* ContentView.swift */; };
+		0A55A0F32B8A003100FB6C1E /* ThemeChangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55A0F12B8A003100FB6C1E /* ThemeChangeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		0A55A0E62B89FD1D00FB6C1E /* TaskWidgetBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskWidgetBundle.swift; sourceTree = "<group>"; };
 		0A55A0E72B89FD1D00FB6C1E /* TaskWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskWidget.swift; sourceTree = "<group>"; };
 		0A55A0E82B89FD1E00FB6C1E /* ToggleStateIntent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleStateIntent.swift; sourceTree = "<group>"; };
+		0A55A0EF2B8A003100FB6C1E /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0A55A0F12B8A003100FB6C1E /* ThemeChangeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeChangeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0A55A0ED2B89FFEC00FB6C1E /* CustomModals */,
 				0A55A0B42B89FAA000FB6C1E /* Widgets */,
 				0A55A0AC2B89F88600FB6C1E /* CustomToasts */,
 				0A55A0A12B89F70300FB6C1E /* MapsBottomSheet */,
@@ -239,6 +244,31 @@
 			path = TaskWidget;
 			sourceTree = "<group>";
 		};
+		0A55A0ED2B89FFEC00FB6C1E /* CustomModals */ = {
+			isa = PBXGroup;
+			children = (
+				0A55A0EE2B8A001300FB6C1E /* ThemeSwitcher */,
+			);
+			path = CustomModals;
+			sourceTree = "<group>";
+		};
+		0A55A0EE2B8A001300FB6C1E /* ThemeSwitcher */ = {
+			isa = PBXGroup;
+			children = (
+				0A55A0EF2B8A003100FB6C1E /* ContentView.swift */,
+				0A55A0F02B8A003100FB6C1E /* Helpers */,
+			);
+			path = ThemeSwitcher;
+			sourceTree = "<group>";
+		};
+		0A55A0F02B8A003100FB6C1E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0A55A0F12B8A003100FB6C1E /* ThemeChangeView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -343,6 +373,8 @@
 			files = (
 				0A55A0A02B89F6A300FB6C1E /* URLImage.swift in Sources */,
 				0A55A09F2B89F6A300FB6C1E /* Photo.swift in Sources */,
+				0A55A0F22B8A003100FB6C1E /* ContentView.swift in Sources */,
+				0A55A0F32B8A003100FB6C1E /* ThemeChangeView.swift in Sources */,
 				0A55A0B22B89F96900FB6C1E /* CustomToastsContentView.swift in Sources */,
 				0A55A0A92B89F75100FB6C1E /* BottomSheetHelper.swift in Sources */,
 				0A55A0A72B89F75100FB6C1E /* MapsBottomSheetContentView.swift in Sources */,
