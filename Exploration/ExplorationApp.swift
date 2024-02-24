@@ -11,7 +11,7 @@ import SwiftUI
 struct ExplorationApp: App {
 	var body: some Scene {
 		WindowGroup {
-			ContentView()
+			MapsBottomSheetContentView()
 		}
 	}
 }
