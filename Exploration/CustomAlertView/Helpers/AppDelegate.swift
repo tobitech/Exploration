@@ -1,30 +1,5 @@
 import SwiftUI
 
-// Alert Config
-struct AlertConfig {
-	var enableBackgroundBlur: Bool = true
-	var disableOutsideTap: Bool = true
-	var transitionType: TransitionType = .slide
-	var slideEdge: Edge = .bottom
-	// Private Properties
-	var show: Bool = true
-	
-	// Transition Type
-	enum TransitionType {
-		case slide
-		case opacity
-	}
-	
-	// Alert Present/Dismiss Methods
-	mutating func present() {
-		show = true
-	}
-	
-	mutating func dismiss() {
-		show = false
-	}
-}
-
 // App Delegate
 @Observable
 class AppDelegate: NSObject, UIApplicationDelegate {
@@ -57,11 +32,10 @@ class SceneDelegate: NSObject, UIWindowSceneDelegate {
 		window.isHidden = true
 		window.isUserInteractionEnabled = false
 		self.overlayWindow = window
-		print("window added")
 	}
 	
 	// The ViewTag closure will return the appropriate tag for the added alert view, and with that, we can remove the alert in some complex cases (as shown in the video).
-	fileprivate func alert<Content: View>(
+	func alert<Content: View>(
 		config: Binding<AlertConfig>,
 		@ViewBuilder content: @escaping () -> Content,
 		viewTag: @escaping (Int) -> Void
@@ -88,41 +62,6 @@ class SceneDelegate: NSObject, UIWindowSceneDelegate {
 			alertWindow.isUserInteractionEnabled = true
 		} else {
 			print("Existing Alert is still Present")
-		}
-	}
-}
-
-// Custom View Extensions
-extension View {
-	@ViewBuilder
-	func alert<Content: View>(alertConfig: Binding<AlertConfig>, @ViewBuilder content: @escaping () -> Content) -> some View {
-		self
-			.modifier(AlertModifier(config: alertConfig, alertContent: content))
-	}
-}
-
-// Alert Handling View Modifier
-// A private modifier that handles the present and dismisses actions for the alert
-fileprivate struct AlertModifier<AlertContent: View>: ViewModifier {
-	@Binding var config: AlertConfig
-	@ViewBuilder var alertContent: () -> AlertContent
-	// Scene Delegate
-	@Environment(SceneDelegate.self) private var sceneDelegate
-	// View Tag
-	@State private var viewTag: Int = 0
-	func body(content: Content) -> some View {
-		content
-	}
-}
-
-fileprivate struct AlertView<Content: View>: View {
-	@Binding var config: AlertConfig
-	// View Tag
-	var tag: Int
-	@ViewBuilder var content: () -> Content
-	var body: some View {
-		GeometryReader { geometry in
-			Color.red
 		}
 	}
 }
