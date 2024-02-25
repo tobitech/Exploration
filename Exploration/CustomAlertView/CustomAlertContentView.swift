@@ -12,6 +12,9 @@ struct CustomAlertContentView: View {
 			RoundedRectangle(cornerRadius: 15)
 				.fill(.red.gradient)
 				.frame(width: 150, height: 150)
+				.onTapGesture {
+					alert.dismiss()
+				}
 		}
 	}
 }

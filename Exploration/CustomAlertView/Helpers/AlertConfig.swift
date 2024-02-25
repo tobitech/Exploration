@@ -8,6 +8,8 @@ struct AlertConfig {
 	var slideEdge: Edge = .bottom
 	// Private Properties
 	var show: Bool = false
+	// Since we need to dismiss the view with the same animation, I'm creating an extra variable in the alert configuration. With that, we can animate the alert in or out even from outside the AlertView.
+	var showView: Bool = false
 	
 	// Transition Type
 	enum TransitionType {

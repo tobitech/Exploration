@@ -28,7 +28,23 @@ struct AlertModifier<AlertContent: View>: ViewModifier {
 						viewTag = tag
 					}
 				} else {
-					print("Dismiss")
+					guard let alertWindow = sceneDelegate.overlayWindow else { return }
+					// print("Dismiss")
+					if config.showView {
+						// print("View is appeared")
+						// Removing the alert with animation
+						withAnimation(.smooth(duration: 0.35, extraBounce: 0)) {
+							config.showView = false
+						}
+						
+						DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) {
+							alertWindow.rootViewController = nil
+							alertWindow.isHidden = true
+							alertWindow.isUserInteractionEnabled = false
+						}
+					} else {
+						print("View is not appeared")
+					}
 				}
 			}
 	}

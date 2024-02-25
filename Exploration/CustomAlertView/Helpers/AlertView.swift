@@ -5,6 +5,10 @@ struct AlertView<Content: View>: View {
 	// View Tag
 	var tag: Int
 	@ViewBuilder var content: () -> Content
+	
+	// View Properties
+	@State var showView: Bool = false
+	
 	var body: some View {
 		GeometryReader { geometry in
 			ZStack {
@@ -18,14 +22,29 @@ struct AlertView<Content: View>: View {
 			}
 			.ignoresSafeArea()
 			.contentShape(.rect)
+			.onTapGesture {
+				if !config.disableOutsideTap {
+					config.dismiss()
+				}
+			}
+			.opacity(showView ? 1 : 0)
 			
-			if config.transitionType == .slide {
+			if showView && config.transitionType == .slide {
 				content()
 					.frame(maxWidth: .infinity, maxHeight: .infinity)
 					.transition(.move(edge: config.slideEdge))
 			} else {
 				content()
 					.frame(maxWidth: .infinity, maxHeight: .infinity)
+					.opacity(showView ? 1 : 0)
+			}
+		}
+		.onAppear {
+			config.showView = true
+		}
+		.onChange(of: config.showView) { oldValue, newValue in
+			withAnimation(.smooth(duration: 0.35, extraBounce: 0)) {
+				showView = newValue
 			}
 		}
 	}
