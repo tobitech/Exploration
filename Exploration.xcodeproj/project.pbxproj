@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A0790F42B8DC21E00CFB197 /* BottomCustomAlertContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0790F32B8DC21E00CFB197 /* BottomCustomAlertContentView.swift */; };
 		0A27EA432B8B28C400AF1A2E /* AlertConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A27EA422B8B28C400AF1A2E /* AlertConfig.swift */; };
 		0A27EA452B8B28EB00AF1A2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A27EA442B8B28EB00AF1A2E /* AppDelegate.swift */; };
 		0A27EA472B8B293200AF1A2E /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A27EA462B8B293200AF1A2E /* AlertView.swift */; };
@@ -74,6 +75,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A0790F32B8DC21E00CFB197 /* BottomCustomAlertContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomCustomAlertContentView.swift; sourceTree = "<group>"; };
 		0A27EA422B8B28C400AF1A2E /* AlertConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertConfig.swift; sourceTree = "<group>"; };
 		0A27EA442B8B28EB00AF1A2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A27EA462B8B293200AF1A2E /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
@@ -138,6 +140,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A0790F22B8DC1FC00CFB197 /* BottomCustomAlert */ = {
+			isa = PBXGroup;
+			children = (
+				0A0790F32B8DC21E00CFB197 /* BottomCustomAlertContentView.swift */,
+			);
+			path = BottomCustomAlert;
+			sourceTree = "<group>";
+		};
 		0A55A07B2B89F5FD00FB6C1E = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +170,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0A0790F22B8DC1FC00CFB197 /* BottomCustomAlert */,
 				0A55A10F2B8A527200FB6C1E /* CustomAlertView */,
 				0A55A0F42B8A016700FB6C1E /* BiometricPINLock */,
 				0A55A0ED2B89FFEC00FB6C1E /* CustomModals */,
@@ -492,6 +503,7 @@
 				0A55A09F2B89F6A300FB6C1E /* Photo.swift in Sources */,
 				0A55A0F22B8A003100FB6C1E /* ContentView.swift in Sources */,
 				0A55A0F32B8A003100FB6C1E /* ThemeChangeView.swift in Sources */,
+				0A0790F42B8DC21E00CFB197 /* BottomCustomAlertContentView.swift in Sources */,
 				0A27EA452B8B28EB00AF1A2E /* AppDelegate.swift in Sources */,
 				0A27EA472B8B293200AF1A2E /* AlertView.swift in Sources */,
 				0A55A1112B8A528F00FB6C1E /* CustomAlertContentView.swift in Sources */,
