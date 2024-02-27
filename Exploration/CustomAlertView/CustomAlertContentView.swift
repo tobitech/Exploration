@@ -15,6 +15,10 @@ struct CustomAlertContentView: View {
 			DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
 				alert1.present()
 			}
+			
+			DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+				alert1.dismiss()
+			}
 		})
 		.alert(alertConfig: $alert) {
 			RoundedRectangle(cornerRadius: 15)

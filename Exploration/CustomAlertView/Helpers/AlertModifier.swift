@@ -58,6 +58,9 @@ struct AlertModifier<AlertContent: View>: ViewModifier {
 						}
 					} else {
 						print("View is not appeared")
+						// Now let's consider this scenario: when an initial alert is displayed and the user triggers another alert, it's being stored. Now the user cancels the second alert suddenly, even before the first alert is dismissed. Now the second alert need not be displayed, but here it's displaying. In order to avoid this, I'm storing the view tag, and with the help of that, I can remove the view from the array, and thus we can avoid this issue.
+						// Removing the View from the Array with the help of View Tag
+						sceneDelegate.alerts.removeAll(where: { $0.tag == viewTag })
 					}
 				}
 			}
