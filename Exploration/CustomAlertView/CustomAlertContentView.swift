@@ -6,19 +6,16 @@ import SwiftUI
 
 struct CustomAlertContentView: View {
 	@State private var alert: AlertConfig = .init()
-	@State private var alert1: AlertConfig = .init(slideEdge: .leading)
+	@State private var alert1: AlertConfig = .init(slideEdge: .top)
+	@State private var alert2: AlertConfig = .init(slideEdge: .leading)
+	@State private var alert3: AlertConfig = .init(disableOutsideTap: false, slideEdge: .trailing)
 	
 	var body: some View {
 		Button("Show Alert", action: {
 			alert.present()
-			
-			DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-				alert1.present()
-			}
-			
-			DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-				alert1.dismiss()
-			}
+			alert1.present()
+			alert2.present()
+			alert3.present()
 		})
 		.alert(alertConfig: $alert) {
 			RoundedRectangle(cornerRadius: 15)
@@ -31,6 +28,22 @@ struct CustomAlertContentView: View {
 		.alert(alertConfig: $alert1) {
 			RoundedRectangle(cornerRadius: 15)
 				.fill(.blue.gradient)
+				.frame(width: 150, height: 150)
+				.onTapGesture {
+					alert1.dismiss()
+				}
+		}
+		.alert(alertConfig: $alert2) {
+			RoundedRectangle(cornerRadius: 15)
+				.fill(.yellow.gradient)
+				.frame(width: 150, height: 150)
+				.onTapGesture {
+					alert1.dismiss()
+				}
+		}
+		.alert(alertConfig: $alert3) {
+			RoundedRectangle(cornerRadius: 15)
+				.fill(.purple.gradient)
 				.frame(width: 150, height: 150)
 				.onTapGesture {
 					alert1.dismiss()
