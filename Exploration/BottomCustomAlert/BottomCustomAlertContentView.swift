@@ -20,6 +20,8 @@ struct BottomCustomAlertContentView: View {
 					.frame(height: 300)
 					.foregroundStyle(LinearGradient(gradient: Gradient(colors: [Color.clear, Color.clear, gradientColor]), startPoint: .top, endPoint: .bottom))
 					.opacity(0.4)
+					.offset(y: show ? 0 : 300)
+
 				ZStack {
 					RoundedRectangle(cornerRadius: corner)
 						.foregroundStyle(.white)
@@ -58,6 +60,16 @@ struct BottomCustomAlertContentView: View {
 					}
 				}
 				.padding(.horizontal, 10)
+				.offset(y: show ? -30 : 300)
+			}
+			.onChange(of: show) { oldValue, newValue in
+				if newValue {
+					DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+						withAnimation {
+							show = false
+						}
+					}
+				}
 			}
 		}
 		.ignoresSafeArea()
@@ -65,5 +77,5 @@ struct BottomCustomAlertContentView: View {
 }
 
 #Preview {
-	BottomCustomAlertContentView(show: .constant(true))
+	BottomCustomAlertHomeView()
 }

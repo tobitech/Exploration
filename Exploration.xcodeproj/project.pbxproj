@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A0790F42B8DC21E00CFB197 /* BottomCustomAlertContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0790F32B8DC21E00CFB197 /* BottomCustomAlertContentView.swift */; };
+		0A0790F62B8DD14500CFB197 /* BottomCustomAlertHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0790F52B8DD14500CFB197 /* BottomCustomAlertHomeView.swift */; };
 		0A27EA432B8B28C400AF1A2E /* AlertConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A27EA422B8B28C400AF1A2E /* AlertConfig.swift */; };
 		0A27EA452B8B28EB00AF1A2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A27EA442B8B28EB00AF1A2E /* AppDelegate.swift */; };
 		0A27EA472B8B293200AF1A2E /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A27EA462B8B293200AF1A2E /* AlertView.swift */; };
@@ -76,6 +77,7 @@
 
 /* Begin PBXFileReference section */
 		0A0790F32B8DC21E00CFB197 /* BottomCustomAlertContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomCustomAlertContentView.swift; sourceTree = "<group>"; };
+		0A0790F52B8DD14500CFB197 /* BottomCustomAlertHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomCustomAlertHomeView.swift; sourceTree = "<group>"; };
 		0A27EA422B8B28C400AF1A2E /* AlertConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertConfig.swift; sourceTree = "<group>"; };
 		0A27EA442B8B28EB00AF1A2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A27EA462B8B293200AF1A2E /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				0A0790F32B8DC21E00CFB197 /* BottomCustomAlertContentView.swift */,
+				0A0790F52B8DD14500CFB197 /* BottomCustomAlertHomeView.swift */,
 			);
 			path = BottomCustomAlert;
 			sourceTree = "<group>";
@@ -512,6 +515,7 @@
 				0A55A1142B8A52DD00FB6C1E /* AlertModifier.swift in Sources */,
 				0A55A0A92B89F75100FB6C1E /* BottomSheetHelper.swift in Sources */,
 				0A55A10B2B8A1EEB00FB6C1E /* ErrorView.swift in Sources */,
+				0A0790F62B8DD14500CFB197 /* BottomCustomAlertHomeView.swift in Sources */,
 				0A55A1032B8A165300FB6C1E /* PokedexView.swift in Sources */,
 				0A55A0A72B89F75100FB6C1E /* MapsBottomSheetContentView.swift in Sources */,
 				0A55A0F92B8A019300FB6C1E /* BiometricPINLockContentView.swift in Sources */,
