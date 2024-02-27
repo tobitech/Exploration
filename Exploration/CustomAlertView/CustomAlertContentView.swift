@@ -2,11 +2,19 @@
 
 import SwiftUI
 
+// As you can see, the alert is built with animations. Now let's test it with multiple alerts and see the results.
+
 struct CustomAlertContentView: View {
 	@State private var alert: AlertConfig = .init()
+	@State private var alert1: AlertConfig = .init(slideEdge: .leading)
+	
 	var body: some View {
 		Button("Show Alert", action: {
 			alert.present()
+			
+			DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+				alert1.present()
+			}
 		})
 		.alert(alertConfig: $alert) {
 			RoundedRectangle(cornerRadius: 15)
@@ -14,6 +22,14 @@ struct CustomAlertContentView: View {
 				.frame(width: 150, height: 150)
 				.onTapGesture {
 					alert.dismiss()
+				}
+		}
+		.alert(alertConfig: $alert1) {
+			RoundedRectangle(cornerRadius: 15)
+				.fill(.blue.gradient)
+				.frame(width: 150, height: 150)
+				.onTapGesture {
+					alert1.dismiss()
 				}
 		}
 	}

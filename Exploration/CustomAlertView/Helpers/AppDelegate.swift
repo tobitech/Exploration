@@ -19,6 +19,7 @@ class SceneDelegate: NSObject, UIWindowSceneDelegate {
 	weak var windowScene: UIWindowScene?
 	var overlayWindow: UIWindow?
 	var tag: Int = 0
+	var alerts: [UIView] = []
 	
 	func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
 		windowScene = scene as? UIWindowScene
@@ -62,6 +63,9 @@ class SceneDelegate: NSObject, UIWindowSceneDelegate {
 			alertWindow.isUserInteractionEnabled = true
 		} else {
 			print("Existing Alert is still Present")
+			// As you can see, I didn't include any logic for the second alert, thus it won't appear. Therefore, when an alert is displayed, if any additional alerts are displayed simultaneously, I'm going to save those alerts in an array and display them in the same order as the current alert when it is dismissed.
+			viewController.view.frame = alertWindow.rootViewController?.view.frame ?? .zero
+			alerts.append(viewController.view)
 		}
 	}
 }

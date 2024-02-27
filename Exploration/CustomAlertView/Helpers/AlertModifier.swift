@@ -38,9 +38,23 @@ struct AlertModifier<AlertContent: View>: ViewModifier {
 						}
 						
 						DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) {
-							alertWindow.rootViewController = nil
-							alertWindow.isHidden = true
-							alertWindow.isUserInteractionEnabled = false
+							if sceneDelegate.alerts.isEmpty {
+								alertWindow.rootViewController = nil
+								alertWindow.isHidden = true
+								alertWindow.isUserInteractionEnabled = false
+							} else {
+								// Presenting Next Alert
+								if let first = sceneDelegate.alerts.first {
+									// Removing the preview view:
+									alertWindow.rootViewController?.view.subviews.forEach({ view in
+										view.removeFromSuperview()
+									})
+									
+									alertWindow.rootViewController?.view.addSubview(first)
+									// Removing the Added Alert from the Array
+									sceneDelegate.alerts.removeFirst()
+								}
+							}
 						}
 					} else {
 						print("View is not appeared")
