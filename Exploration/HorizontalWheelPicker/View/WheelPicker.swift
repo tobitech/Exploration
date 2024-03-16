@@ -10,8 +10,10 @@ import SwiftUI
 struct WheelPicker: View {
 	/// Config
 	var config: Config
+	@Binding var value: CGFloat
 	
-	@Binding var value: Int
+	/// View Properties.
+	@State private var isLoaded: Bool = false
 
 	var body: some View {
 		GeometryReader {
@@ -31,7 +33,7 @@ struct WheelPicker: View {
 							.frame(maxHeight: 20, alignment: .bottom)
 							.overlay {
 								if remainder == 0 && config.showsText {
-									Text("\(index / config.steps)")
+									Text("\((index / config.steps) * config.multiplier)")
 										.font(.caption)
 										.fontWeight(.semibold)
 										.fixedSize()
@@ -48,11 +50,12 @@ struct WheelPicker: View {
 			/// By using the new iOs 17 Scroll APls, we can easily create the horizontal wheel picker, and we can even know which index is at the centre by using the scrollPosition API.
 			.scrollTargetBehavior(.viewAligned)
 			.scrollPosition(id: .init(get: {
-				let position: Int? = value
-				return value
+				/// We must reverse the value to its original index value, else, the scroll position won't work properly.
+				let position: Int? = isLoaded ? (Int(value) * config.steps) / config.multiplier : nil
+				return position
 			}, set: { newValue in
 				if let newValue {
-					value = newValue
+					value = (CGFloat(newValue) / CGFloat(config.steps)) * CGFloat(config.multiplier)
 				}
 			}))
 			.overlay(alignment: .center, content: {
@@ -62,6 +65,12 @@ struct WheelPicker: View {
 					.padding(.bottom, 20)
 			})
 			.safeAreaPadding(.horizontal, horizontalPadding)
+			.onAppear {
+				/// By default, SwiftUI ScrollPosition won't work with initial values, but there is a work around to make it work. Simply use the onAppear modifier to inform the ScrollPosition modifier to set the initial position
+				if !isLoaded {
+					isLoaded = true
+				}
+			}
 		}
 	}
 	
@@ -69,6 +78,7 @@ struct WheelPicker: View {
 		var count: Int
 		var steps: Int = 10
 		var spacing: CGFloat = 5
+		var multiplier: Int = 10
 		var showsText: Bool = true
 	}
 }
