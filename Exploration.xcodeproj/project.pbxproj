@@ -55,6 +55,7 @@
 		0A70AD442BB2936B008794F4 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A70AD432BB2936B008794F4 /* FeedView.swift */; };
 		0A70AD472BB29662008794F4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A70AD462BB29662008794F4 /* Post.swift */; };
 		0A70AD492BB297A6008794F4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A70AD482BB297A6008794F4 /* MainView.swift */; };
+		0A8118E42BB712AF00889DA7 /* PinchZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8118E32BB712AF00889DA7 /* PinchZoom.swift */; };
 		0ACFD6E42BA5DD3A0014336E /* HorizontalWheelPickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACFD6E32BA5DD3A0014336E /* HorizontalWheelPickerContentView.swift */; };
 		0ACFD6E72BA5DDA80014336E /* WheelPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACFD6E62BA5DDA80014336E /* WheelPicker.swift */; };
 		0AFC0ABF2BB708F300B339D0 /* IGPinchZoomContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0ABE2BB708F300B339D0 /* IGPinchZoomContentView.swift */; };
@@ -136,6 +137,7 @@
 		0A70AD432BB2936B008794F4 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		0A70AD462BB29662008794F4 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		0A70AD482BB297A6008794F4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		0A8118E32BB712AF00889DA7 /* PinchZoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchZoom.swift; sourceTree = "<group>"; };
 		0ACFD6E32BA5DD3A0014336E /* HorizontalWheelPickerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalWheelPickerContentView.swift; sourceTree = "<group>"; };
 		0ACFD6E62BA5DDA80014336E /* WheelPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelPicker.swift; sourceTree = "<group>"; };
 		0AFC0ABE2BB708F300B339D0 /* IGPinchZoomContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGPinchZoomContentView.swift; sourceTree = "<group>"; };
@@ -452,6 +454,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		0A8118E22BB7129A00889DA7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0A8118E32BB712AF00889DA7 /* PinchZoom.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		0ACFD6E22BA5DCE10014336E /* HorizontalWheelPicker */ = {
 			isa = PBXGroup;
 			children = (
@@ -472,6 +482,7 @@
 		0AFC0ABD2BB708D100B339D0 /* InstagramPinchZoom */ = {
 			isa = PBXGroup;
 			children = (
+				0A8118E22BB7129A00889DA7 /* Helpers */,
 				0AFC0AC02BB7090200B339D0 /* Model */,
 				0AFC0ABE2BB708F300B339D0 /* IGPinchZoomContentView.swift */,
 			);
@@ -624,6 +635,7 @@
 				0AFC0AC22BB7090C00B339D0 /* IGPost.swift in Sources */,
 				0A55A09D2B89F6A300FB6C1E /* WebService.swift in Sources */,
 				0A70AD492BB297A6008794F4 /* MainView.swift in Sources */,
+				0A8118E42BB712AF00889DA7 /* PinchZoom.swift in Sources */,
 				0A55A0B12B89F96900FB6C1E /* Toast.swift in Sources */,
 				0A55A0E42B89FCC800FB6C1E /* InteractiveWidgetsContentView.swift in Sources */,
 				0A55A0F82B8A019300FB6C1E /* LockView.swift in Sources */,

@@ -4,22 +4,24 @@ import SwiftUI
 
 struct IGPinchZoomContentView: View {
 	var body: some View {
-		TabView {
-			NavigationStack {
-				ScrollView {
-					VStack(spacing: 15) {
-						ForEach(igPosts) {
-							IGCardView($0)
+		ZoomContainer {
+			TabView {
+				NavigationStack {
+					ScrollView {
+						VStack(spacing: 15) {
+							ForEach(igPosts) {
+								IGCardView($0)
+							}
 						}
+						.padding(15)
 					}
-					.padding(15)
+					.navigationTitle("Instagram")
 				}
-				.navigationTitle("Instagram")
+				.tabItem { Label("Home", systemImage: "house") }
+				
+				Text("Profile")
+					.tabItem { Label("Profile", systemImage: "person.circle") }
 			}
-			.tabItem { Label("Home", systemImage: "house") }
-			
-			Text("Profile")
-				.tabItem { Label("Profile", systemImage: "person.circle") }
 		}
 	}
 	
@@ -33,6 +35,7 @@ struct IGPinchZoomContentView: View {
 					.aspectRatio(contentMode: .fill)
 					.frame(width: size.width, height: size.height)
 					.clipShape(.rect(cornerRadius: 10))
+					.pinchZoom()
 			}
 			.frame(height: 240)
 			
