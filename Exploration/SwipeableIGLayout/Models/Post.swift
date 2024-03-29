@@ -1,10 +1,3 @@
-//
-//  Posts.swift
-//  Exploration
-//
-//  Created by Oluwatobi Omotayo on 26/03/2024.
-//
-
 import Foundation
 
 // Post Model and Data

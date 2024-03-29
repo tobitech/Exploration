@@ -57,6 +57,8 @@
 		0A70AD492BB297A6008794F4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A70AD482BB297A6008794F4 /* MainView.swift */; };
 		0ACFD6E42BA5DD3A0014336E /* HorizontalWheelPickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACFD6E32BA5DD3A0014336E /* HorizontalWheelPickerContentView.swift */; };
 		0ACFD6E72BA5DDA80014336E /* WheelPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACFD6E62BA5DDA80014336E /* WheelPicker.swift */; };
+		0AFC0ABF2BB708F300B339D0 /* IGPinchZoomContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0ABE2BB708F300B339D0 /* IGPinchZoomContentView.swift */; };
+		0AFC0AC22BB7090C00B339D0 /* IGPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0AC12BB7090C00B339D0 /* IGPost.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +138,8 @@
 		0A70AD482BB297A6008794F4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		0ACFD6E32BA5DD3A0014336E /* HorizontalWheelPickerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalWheelPickerContentView.swift; sourceTree = "<group>"; };
 		0ACFD6E62BA5DDA80014336E /* WheelPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelPicker.swift; sourceTree = "<group>"; };
+		0AFC0ABE2BB708F300B339D0 /* IGPinchZoomContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGPinchZoomContentView.swift; sourceTree = "<group>"; };
+		0AFC0AC12BB7090C00B339D0 /* IGPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGPost.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +193,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0AFC0ABD2BB708D100B339D0 /* InstagramPinchZoom */,
 				0A70AD3D2BB288CA008794F4 /* SwipeableIGLayout */,
 				0ACFD6E22BA5DCE10014336E /* HorizontalWheelPicker */,
 				0A0790F22B8DC1FC00CFB197 /* BottomCustomAlert */,
@@ -464,6 +469,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		0AFC0ABD2BB708D100B339D0 /* InstagramPinchZoom */ = {
+			isa = PBXGroup;
+			children = (
+				0AFC0AC02BB7090200B339D0 /* Model */,
+				0AFC0ABE2BB708F300B339D0 /* IGPinchZoomContentView.swift */,
+			);
+			path = InstagramPinchZoom;
+			sourceTree = "<group>";
+		};
+		0AFC0AC02BB7090200B339D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0AFC0AC12BB7090C00B339D0 /* IGPost.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -592,12 +614,14 @@
 				0A55A1052B8A168F00FB6C1E /* PokemonList.swift in Sources */,
 				0A70AD422BB28A71008794F4 /* HomeView.swift in Sources */,
 				0ACFD6E72BA5DDA80014336E /* WheelPicker.swift in Sources */,
+				0AFC0ABF2BB708F300B339D0 /* IGPinchZoomContentView.swift in Sources */,
 				0A55A1092B8A1EA500FB6C1E /* PokemonDescriptionView.swift in Sources */,
 				0A55A0A82B89F75100FB6C1E /* Tab.swift in Sources */,
 				0A55A1072B8A17D100FB6C1E /* PokemonCell.swift in Sources */,
 				0A55A0882B89F5FD00FB6C1E /* ExplorationApp.swift in Sources */,
 				0A55A0AB2B89F79100FB6C1E /* CachingImagesContentView.swift in Sources */,
 				0A70AD472BB29662008794F4 /* Post.swift in Sources */,
+				0AFC0AC22BB7090C00B339D0 /* IGPost.swift in Sources */,
 				0A55A09D2B89F6A300FB6C1E /* WebService.swift in Sources */,
 				0A70AD492BB297A6008794F4 /* MainView.swift in Sources */,
 				0A55A0B12B89F96900FB6C1E /* Toast.swift in Sources */,
