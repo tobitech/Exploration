@@ -33,11 +33,18 @@ struct ZoomContainer<Content: View>: View {
 			
 			ZStack(alignment: .topLeading) {
 				if let view = containerData.zoomingView {
-					view
-						.scaleEffect(containerData.zoom, anchor: containerData.zoomAnchor)
-						.offset(containerData.dragOffset)
+					Group {
+						if containerData.dimsBackground {
+							Rectangle()
+								.fill(.black.opacity(0.25))
+								.opacity(containerData.zoom - 1)
+						}
+						view
+							.scaleEffect(containerData.zoom, anchor: containerData.zoomAnchor)
+							.offset(containerData.dragOffset)
 						// View Position
-						.offset(x: containerData.viewRect.minX, y: containerData.viewRect.minY)
+							.offset(x: containerData.viewRect.minX, y: containerData.viewRect.minY)
+					}
 				}
 			}
 			.ignoresSafeArea()
@@ -56,6 +63,8 @@ fileprivate class ZoomContainerData {
 	var zoom: CGFloat = 1
 	var zoomAnchor: UnitPoint = .center
 	var dragOffset: CGSize = .zero
+	/// Sometimes, the user may trigger another event before the animation is completely finished. To avoid that, we can introduce a property to identify whether the animation is completely finished or not.
+	var isResetting: Bool = false
 }
 
 
@@ -76,6 +85,7 @@ fileprivate struct PinchZoomHelper<Content: View>: View {
 					Color.clear
 						.onChange(of: config.isGestureActive) { oldValue, newValue in
 							if newValue {
+								guard !containerData.isResetting else { return }
 								// Showing View on Zoom Container
 								containerData.viewRect = rect
 								containerData.zoomAnchor = config.zoomAnchor
@@ -85,6 +95,7 @@ fileprivate struct PinchZoomHelper<Content: View>: View {
 								config.hidesSourceView = true
 							} else {
 								// Resetting to its initial position with animation.
+								containerData.isResetting = true
 								withAnimation(.snappy(duration: 0.3, extraBounce: 0), completionCriteria: .logicallyComplete) {
 									containerData.dragOffset = .zero
 									containerData.zoom = 1
@@ -93,11 +104,12 @@ fileprivate struct PinchZoomHelper<Content: View>: View {
 									config = .init()
 									// Removing View from container
 									containerData.zoomingView = nil
+									containerData.isResetting = false
 								}
 							}
 						}
 						.onChange(of: config) { oldValue, newValue in
-							if config.isGestureActive {
+							if config.isGestureActive && !containerData.isResetting {
 								// Updating View's position and scale in zoom container
 								containerData.zoom = config.zoom
 								containerData.dragOffset = config.dragOffset
