@@ -13,6 +13,15 @@
 		0A27EA452B8B28EB00AF1A2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A27EA442B8B28EB00AF1A2E /* AppDelegate.swift */; };
 		0A27EA472B8B293200AF1A2E /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A27EA462B8B293200AF1A2E /* AlertView.swift */; };
 		0A29EF422BB05B75007D411E /* CameraPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A29EF412BB05B75007D411E /* CameraPickerView.swift */; };
+		0A48B6F92BBC51D500060277 /* RatioContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A48B6F82BBC51D500060277 /* RatioContentView.swift */; };
+		0A48B6FB2BBC524C00060277 /* CashFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A48B6FA2BBC524C00060277 /* CashFlowView.swift */; };
+		0A48B6FD2BBC550400060277 /* SavingsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A48B6FC2BBC550400060277 /* SavingsCardView.swift */; };
+		0A48B6FF2BBC554B00060277 /* DebtCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A48B6FE2BBC554B00060277 /* DebtCardView.swift */; };
+		0A48B7012BBC556C00060277 /* NetworthCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A48B7002BBC556C00060277 /* NetworthCardView.swift */; };
+		0A48B7032BBC558A00060277 /* UpcomingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A48B7022BBC558A00060277 /* UpcomingListView.swift */; };
+		0A48B7052BBC66B900060277 /* ListsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A48B7042BBC66B900060277 /* ListsCardView.swift */; };
+		0A48B7072BBC6D4B00060277 /* OverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A48B7062BBC6D4B00060277 /* OverviewView.swift */; };
+		0A48B7092BBC6DE900060277 /* RatioMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A48B7082BBC6DE900060277 /* RatioMainView.swift */; };
 		0A55A0882B89F5FD00FB6C1E /* ExplorationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55A0872B89F5FD00FB6C1E /* ExplorationApp.swift */; };
 		0A55A08C2B89F5FE00FB6C1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A55A08B2B89F5FE00FB6C1E /* Assets.xcassets */; };
 		0A55A08F2B89F5FE00FB6C1E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A55A08E2B89F5FE00FB6C1E /* Preview Assets.xcassets */; };
@@ -93,6 +102,15 @@
 		0A27EA442B8B28EB00AF1A2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A27EA462B8B293200AF1A2E /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		0A29EF412BB05B75007D411E /* CameraPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPickerView.swift; sourceTree = "<group>"; };
+		0A48B6F82BBC51D500060277 /* RatioContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatioContentView.swift; sourceTree = "<group>"; };
+		0A48B6FA2BBC524C00060277 /* CashFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashFlowView.swift; sourceTree = "<group>"; };
+		0A48B6FC2BBC550400060277 /* SavingsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsCardView.swift; sourceTree = "<group>"; };
+		0A48B6FE2BBC554B00060277 /* DebtCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtCardView.swift; sourceTree = "<group>"; };
+		0A48B7002BBC556C00060277 /* NetworthCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworthCardView.swift; sourceTree = "<group>"; };
+		0A48B7022BBC558A00060277 /* UpcomingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingListView.swift; sourceTree = "<group>"; };
+		0A48B7042BBC66B900060277 /* ListsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsCardView.swift; sourceTree = "<group>"; };
+		0A48B7062BBC6D4B00060277 /* OverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewView.swift; sourceTree = "<group>"; };
+		0A48B7082BBC6DE900060277 /* RatioMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatioMainView.swift; sourceTree = "<group>"; };
 		0A55A0842B89F5FD00FB6C1E /* Exploration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exploration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A55A0872B89F5FD00FB6C1E /* ExplorationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorationApp.swift; sourceTree = "<group>"; };
 		0A55A08B2B89F5FE00FB6C1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -173,6 +191,22 @@
 			path = BottomCustomAlert;
 			sourceTree = "<group>";
 		};
+		0A48B6F72BBC51BD00060277 /* RatioOverview */ = {
+			isa = PBXGroup;
+			children = (
+				0A48B6F82BBC51D500060277 /* RatioContentView.swift */,
+				0A48B7082BBC6DE900060277 /* RatioMainView.swift */,
+				0A48B7062BBC6D4B00060277 /* OverviewView.swift */,
+				0A48B6FE2BBC554B00060277 /* DebtCardView.swift */,
+				0A48B7002BBC556C00060277 /* NetworthCardView.swift */,
+				0A48B7022BBC558A00060277 /* UpcomingListView.swift */,
+				0A48B6FC2BBC550400060277 /* SavingsCardView.swift */,
+				0A48B6FA2BBC524C00060277 /* CashFlowView.swift */,
+				0A48B7042BBC66B900060277 /* ListsCardView.swift */,
+			);
+			path = RatioOverview;
+			sourceTree = "<group>";
+		};
 		0A55A07B2B89F5FD00FB6C1E = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +229,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0A48B6F72BBC51BD00060277 /* RatioOverview */,
 				0AFC0ABD2BB708D100B339D0 /* InstagramPinchZoom */,
 				0A70AD3D2BB288CA008794F4 /* SwipeableIGLayout */,
 				0ACFD6E22BA5DCE10014336E /* HorizontalWheelPicker */,
@@ -600,7 +635,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A55A0A02B89F6A300FB6C1E /* URLImage.swift in Sources */,
+				0A48B7092BBC6DE900060277 /* RatioMainView.swift in Sources */,
 				0A55A09F2B89F6A300FB6C1E /* Photo.swift in Sources */,
+				0A48B6FF2BBC554B00060277 /* DebtCardView.swift in Sources */,
 				0A55A0F22B8A003100FB6C1E /* ContentView.swift in Sources */,
 				0A55A0F32B8A003100FB6C1E /* ThemeChangeView.swift in Sources */,
 				0ACFD6E42BA5DD3A0014336E /* HorizontalWheelPickerContentView.swift in Sources */,
@@ -610,11 +647,14 @@
 				0A70AD442BB2936B008794F4 /* FeedView.swift in Sources */,
 				0A55A1112B8A528F00FB6C1E /* CustomAlertContentView.swift in Sources */,
 				0A70AD3F2BB288EB008794F4 /* SwipeableIGLayoutContentView.swift in Sources */,
+				0A48B7052BBC66B900060277 /* ListsCardView.swift in Sources */,
 				0A55A0B22B89F96900FB6C1E /* CustomToastsContentView.swift in Sources */,
 				0A55A1002B8A131C00FB6C1E /* PokemonData.swift in Sources */,
 				0A55A1142B8A52DD00FB6C1E /* AlertModifier.swift in Sources */,
+				0A48B7072BBC6D4B00060277 /* OverviewView.swift in Sources */,
 				0A55A0A92B89F75100FB6C1E /* BottomSheetHelper.swift in Sources */,
 				0A55A10B2B8A1EEB00FB6C1E /* ErrorView.swift in Sources */,
+				0A48B6FD2BBC550400060277 /* SavingsCardView.swift in Sources */,
 				0A0790F62B8DD14500CFB197 /* BottomCustomAlertHomeView.swift in Sources */,
 				0A55A1032B8A165300FB6C1E /* PokedexView.swift in Sources */,
 				0A55A0A72B89F75100FB6C1E /* MapsBottomSheetContentView.swift in Sources */,
@@ -630,17 +670,21 @@
 				0A55A0A82B89F75100FB6C1E /* Tab.swift in Sources */,
 				0A55A1072B8A17D100FB6C1E /* PokemonCell.swift in Sources */,
 				0A55A0882B89F5FD00FB6C1E /* ExplorationApp.swift in Sources */,
+				0A48B7012BBC556C00060277 /* NetworthCardView.swift in Sources */,
 				0A55A0AB2B89F79100FB6C1E /* CachingImagesContentView.swift in Sources */,
 				0A70AD472BB29662008794F4 /* Post.swift in Sources */,
 				0AFC0AC22BB7090C00B339D0 /* IGPost.swift in Sources */,
 				0A55A09D2B89F6A300FB6C1E /* WebService.swift in Sources */,
+				0A48B7032BBC558A00060277 /* UpcomingListView.swift in Sources */,
 				0A70AD492BB297A6008794F4 /* MainView.swift in Sources */,
 				0A8118E42BB712AF00889DA7 /* PinchZoom.swift in Sources */,
+				0A48B6F92BBC51D500060277 /* RatioContentView.swift in Sources */,
 				0A55A0B12B89F96900FB6C1E /* Toast.swift in Sources */,
 				0A55A0E42B89FCC800FB6C1E /* InteractiveWidgetsContentView.swift in Sources */,
 				0A55A0F82B8A019300FB6C1E /* LockView.swift in Sources */,
 				0A55A09E2B89F6A300FB6C1E /* PhotoListViewModel.swift in Sources */,
 				0A27EA432B8B28C400AF1A2E /* AlertConfig.swift in Sources */,
+				0A48B6FB2BBC524C00060277 /* CashFlowView.swift in Sources */,
 				0A55A09C2B89F6A300FB6C1E /* ImageLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
