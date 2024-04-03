@@ -3,14 +3,15 @@ import SwiftUI
 struct ListsCardView: View {
 	var body: some View {
 		VStack(alignment: .leading) {
-			Label("Planned list", systemImage: "list.bullet.clipboard")
-				.font(.subheadline)
+			// Label("Planned list", systemImage: "list.bullet.clipboard")
+			Text("Planned list")
+				.font(.footnote)
 				.fontWeight(.medium)
-				.textCase(.uppercase)
+				// .textCase(.uppercase)
 				.foregroundStyle(.secondary)
 			VStack(alignment: .leading, spacing: 0) {
 				Text("12")
-					.font(.largeTitle)
+					.font(.title)
 					.padding(.top, 5)
 				Text("items")
 			}
@@ -23,13 +24,14 @@ struct ListsCardView: View {
 					.foregroundStyle(.secondary)
 				Spacer()
 				Text("8")
+					.font(.subheadline)
 					.fontWeight(.medium)
 			}
 		}
 		.frame(maxWidth: .infinity, alignment: .topLeading)
-		.frame(height: 140)
+		.frame(height: 130)
 		.padding()
-		.background(Color.blue, in: .rect(cornerRadius: 20))
+		.background(Color.gray.opacity(0.1), in: .rect(cornerRadius: 20))
 	}
 }
 

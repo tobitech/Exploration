@@ -24,6 +24,7 @@ struct RatioMainView: View {
 					Label("Profile", systemImage: "person")
 				}
 		}
+		.toolbarBackground(.visible, for: .tabBar)
 	}
 }
 

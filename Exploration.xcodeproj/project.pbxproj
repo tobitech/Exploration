@@ -65,6 +65,8 @@
 		0A70AD472BB29662008794F4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A70AD462BB29662008794F4 /* Post.swift */; };
 		0A70AD492BB297A6008794F4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A70AD482BB297A6008794F4 /* MainView.swift */; };
 		0A8118E42BB712AF00889DA7 /* PinchZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8118E32BB712AF00889DA7 /* PinchZoom.swift */; };
+		0AC5D0832BBD3B35007CF93E /* RatioChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC5D0822BBD3B35007CF93E /* RatioChartData.swift */; };
+		0AC5D0852BBD50BC007CF93E /* ReportCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC5D0842BBD50BC007CF93E /* ReportCardView.swift */; };
 		0ACFD6E42BA5DD3A0014336E /* HorizontalWheelPickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACFD6E32BA5DD3A0014336E /* HorizontalWheelPickerContentView.swift */; };
 		0ACFD6E72BA5DDA80014336E /* WheelPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACFD6E62BA5DDA80014336E /* WheelPicker.swift */; };
 		0AFC0ABF2BB708F300B339D0 /* IGPinchZoomContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0ABE2BB708F300B339D0 /* IGPinchZoomContentView.swift */; };
@@ -156,6 +158,8 @@
 		0A70AD462BB29662008794F4 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		0A70AD482BB297A6008794F4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		0A8118E32BB712AF00889DA7 /* PinchZoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchZoom.swift; sourceTree = "<group>"; };
+		0AC5D0822BBD3B35007CF93E /* RatioChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatioChartData.swift; sourceTree = "<group>"; };
+		0AC5D0842BBD50BC007CF93E /* ReportCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportCardView.swift; sourceTree = "<group>"; };
 		0ACFD6E32BA5DD3A0014336E /* HorizontalWheelPickerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalWheelPickerContentView.swift; sourceTree = "<group>"; };
 		0ACFD6E62BA5DDA80014336E /* WheelPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelPicker.swift; sourceTree = "<group>"; };
 		0AFC0ABE2BB708F300B339D0 /* IGPinchZoomContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGPinchZoomContentView.swift; sourceTree = "<group>"; };
@@ -202,7 +206,9 @@
 				0A48B7022BBC558A00060277 /* UpcomingListView.swift */,
 				0A48B6FC2BBC550400060277 /* SavingsCardView.swift */,
 				0A48B6FA2BBC524C00060277 /* CashFlowView.swift */,
+				0AC5D0822BBD3B35007CF93E /* RatioChartData.swift */,
 				0A48B7042BBC66B900060277 /* ListsCardView.swift */,
+				0AC5D0842BBD50BC007CF93E /* ReportCardView.swift */,
 			);
 			path = RatioOverview;
 			sourceTree = "<group>";
@@ -646,9 +652,11 @@
 				0A27EA472B8B293200AF1A2E /* AlertView.swift in Sources */,
 				0A70AD442BB2936B008794F4 /* FeedView.swift in Sources */,
 				0A55A1112B8A528F00FB6C1E /* CustomAlertContentView.swift in Sources */,
+				0AC5D0852BBD50BC007CF93E /* ReportCardView.swift in Sources */,
 				0A70AD3F2BB288EB008794F4 /* SwipeableIGLayoutContentView.swift in Sources */,
 				0A48B7052BBC66B900060277 /* ListsCardView.swift in Sources */,
 				0A55A0B22B89F96900FB6C1E /* CustomToastsContentView.swift in Sources */,
+				0AC5D0832BBD3B35007CF93E /* RatioChartData.swift in Sources */,
 				0A55A1002B8A131C00FB6C1E /* PokemonData.swift in Sources */,
 				0A55A1142B8A52DD00FB6C1E /* AlertModifier.swift in Sources */,
 				0A48B7072BBC6D4B00060277 /* OverviewView.swift in Sources */,

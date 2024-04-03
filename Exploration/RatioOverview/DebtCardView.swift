@@ -3,15 +3,20 @@ import SwiftUI
 struct DebtCardView: View {
 	var body: some View {
 		VStack(alignment: .leading) {
-			Label("Debt", systemImage: "creditcard")
-				.font(.subheadline)
+			// Label("Debt", systemImage: "creditcard")
+			Text("Debt")
+				.font(.footnote)
 				.fontWeight(.medium)
-				.textCase(.uppercase)
+				// .textCase(.uppercase)
 				.foregroundStyle(.secondary)
-			Text("$120")
-				.font(.largeTitle)
-				.fontWeight(.medium)
-				.padding(.top, 5)
+			HStack {
+				Text("$120")
+					.font(.title)
+					//.fontWeight(.medium)
+					.padding(.top, 5)
+				Image(systemName: "arrow.down.backward")
+					.foregroundStyle(.red)
+			}
 			Spacer()
 			HStack(alignment: .bottom) {
 				Text("Credit score")
@@ -20,13 +25,14 @@ struct DebtCardView: View {
 					.foregroundStyle(.secondary)
 				Spacer()
 				Text("750")
+					.font(.subheadline)
 					.fontWeight(.medium)
 			}
 		}
 		.frame(maxWidth: .infinity, alignment: .topLeading)
-		.frame(height: 140)
+		.frame(height: 130)
 		.padding()
-		.background(Color.pink, in: .rect(cornerRadius: 20))
+		.background(Color.gray.opacity(0.1), in: .rect(cornerRadius: 20))
 	}
 }
 

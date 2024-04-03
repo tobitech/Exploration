@@ -5,22 +5,24 @@ struct OverviewView: View {
 		NavigationStack {
 			ScrollView {
 				GeometryReader { geometry in
+					let size = geometry.size
+					let width = (size.width - 16) / 2
 					VStack {
 						CashFlowView()
-						let size = geometry.size
-						let width = (size.width - 16) / 2
+						// ReportCardView()
+						UpcomingListView()
 						LazyVGrid(columns: [GridItem(.fixed(width)), GridItem(.fixed(width))], spacing: 10, content: {
 							SavingsCardView()
 							NetworthCardView()
 							DebtCardView()
 							ListsCardView()
 						})
-						UpcomingListView()
 					}
 					.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
 				}
 				.padding(10)
 			}
+			.scrollBounceBehavior(.always)
 			.navigationTitle("Overview")
 		}
 	}
