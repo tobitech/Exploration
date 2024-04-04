@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0A0790F42B8DC21E00CFB197 /* BottomCustomAlertContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0790F32B8DC21E00CFB197 /* BottomCustomAlertContentView.swift */; };
 		0A0790F62B8DD14500CFB197 /* BottomCustomAlertHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0790F52B8DD14500CFB197 /* BottomCustomAlertHomeView.swift */; };
+		0A0FA8742BBE992D0036139E /* InteractiveFloatingButtonContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0FA8732BBE992D0036139E /* InteractiveFloatingButtonContentView.swift */; };
 		0A27EA432B8B28C400AF1A2E /* AlertConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A27EA422B8B28C400AF1A2E /* AlertConfig.swift */; };
 		0A27EA452B8B28EB00AF1A2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A27EA442B8B28EB00AF1A2E /* AppDelegate.swift */; };
 		0A27EA472B8B293200AF1A2E /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A27EA462B8B293200AF1A2E /* AlertView.swift */; };
@@ -100,6 +101,7 @@
 /* Begin PBXFileReference section */
 		0A0790F32B8DC21E00CFB197 /* BottomCustomAlertContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomCustomAlertContentView.swift; sourceTree = "<group>"; };
 		0A0790F52B8DD14500CFB197 /* BottomCustomAlertHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomCustomAlertHomeView.swift; sourceTree = "<group>"; };
+		0A0FA8732BBE992D0036139E /* InteractiveFloatingButtonContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveFloatingButtonContentView.swift; sourceTree = "<group>"; };
 		0A27EA422B8B28C400AF1A2E /* AlertConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertConfig.swift; sourceTree = "<group>"; };
 		0A27EA442B8B28EB00AF1A2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A27EA462B8B293200AF1A2E /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
@@ -195,6 +197,14 @@
 			path = BottomCustomAlert;
 			sourceTree = "<group>";
 		};
+		0A0FA8722BBE99150036139E /* InteractiveFloatingButton */ = {
+			isa = PBXGroup;
+			children = (
+				0A0FA8732BBE992D0036139E /* InteractiveFloatingButtonContentView.swift */,
+			);
+			path = InteractiveFloatingButton;
+			sourceTree = "<group>";
+		};
 		0A48B6F72BBC51BD00060277 /* RatioOverview */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +245,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0A0FA8722BBE99150036139E /* InteractiveFloatingButton */,
 				0A48B6F72BBC51BD00060277 /* RatioOverview */,
 				0AFC0ABD2BB708D100B339D0 /* InstagramPinchZoom */,
 				0A70AD3D2BB288CA008794F4 /* SwipeableIGLayout */,
@@ -645,6 +656,7 @@
 				0A55A09F2B89F6A300FB6C1E /* Photo.swift in Sources */,
 				0A48B6FF2BBC554B00060277 /* DebtCardView.swift in Sources */,
 				0A55A0F22B8A003100FB6C1E /* ContentView.swift in Sources */,
+				0A0FA8742BBE992D0036139E /* InteractiveFloatingButtonContentView.swift in Sources */,
 				0A55A0F32B8A003100FB6C1E /* ThemeChangeView.swift in Sources */,
 				0ACFD6E42BA5DD3A0014336E /* HorizontalWheelPickerContentView.swift in Sources */,
 				0A0790F42B8DC21E00CFB197 /* BottomCustomAlertContentView.swift in Sources */,

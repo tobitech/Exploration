@@ -1,10 +1,3 @@
-//
-//  ExplorationApp.swift
-//  Exploration
-//
-//  Created by Oluwatobi Omotayo on 24/02/2024.
-//
-
 import SwiftUI
 
 @main
@@ -14,7 +7,7 @@ struct ExplorationApp: App {
 	// @UIApplicationDelegateAdaptor(AppDelegate.self) private var delegate
 	var body: some Scene {
 		WindowGroup {
-			RatioContentView()
+			InteractiveFloatingButtonContentView()
 		}
 	}
 }
