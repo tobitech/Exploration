@@ -19,6 +19,31 @@ struct InteractiveFloatingButtonContentView: View {
 			}
 			.navigationTitle("Floating Button")
 		}
+		.overlay(alignment: .bottomTrailing) {
+			FloatingButton {
+				FloatingAction(symbol: "tray.full.fill") {
+					print("Tray")
+				}
+				FloatingAction(symbol: "lasso.badge.sparkles") {
+					print("Spark")
+				}
+				FloatingAction(symbol: "square.and.arrow.up.fill") {
+					print("Share")
+				}
+			} label: { isExpanded in
+				Image(systemName: "plus")
+					.font(.title3)
+					.fontWeight(.semibold)
+					.foregroundStyle(.white)
+					.rotationEffect(.init(degrees: isExpanded ? 45 : 0))
+					.scaleEffect(1.02)
+					.frame(maxWidth: .infinity, maxHeight: .infinity)
+					.background(.black, in: .circle)
+					// Scaling Effect when Expanded
+					.scaleEffect(isExpanded ? 0.9 : 1)
+			}
+			.padding()
+		}
 	}
 }
 

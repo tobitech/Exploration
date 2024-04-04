@@ -10,6 +10,7 @@
 		0A0790F42B8DC21E00CFB197 /* BottomCustomAlertContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0790F32B8DC21E00CFB197 /* BottomCustomAlertContentView.swift */; };
 		0A0790F62B8DD14500CFB197 /* BottomCustomAlertHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0790F52B8DD14500CFB197 /* BottomCustomAlertHomeView.swift */; };
 		0A0FA8742BBE992D0036139E /* InteractiveFloatingButtonContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0FA8732BBE992D0036139E /* InteractiveFloatingButtonContentView.swift */; };
+		0A0FA8772BBE9AB10036139E /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0FA8762BBE9AB10036139E /* FloatingButton.swift */; };
 		0A27EA432B8B28C400AF1A2E /* AlertConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A27EA422B8B28C400AF1A2E /* AlertConfig.swift */; };
 		0A27EA452B8B28EB00AF1A2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A27EA442B8B28EB00AF1A2E /* AppDelegate.swift */; };
 		0A27EA472B8B293200AF1A2E /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A27EA462B8B293200AF1A2E /* AlertView.swift */; };
@@ -102,6 +103,7 @@
 		0A0790F32B8DC21E00CFB197 /* BottomCustomAlertContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomCustomAlertContentView.swift; sourceTree = "<group>"; };
 		0A0790F52B8DD14500CFB197 /* BottomCustomAlertHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomCustomAlertHomeView.swift; sourceTree = "<group>"; };
 		0A0FA8732BBE992D0036139E /* InteractiveFloatingButtonContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveFloatingButtonContentView.swift; sourceTree = "<group>"; };
+		0A0FA8762BBE9AB10036139E /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
 		0A27EA422B8B28C400AF1A2E /* AlertConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertConfig.swift; sourceTree = "<group>"; };
 		0A27EA442B8B28EB00AF1A2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A27EA462B8B293200AF1A2E /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
@@ -200,9 +202,18 @@
 		0A0FA8722BBE99150036139E /* InteractiveFloatingButton */ = {
 			isa = PBXGroup;
 			children = (
+				0A0FA8752BBE9AAA0036139E /* Helpers */,
 				0A0FA8732BBE992D0036139E /* InteractiveFloatingButtonContentView.swift */,
 			);
 			path = InteractiveFloatingButton;
+			sourceTree = "<group>";
+		};
+		0A0FA8752BBE9AAA0036139E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0A0FA8762BBE9AB10036139E /* FloatingButton.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		0A48B6F72BBC51BD00060277 /* RatioOverview */ = {
@@ -674,6 +685,7 @@
 				0A48B7072BBC6D4B00060277 /* OverviewView.swift in Sources */,
 				0A55A0A92B89F75100FB6C1E /* BottomSheetHelper.swift in Sources */,
 				0A55A10B2B8A1EEB00FB6C1E /* ErrorView.swift in Sources */,
+				0A0FA8772BBE9AB10036139E /* FloatingButton.swift in Sources */,
 				0A48B6FD2BBC550400060277 /* SavingsCardView.swift in Sources */,
 				0A0790F62B8DD14500CFB197 /* BottomCustomAlertHomeView.swift in Sources */,
 				0A55A1032B8A165300FB6C1E /* PokedexView.swift in Sources */,
