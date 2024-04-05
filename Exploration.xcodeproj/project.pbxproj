@@ -67,6 +67,8 @@
 		0A70AD472BB29662008794F4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A70AD462BB29662008794F4 /* Post.swift */; };
 		0A70AD492BB297A6008794F4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A70AD482BB297A6008794F4 /* MainView.swift */; };
 		0A8118E42BB712AF00889DA7 /* PinchZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8118E32BB712AF00889DA7 /* PinchZoom.swift */; };
+		0AA952EE2BBFD836007E62B1 /* HoldDownButtonContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA952ED2BBFD836007E62B1 /* HoldDownButtonContentView.swift */; };
+		0AA952F12BBFD86E007E62B1 /* HoldDownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA952F02BBFD86E007E62B1 /* HoldDownButton.swift */; };
 		0AC5D0832BBD3B35007CF93E /* RatioChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC5D0822BBD3B35007CF93E /* RatioChartData.swift */; };
 		0AC5D0852BBD50BC007CF93E /* ReportCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC5D0842BBD50BC007CF93E /* ReportCardView.swift */; };
 		0ACFD6E42BA5DD3A0014336E /* HorizontalWheelPickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACFD6E32BA5DD3A0014336E /* HorizontalWheelPickerContentView.swift */; };
@@ -162,6 +164,8 @@
 		0A70AD462BB29662008794F4 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		0A70AD482BB297A6008794F4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		0A8118E32BB712AF00889DA7 /* PinchZoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchZoom.swift; sourceTree = "<group>"; };
+		0AA952ED2BBFD836007E62B1 /* HoldDownButtonContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldDownButtonContentView.swift; sourceTree = "<group>"; };
+		0AA952F02BBFD86E007E62B1 /* HoldDownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldDownButton.swift; sourceTree = "<group>"; };
 		0AC5D0822BBD3B35007CF93E /* RatioChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatioChartData.swift; sourceTree = "<group>"; };
 		0AC5D0842BBD50BC007CF93E /* ReportCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportCardView.swift; sourceTree = "<group>"; };
 		0ACFD6E32BA5DD3A0014336E /* HorizontalWheelPickerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalWheelPickerContentView.swift; sourceTree = "<group>"; };
@@ -256,6 +260,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0AA952EC2BBFD805007E62B1 /* HoldDownButton */,
 				0A0FA8722BBE99150036139E /* InteractiveFloatingButton */,
 				0A48B6F72BBC51BD00060277 /* RatioOverview */,
 				0AFC0ABD2BB708D100B339D0 /* InstagramPinchZoom */,
@@ -525,6 +530,23 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		0AA952EC2BBFD805007E62B1 /* HoldDownButton */ = {
+			isa = PBXGroup;
+			children = (
+				0AA952EF2BBFD85D007E62B1 /* Helpers */,
+				0AA952ED2BBFD836007E62B1 /* HoldDownButtonContentView.swift */,
+			);
+			path = HoldDownButton;
+			sourceTree = "<group>";
+		};
+		0AA952EF2BBFD85D007E62B1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0AA952F02BBFD86E007E62B1 /* HoldDownButton.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		0ACFD6E22BA5DCE10014336E /* HorizontalWheelPicker */ = {
 			isa = PBXGroup;
 			children = (
@@ -697,6 +719,7 @@
 				0A55A1052B8A168F00FB6C1E /* PokemonList.swift in Sources */,
 				0A70AD422BB28A71008794F4 /* HomeView.swift in Sources */,
 				0ACFD6E72BA5DDA80014336E /* WheelPicker.swift in Sources */,
+				0AA952EE2BBFD836007E62B1 /* HoldDownButtonContentView.swift in Sources */,
 				0AFC0ABF2BB708F300B339D0 /* IGPinchZoomContentView.swift in Sources */,
 				0A55A1092B8A1EA500FB6C1E /* PokemonDescriptionView.swift in Sources */,
 				0A55A0A82B89F75100FB6C1E /* Tab.swift in Sources */,
@@ -717,6 +740,7 @@
 				0A55A09E2B89F6A300FB6C1E /* PhotoListViewModel.swift in Sources */,
 				0A27EA432B8B28C400AF1A2E /* AlertConfig.swift in Sources */,
 				0A48B6FB2BBC524C00060277 /* CashFlowView.swift in Sources */,
+				0AA952F12BBFD86E007E62B1 /* HoldDownButton.swift in Sources */,
 				0A55A09C2B89F6A300FB6C1E /* ImageLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
