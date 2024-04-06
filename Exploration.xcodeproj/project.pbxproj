@@ -61,6 +61,8 @@
 		0A55A10E2B8A282800FB6C1E /* CacheAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55A10D2B8A282800FB6C1E /* CacheAsyncImage.swift */; };
 		0A55A1112B8A528F00FB6C1E /* CustomAlertContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55A1102B8A528F00FB6C1E /* CustomAlertContentView.swift */; };
 		0A55A1142B8A52DD00FB6C1E /* AlertModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55A1132B8A52DD00FB6C1E /* AlertModifier.swift */; };
+		0A6F0E982BC129590038D412 /* AnimatedChartsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6F0E972BC129590038D412 /* AnimatedChartsContentView.swift */; };
+		0A6F0E9B2BC129940038D412 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6F0E9A2BC129940038D412 /* Download.swift */; };
 		0A70AD3F2BB288EB008794F4 /* SwipeableIGLayoutContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A70AD3E2BB288EB008794F4 /* SwipeableIGLayoutContentView.swift */; };
 		0A70AD422BB28A71008794F4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A70AD412BB28A71008794F4 /* HomeView.swift */; };
 		0A70AD442BB2936B008794F4 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A70AD432BB2936B008794F4 /* FeedView.swift */; };
@@ -158,6 +160,8 @@
 		0A55A10D2B8A282800FB6C1E /* CacheAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheAsyncImage.swift; sourceTree = "<group>"; };
 		0A55A1102B8A528F00FB6C1E /* CustomAlertContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertContentView.swift; sourceTree = "<group>"; };
 		0A55A1132B8A52DD00FB6C1E /* AlertModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertModifier.swift; sourceTree = "<group>"; };
+		0A6F0E972BC129590038D412 /* AnimatedChartsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedChartsContentView.swift; sourceTree = "<group>"; };
+		0A6F0E9A2BC129940038D412 /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
 		0A70AD3E2BB288EB008794F4 /* SwipeableIGLayoutContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableIGLayoutContentView.swift; sourceTree = "<group>"; };
 		0A70AD412BB28A71008794F4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0A70AD432BB2936B008794F4 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
@@ -260,6 +264,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0A6F0E962BC1294A0038D412 /* AnimatedCharts */,
 				0AA952EC2BBFD805007E62B1 /* HoldDownButton */,
 				0A0FA8722BBE99150036139E /* InteractiveFloatingButton */,
 				0A48B6F72BBC51BD00060277 /* RatioOverview */,
@@ -494,6 +499,23 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		0A6F0E962BC1294A0038D412 /* AnimatedCharts */ = {
+			isa = PBXGroup;
+			children = (
+				0A6F0E992BC129800038D412 /* Models */,
+				0A6F0E972BC129590038D412 /* AnimatedChartsContentView.swift */,
+			);
+			path = AnimatedCharts;
+			sourceTree = "<group>";
+		};
+		0A6F0E992BC129800038D412 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0A6F0E9A2BC129940038D412 /* Download.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		0A70AD3D2BB288CA008794F4 /* SwipeableIGLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -692,6 +714,8 @@
 				0A0FA8742BBE992D0036139E /* InteractiveFloatingButtonContentView.swift in Sources */,
 				0A55A0F32B8A003100FB6C1E /* ThemeChangeView.swift in Sources */,
 				0ACFD6E42BA5DD3A0014336E /* HorizontalWheelPickerContentView.swift in Sources */,
+				0A6F0E982BC129590038D412 /* AnimatedChartsContentView.swift in Sources */,
+				0A6F0E9B2BC129940038D412 /* Download.swift in Sources */,
 				0A0790F42B8DC21E00CFB197 /* BottomCustomAlertContentView.swift in Sources */,
 				0A27EA452B8B28EB00AF1A2E /* AppDelegate.swift in Sources */,
 				0A27EA472B8B293200AF1A2E /* AlertView.swift in Sources */,
