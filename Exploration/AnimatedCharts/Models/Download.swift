@@ -4,6 +4,8 @@ struct Download: Identifiable {
 	var id = UUID()
 	var date: Date
 	var value: Double
+	// Animatable Properties
+	var isAnimated: Bool = false
 	
 	var month: String {
 		date.formatted(.dateTime.month(.abbreviated))
