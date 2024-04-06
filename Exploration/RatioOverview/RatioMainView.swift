@@ -15,9 +15,17 @@ struct RatioMainView: View {
 				.tabItem {
 					Label("Overview", systemImage: "chart.pie")
 				}
-			Text("Insights")
+			Text("Transactions")
 				.tabItem {
-					Label("Insights", systemImage: "chart.bar")
+					Label("Transactions", systemImage: "square.stack.3d.up")
+				}
+			Text("Budgeting")
+				.tabItem {
+					Label("Budgeting", systemImage: "doc.plaintext")
+				}
+			Text("Goals")
+				.tabItem {
+					Label("Goals", systemImage: "target")
 				}
 			Text("Profile")
 				.tabItem {

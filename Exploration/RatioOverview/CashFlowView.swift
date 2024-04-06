@@ -8,6 +8,8 @@ struct ToyShape: Identifiable {
 }
 
 struct CashFlowView: View {
+	@State private var showIncome: Bool = false
+	
 	var data: [ToyShape] = [
 		.init(type: "Cube", count: 5),
 		.init(type: "Sphere", count: 4),
@@ -16,18 +18,40 @@ struct CashFlowView: View {
 	
 	var body: some View {
 		HStack {
-			VStack(alignment: .leading) {
-				// Label("Spent this month",systemImage: "banknote")
-				Text("Spent this month")
-					.font(.subheadline)
-					.fontWeight(.medium)
-					// .textCase(.uppercase)
-					.foregroundStyle(.secondary)
-				Text("$193.78")
-					.font(.system(size: 40))
+			if showIncome {
+				VStack(alignment: .leading) {
+					Text("Cash flow this month")
+						.font(.subheadline)
+						.fontWeight(.medium)
+						// .textCase(.uppercase)
+						.foregroundStyle(.secondary)
+					VStack(alignment: .leading) {
+						Text("$193.78")
+							.font(.largeTitle)
+					}
+					.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+					// Divider()
+					VStack(alignment: .leading) {
+						Text("$193.78")
+							.font(.title3)
+					}
+					.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+				}
+				.frame(maxWidth: .infinity, alignment: .topLeading)
+			} else {
+				VStack(alignment: .leading) {
+					// Label("Spent this month",systemImage: "banknote")
+					Text("Spent this month")
+						.font(.subheadline)
+						.fontWeight(.medium)
+						// .textCase(.uppercase)
+						.foregroundStyle(.secondary)
+					Text("$193.78")
+						.font(.system(size: 40))
+				}
+				.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
 			}
-			.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-			
+			Spacer()
 			Chart {
 				BarMark(
 					x: .value("Shape Type", data[0].type),
@@ -51,7 +75,7 @@ struct CashFlowView: View {
 			.foregroundStyle(.gray.gradient)
 			.chartXAxis(.hidden)
 			.chartYAxis(.hidden)
-			.frame(width: 50, height: 40)
+			.frame(width: 100, height: 60)
 		}
 		.padding()
 	}
