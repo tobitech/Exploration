@@ -52,6 +52,8 @@ struct CashFlowView: View {
 				.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
 			}
 			Spacer()
+			// TODO: - Check Horizontal Scrolling Bar Chart in the repo below to make a cash flow chart
+			// - https://github.com/jordibruin/Swift-Charts-Examples?tab=readme-ov-file
 			Chart {
 				BarMark(
 					x: .value("Shape Type", data[0].type),

@@ -18,6 +18,7 @@ struct SavingsCardView: View {
 				.font(.title)
 				// .fontWeight(.medium)
 				.padding(.top, 5)
+			// TODO: - Make this Line Chart have a gradient shade below the line of light green.
 			Chart {
 				LineMark(
 					x: .value("Day", date(year: 2024, month: 1), unit: .day),
@@ -41,7 +42,7 @@ struct SavingsCardView: View {
 			.frame(height: 30)
 			
 			Spacer()
-			HStack(alignment: .bottom) {
+			HStack(alignment: .top) {
 				Text("Savings to\nExpense Ratio")
 					.font(.footnote)
 					.fontWeight(.medium)
@@ -51,10 +52,12 @@ struct SavingsCardView: View {
 					.font(.subheadline)
 					.fontWeight(.medium)
 			}
+			.padding(10)
+			.background(.green.opacity(0.3), in: .rect(cornerRadius: 12))
 		}
 		.frame(maxWidth: .infinity, alignment: .topLeading)
-		.frame(height: 130)
-		.padding()
+		.frame(height: 150)
+		.padding(10)
 		.background(Color.gray.opacity(0.1), in: .rect(cornerRadius: 20))
 	}
 }
