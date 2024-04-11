@@ -12,6 +12,7 @@
 		0A0FA8742BBE992D0036139E /* InteractiveFloatingButtonContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0FA8732BBE992D0036139E /* InteractiveFloatingButtonContentView.swift */; };
 		0A0FA8772BBE9AB10036139E /* FloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0FA8762BBE9AB10036139E /* FloatingButton.swift */; };
 		0A115B552BC7BB23002628A1 /* OffsetReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A115B542BC7BB23002628A1 /* OffsetReader.swift */; };
+		0A115B572BC7C13D002628A1 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A115B562BC7C13D002628A1 /* PageControl.swift */; };
 		0A27EA432B8B28C400AF1A2E /* AlertConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A27EA422B8B28C400AF1A2E /* AlertConfig.swift */; };
 		0A27EA452B8B28EB00AF1A2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A27EA442B8B28EB00AF1A2E /* AppDelegate.swift */; };
 		0A27EA472B8B293200AF1A2E /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A27EA462B8B293200AF1A2E /* AlertView.swift */; };
@@ -113,6 +114,7 @@
 		0A0FA8732BBE992D0036139E /* InteractiveFloatingButtonContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveFloatingButtonContentView.swift; sourceTree = "<group>"; };
 		0A0FA8762BBE9AB10036139E /* FloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButton.swift; sourceTree = "<group>"; };
 		0A115B542BC7BB23002628A1 /* OffsetReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetReader.swift; sourceTree = "<group>"; };
+		0A115B562BC7C13D002628A1 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		0A27EA422B8B28C400AF1A2E /* AlertConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertConfig.swift; sourceTree = "<group>"; };
 		0A27EA442B8B28EB00AF1A2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A27EA462B8B293200AF1A2E /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
@@ -601,6 +603,7 @@
 			isa = PBXGroup;
 			children = (
 				0AC96E952BC7199800C31CC1 /* CarouselHomeView.swift */,
+				0A115B562BC7C13D002628A1 /* PageControl.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -805,6 +808,7 @@
 				0A48B7032BBC558A00060277 /* UpcomingListView.swift in Sources */,
 				0A70AD492BB297A6008794F4 /* MainView.swift in Sources */,
 				0A8118E42BB712AF00889DA7 /* PinchZoom.swift in Sources */,
+				0A115B572BC7C13D002628A1 /* PageControl.swift in Sources */,
 				0A48B6F92BBC51D500060277 /* RatioContentView.swift in Sources */,
 				0A55A0B12B89F96900FB6C1E /* Toast.swift in Sources */,
 				0A55A0E42B89FCC800FB6C1E /* InteractiveWidgetsContentView.swift in Sources */,

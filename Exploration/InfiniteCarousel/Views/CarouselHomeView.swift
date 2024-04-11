@@ -48,6 +48,10 @@ struct CarouselHomeView: View {
 				}
 			})
 			.tabViewStyle(.page(indexDisplayMode: .never))
+			.overlay(alignment: .bottom) {
+				PageControl(totalPages: pages.count, currentPage: originalIndex(currentPage))
+					.offset(y: -15)
+			}
 		}
 		.frame(height: 400)
 		// Create some sample tabs.
@@ -74,6 +78,12 @@ struct CarouselHomeView: View {
 	
 	func fakeIndex(_ of: CarouselPage) -> Int {
 		return fakedPages.firstIndex(of: of) ?? 0
+	}
+	
+	func originalIndex(_ id: String) -> Int {
+		return pages.firstIndex { page in
+			page.id.uuidString == id
+		} ?? 0
 	}
 }
 
