@@ -1,34 +1,30 @@
 import Foundation
 import SwiftUI
 
+// This currently doesn't work anymore. When the offset reader is pushed too far outside the screen, it doesn't return the correct offset anymore
+// To fix it:
+// That’s because TabView removes the view when it's out of the screen. Check out this video where I implemented an offset method to read the entire scroll offset of the tabview.
+// https://youtu.be/W-uSGXhuFHY
+
 struct AnimatedPageIndicatorHomeView: View {
 	var colors: [Color] = [.red, .blue, .pink, .purple]
 	
+	@State private var selectedColor: Color = .red
 	@State private var offset: CGFloat = 0
 	
 	var body: some View {
 		// TabView has problem in ignoring safe area top edge.
 		// the fix is to use scroll view. using .init() creates an empty option set.
 		ScrollView(.init()) {
-			TabView {
-				ForEach(colors.indices, id: \.self) { index in
-					if index == 1 {
-						colors[index]
-							.overlay(alignment: .leading) {
-								GeometryReader { proxy -> Color in
-									let minX = proxy.frame(in: .global).minX
-									DispatchQueue.main.async {
-										withAnimation(.default) {
-											self.offset = -minX
-										}
-									}
-									return Color.clear
-								}
-								.frame(width: 0, height: 0)
-							}
-					} else {
-						colors[index]
-					}
+			TabView(selection: $selectedColor) {
+				ForEach(colors, id: \.self) { color in
+					color
+						.tag(color)
+						.offsetX(color == selectedColor) { rect in
+							let minX = rect.minX
+							let pageOffset = minX - (getWidth() * CGFloat(getColorIndex(color)))
+							self.offset = -pageOffset
+						}
 				}
 			}
 			.tabViewStyle(.page(indexDisplayMode: .never))
@@ -53,6 +49,10 @@ struct AnimatedPageIndicatorHomeView: View {
 			}
 		}
 		.ignoresSafeArea()
+	}
+	
+	func getColorIndex(_ of: Color) -> Int {
+		return colors.firstIndex(of: of) ?? 0
 	}
 	
 	// Getting index
