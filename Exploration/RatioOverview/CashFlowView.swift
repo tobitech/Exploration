@@ -49,6 +49,7 @@ struct CashFlowView: View {
 					Text("$193.78")
 						.font(.system(size: 40))
 				}
+				.foregroundStyle(.white)
 				.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
 			}
 			Spacer()
@@ -74,12 +75,13 @@ struct CashFlowView: View {
 				.foregroundStyle(.tertiary)
 				.cornerRadius(3, style: .continuous)
 			}
-			.foregroundStyle(.gray.gradient)
+			.foregroundStyle(.white.gradient)
 			.chartXAxis(.hidden)
 			.chartYAxis(.hidden)
 			.frame(width: 100, height: 60)
 		}
 		.padding()
+		.background(.green, in: .rect(cornerRadius: 20, style: .continuous))
 	}
 }
 

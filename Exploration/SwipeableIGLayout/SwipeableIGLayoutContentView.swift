@@ -15,4 +15,4 @@ struct SwipeableIGLayoutContentView: View {
 
 // Global usage values...
 var rect = UIScreen.main.bounds
-var edges = UIApplication.shared.windows.first?.safeAreaInsets
+var edges = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.windows.first?.safeAreaInsets
