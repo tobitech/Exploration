@@ -118,6 +118,10 @@
 		0AFDFD962BCCF86900DF7DF4 /* LoopingScrollViewHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDFD952BCCF86900DF7DF4 /* LoopingScrollViewHomeView.swift */; };
 		0AFDFD992BCCF8C900DF7DF4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDFD982BCCF8C900DF7DF4 /* Item.swift */; };
 		0AFDFD9B2BCCF9AE00DF7DF4 /* LoopingScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDFD9A2BCCF9AE00DF7DF4 /* LoopingScrollView.swift */; };
+		0AFDFD9E2BCD093D00DF7DF4 /* DynamicTabIndicatorsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDFD9D2BCD093D00DF7DF4 /* DynamicTabIndicatorsContentView.swift */; };
+		0AFDFDA12BCD095E00DF7DF4 /* DynamicTabIndicatorsHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDFDA02BCD095E00DF7DF4 /* DynamicTabIndicatorsHomeView.swift */; };
+		0AFDFDA52BCD0A5700DF7DF4 /* DynamicTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDFDA42BCD0A5700DF7DF4 /* DynamicTab.swift */; };
+		0AFDFDA72BCD117700DF7DF4 /* LinearInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDFDA62BCD117700DF7DF4 /* LinearInterpolation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -258,6 +262,10 @@
 		0AFDFD952BCCF86900DF7DF4 /* LoopingScrollViewHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopingScrollViewHomeView.swift; sourceTree = "<group>"; };
 		0AFDFD982BCCF8C900DF7DF4 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		0AFDFD9A2BCCF9AE00DF7DF4 /* LoopingScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopingScrollView.swift; sourceTree = "<group>"; };
+		0AFDFD9D2BCD093D00DF7DF4 /* DynamicTabIndicatorsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTabIndicatorsContentView.swift; sourceTree = "<group>"; };
+		0AFDFDA02BCD095E00DF7DF4 /* DynamicTabIndicatorsHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTabIndicatorsHomeView.swift; sourceTree = "<group>"; };
+		0AFDFDA42BCD0A5700DF7DF4 /* DynamicTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTab.swift; sourceTree = "<group>"; };
+		0AFDFDA62BCD117700DF7DF4 /* LinearInterpolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearInterpolation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -417,6 +425,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0AFDFD9C2BCD092D00DF7DF4 /* DynamicTabIndicators */,
 				0AFDFD912BCCF81900DF7DF4 /* InfiniteLoopingScrollView */,
 				0A8B70F22BCC5AB20032F794 /* IGReelsLayout */,
 				0A8B70ED2BCC351F0032F794 /* AnimatedPageIndicator */,
@@ -951,6 +960,41 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		0AFDFD9C2BCD092D00DF7DF4 /* DynamicTabIndicators */ = {
+			isa = PBXGroup;
+			children = (
+				0AFDFDA32BCD0A0900DF7DF4 /* Helpers */,
+				0AFDFDA22BCD09FE00DF7DF4 /* Models */,
+				0AFDFD9F2BCD095200DF7DF4 /* Views */,
+				0AFDFD9D2BCD093D00DF7DF4 /* DynamicTabIndicatorsContentView.swift */,
+			);
+			path = DynamicTabIndicators;
+			sourceTree = "<group>";
+		};
+		0AFDFD9F2BCD095200DF7DF4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0AFDFDA02BCD095E00DF7DF4 /* DynamicTabIndicatorsHomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0AFDFDA22BCD09FE00DF7DF4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0AFDFDA42BCD0A5700DF7DF4 /* DynamicTab.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0AFDFDA32BCD0A0900DF7DF4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0AFDFDA62BCD117700DF7DF4 /* LinearInterpolation.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1060,6 +1104,7 @@
 			files = (
 				0A8B70F12BCC35A50032F794 /* AnimatedPageIndicatorHomeView.swift in Sources */,
 				0A55A0A02B89F6A300FB6C1E /* URLImage.swift in Sources */,
+				0AFDFD9E2BCD093D00DF7DF4 /* DynamicTabIndicatorsContentView.swift in Sources */,
 				0A115B652BC7DBBE002628A1 /* AnimationEndCallBack.swift in Sources */,
 				0A48B7092BBC6DE900060277 /* RatioMainView.swift in Sources */,
 				0AFDFD932BCCF83900DF7DF4 /* LoopingScrollViewContentView.swift in Sources */,
@@ -1084,6 +1129,7 @@
 				0A48B7052BBC66B900060277 /* ListsCardView.swift in Sources */,
 				0A55A0B22B89F96900FB6C1E /* CustomToastsContentView.swift in Sources */,
 				0AB9BD4B2BCA564700288609 /* Extensions.swift in Sources */,
+				0AFDFDA52BCD0A5700DF7DF4 /* DynamicTab.swift in Sources */,
 				0AC5D0832BBD3B35007CF93E /* RatioChartData.swift in Sources */,
 				0A8B710E2BCC6B310032F794 /* OffsetKey.swift in Sources */,
 				0A55A1002B8A131C00FB6C1E /* PokemonData.swift in Sources */,
@@ -1104,6 +1150,7 @@
 				0A55A0A72B89F75100FB6C1E /* MapsBottomSheetContentView.swift in Sources */,
 				0A55A0F92B8A019300FB6C1E /* BiometricPINLockContentView.swift in Sources */,
 				0A55A10E2B8A282800FB6C1E /* CacheAsyncImage.swift in Sources */,
+				0AFDFDA12BCD095E00DF7DF4 /* DynamicTabIndicatorsHomeView.swift in Sources */,
 				0A55A0FD2B8A121200FB6C1E /* PokemonLoader.swift in Sources */,
 				0A29EF422BB05B75007D411E /* CameraPickerView.swift in Sources */,
 				0A4DCE532BC9CF6B0042C928 /* Crop.swift in Sources */,
@@ -1122,6 +1169,7 @@
 				0A55A1092B8A1EA500FB6C1E /* PokemonDescriptionView.swift in Sources */,
 				0A55A0A82B89F75100FB6C1E /* Tab.swift in Sources */,
 				0AC96E932BC7195100C31CC1 /* InfiniteCarouselContentView.swift in Sources */,
+				0AFDFDA72BCD117700DF7DF4 /* LinearInterpolation.swift in Sources */,
 				0A55A1072B8A17D100FB6C1E /* PokemonCell.swift in Sources */,
 				0A55A0882B89F5FD00FB6C1E /* ExplorationApp.swift in Sources */,
 				0A48B7012BBC556C00060277 /* NetworthCardView.swift in Sources */,
