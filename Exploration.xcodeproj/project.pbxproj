@@ -38,6 +38,8 @@
 		0A4F4C602BD1524400247B3D /* ImageRendererContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F4C5F2BD1524400247B3D /* ImageRendererContentView.swift */; };
 		0A4F4C632BD1526900247B3D /* ReceiptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F4C622BD1526900247B3D /* ReceiptView.swift */; };
 		0A4F4C652BD15F0B00247B3D /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F4C642BD15F0B00247B3D /* ShareSheet.swift */; };
+		0A4F4C682BD24DD300247B3D /* AutoOTPFieldContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F4C672BD24DD300247B3D /* AutoOTPFieldContentView.swift */; };
+		0A4F4C6B2BD24DF900247B3D /* OTPVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F4C6A2BD24DF900247B3D /* OTPVerificationView.swift */; };
 		0A5333972BCFA8CD00EE2D05 /* FlipTransitionContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5333962BCFA8CD00EE2D05 /* FlipTransitionContentView.swift */; };
 		0A55A0882B89F5FD00FB6C1E /* ExplorationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55A0872B89F5FD00FB6C1E /* ExplorationApp.swift */; };
 		0A55A08C2B89F5FE00FB6C1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A55A08B2B89F5FE00FB6C1E /* Assets.xcassets */; };
@@ -184,6 +186,8 @@
 		0A4F4C5F2BD1524400247B3D /* ImageRendererContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRendererContentView.swift; sourceTree = "<group>"; };
 		0A4F4C622BD1526900247B3D /* ReceiptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptView.swift; sourceTree = "<group>"; };
 		0A4F4C642BD15F0B00247B3D /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
+		0A4F4C672BD24DD300247B3D /* AutoOTPFieldContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoOTPFieldContentView.swift; sourceTree = "<group>"; };
+		0A4F4C6A2BD24DF900247B3D /* OTPVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVerificationView.swift; sourceTree = "<group>"; };
 		0A5333962BCFA8CD00EE2D05 /* FlipTransitionContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipTransitionContentView.swift; sourceTree = "<group>"; };
 		0A55A0842B89F5FD00FB6C1E /* Exploration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exploration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A55A0872B89F5FD00FB6C1E /* ExplorationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorationApp.swift; sourceTree = "<group>"; };
@@ -414,6 +418,7 @@
 		0A4F4C5E2BD1523300247B3D /* ImageRenderer */ = {
 			isa = PBXGroup;
 			children = (
+				0A4F4C612BD1526200247B3D /* Views */,
 				0A4F4C5F2BD1524400247B3D /* ImageRendererContentView.swift */,
 			);
 			path = ImageRenderer;
@@ -424,6 +429,23 @@
 			children = (
 				0A4F4C622BD1526900247B3D /* ReceiptView.swift */,
 				0A4F4C642BD15F0B00247B3D /* ShareSheet.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0A4F4C662BD24DC000247B3D /* AutoOTPField */ = {
+			isa = PBXGroup;
+			children = (
+				0A4F4C692BD24DE400247B3D /* Views */,
+				0A4F4C672BD24DD300247B3D /* AutoOTPFieldContentView.swift */,
+			);
+			path = AutoOTPField;
+			sourceTree = "<group>";
+		};
+		0A4F4C692BD24DE400247B3D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A4F4C6A2BD24DF900247B3D /* OTPVerificationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -458,7 +480,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
-				0A4F4C612BD1526200247B3D /* Views */,
+				0A4F4C662BD24DC000247B3D /* AutoOTPField */,
 				0A4F4C5E2BD1523300247B3D /* ImageRenderer */,
 				0A5333952BCFA8BC00EE2D05 /* FlipTransition */,
 				0AFDFD9C2BCD092D00DF7DF4 /* DynamicTabIndicators */,
@@ -1160,6 +1182,7 @@
 				0A70AD442BB2936B008794F4 /* FeedView.swift in Sources */,
 				0A55A1112B8A528F00FB6C1E /* CustomAlertContentView.swift in Sources */,
 				0AC5D0852BBD50BC007CF93E /* ReportCardView.swift in Sources */,
+				0A4F4C682BD24DD300247B3D /* AutoOTPFieldContentView.swift in Sources */,
 				0A8B70FA2BCC5D720032F794 /* LikeAnimation.swift in Sources */,
 				0A70AD3F2BB288EB008794F4 /* SwipeableIGLayoutContentView.swift in Sources */,
 				0A4F4C632BD1526900247B3D /* ReceiptView.swift in Sources */,
@@ -1210,6 +1233,7 @@
 				0AFDFDA72BCD117700DF7DF4 /* LinearInterpolation.swift in Sources */,
 				0A55A1072B8A17D100FB6C1E /* PokemonCell.swift in Sources */,
 				0A55A0882B89F5FD00FB6C1E /* ExplorationApp.swift in Sources */,
+				0A4F4C6B2BD24DF900247B3D /* OTPVerificationView.swift in Sources */,
 				0A48B7012BBC556C00060277 /* NetworthCardView.swift in Sources */,
 				0A4DCE552BC9D1D70042C928 /* CustomImagePicker.swift in Sources */,
 				0A55A0AB2B89F79100FB6C1E /* CachingImagesContentView.swift in Sources */,
