@@ -35,6 +35,9 @@
 		0A4DCE512BC9CF3E0042C928 /* CropImageHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4DCE502BC9CF3E0042C928 /* CropImageHomeView.swift */; };
 		0A4DCE532BC9CF6B0042C928 /* Crop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4DCE522BC9CF6B0042C928 /* Crop.swift */; };
 		0A4DCE552BC9D1D70042C928 /* CustomImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4DCE542BC9D1D70042C928 /* CustomImagePicker.swift */; };
+		0A4F4C602BD1524400247B3D /* ImageRendererContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F4C5F2BD1524400247B3D /* ImageRendererContentView.swift */; };
+		0A4F4C632BD1526900247B3D /* ReceiptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F4C622BD1526900247B3D /* ReceiptView.swift */; };
+		0A4F4C652BD15F0B00247B3D /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F4C642BD15F0B00247B3D /* ShareSheet.swift */; };
 		0A5333972BCFA8CD00EE2D05 /* FlipTransitionContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5333962BCFA8CD00EE2D05 /* FlipTransitionContentView.swift */; };
 		0A55A0882B89F5FD00FB6C1E /* ExplorationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55A0872B89F5FD00FB6C1E /* ExplorationApp.swift */; };
 		0A55A08C2B89F5FE00FB6C1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A55A08B2B89F5FE00FB6C1E /* Assets.xcassets */; };
@@ -178,6 +181,9 @@
 		0A4DCE502BC9CF3E0042C928 /* CropImageHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropImageHomeView.swift; sourceTree = "<group>"; };
 		0A4DCE522BC9CF6B0042C928 /* Crop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crop.swift; sourceTree = "<group>"; };
 		0A4DCE542BC9D1D70042C928 /* CustomImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImagePicker.swift; sourceTree = "<group>"; };
+		0A4F4C5F2BD1524400247B3D /* ImageRendererContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRendererContentView.swift; sourceTree = "<group>"; };
+		0A4F4C622BD1526900247B3D /* ReceiptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptView.swift; sourceTree = "<group>"; };
+		0A4F4C642BD15F0B00247B3D /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
 		0A5333962BCFA8CD00EE2D05 /* FlipTransitionContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipTransitionContentView.swift; sourceTree = "<group>"; };
 		0A55A0842B89F5FD00FB6C1E /* Exploration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exploration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A55A0872B89F5FD00FB6C1E /* ExplorationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorationApp.swift; sourceTree = "<group>"; };
@@ -405,6 +411,23 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		0A4F4C5E2BD1523300247B3D /* ImageRenderer */ = {
+			isa = PBXGroup;
+			children = (
+				0A4F4C5F2BD1524400247B3D /* ImageRendererContentView.swift */,
+			);
+			path = ImageRenderer;
+			sourceTree = "<group>";
+		};
+		0A4F4C612BD1526200247B3D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A4F4C622BD1526900247B3D /* ReceiptView.swift */,
+				0A4F4C642BD15F0B00247B3D /* ShareSheet.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		0A5333952BCFA8BC00EE2D05 /* FlipTransition */ = {
 			isa = PBXGroup;
 			children = (
@@ -435,6 +458,8 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0A4F4C612BD1526200247B3D /* Views */,
+				0A4F4C5E2BD1523300247B3D /* ImageRenderer */,
 				0A5333952BCFA8BC00EE2D05 /* FlipTransition */,
 				0AFDFD9C2BCD092D00DF7DF4 /* DynamicTabIndicators */,
 				0AFDFD912BCCF81900DF7DF4 /* InfiniteLoopingScrollView */,
@@ -1137,12 +1162,14 @@
 				0AC5D0852BBD50BC007CF93E /* ReportCardView.swift in Sources */,
 				0A8B70FA2BCC5D720032F794 /* LikeAnimation.swift in Sources */,
 				0A70AD3F2BB288EB008794F4 /* SwipeableIGLayoutContentView.swift in Sources */,
+				0A4F4C632BD1526900247B3D /* ReceiptView.swift in Sources */,
 				0A48B7052BBC66B900060277 /* ListsCardView.swift in Sources */,
 				0A55A0B22B89F96900FB6C1E /* CustomToastsContentView.swift in Sources */,
 				0AB9BD4B2BCA564700288609 /* Extensions.swift in Sources */,
 				0AFDFDA52BCD0A5700DF7DF4 /* DynamicTab.swift in Sources */,
 				0AC5D0832BBD3B35007CF93E /* RatioChartData.swift in Sources */,
 				0A8B710E2BCC6B310032F794 /* OffsetKey.swift in Sources */,
+				0A4F4C652BD15F0B00247B3D /* ShareSheet.swift in Sources */,
 				0A55A1002B8A131C00FB6C1E /* PokemonData.swift in Sources */,
 				0A8B70F82BCC5CC30032F794 /* IGReel.swift in Sources */,
 				0A55A1142B8A52DD00FB6C1E /* AlertModifier.swift in Sources */,
@@ -1190,6 +1217,7 @@
 				0A5333972BCFA8CD00EE2D05 /* FlipTransitionContentView.swift in Sources */,
 				0AB9BD482BCA51DB00288609 /* ControlCenterHomeView.swift in Sources */,
 				0A8B70EF2BCC35460032F794 /* AnimatedPageIndicatorContentView.swift in Sources */,
+				0A4F4C602BD1524400247B3D /* ImageRendererContentView.swift in Sources */,
 				0AFC0AC22BB7090C00B339D0 /* IGPost.swift in Sources */,
 				0A55A09D2B89F6A300FB6C1E /* WebService.swift in Sources */,
 				0A48B7032BBC558A00060277 /* UpcomingListView.swift in Sources */,
@@ -1370,6 +1398,7 @@
 				DEVELOPMENT_TEAM = J8A5ZAM5GV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "To Save Image";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1400,6 +1429,7 @@
 				DEVELOPMENT_TEAM = J8A5ZAM5GV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "To Save Image";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
