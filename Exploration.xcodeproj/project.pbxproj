@@ -18,6 +18,7 @@
 		0A115B602BC7CD29002628A1 /* ScrollingTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A115B5F2BC7CD29002628A1 /* ScrollingTab.swift */; };
 		0A115B632BC7D4C6002628A1 /* ScrollOffsetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A115B622BC7D4C6002628A1 /* ScrollOffsetModifier.swift */; };
 		0A115B652BC7DBBE002628A1 /* AnimationEndCallBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A115B642BC7DBBE002628A1 /* AnimationEndCallBack.swift */; };
+		0A22E0AC2BDB9571004C833B /* RangeSliderContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22E0AB2BDB9571004C833B /* RangeSliderContentView.swift */; };
 		0A27EA432B8B28C400AF1A2E /* AlertConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A27EA422B8B28C400AF1A2E /* AlertConfig.swift */; };
 		0A27EA452B8B28EB00AF1A2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A27EA442B8B28EB00AF1A2E /* AppDelegate.swift */; };
 		0A27EA472B8B293200AF1A2E /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A27EA462B8B293200AF1A2E /* AlertView.swift */; };
@@ -177,6 +178,7 @@
 		0A115B5F2BC7CD29002628A1 /* ScrollingTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingTab.swift; sourceTree = "<group>"; };
 		0A115B622BC7D4C6002628A1 /* ScrollOffsetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollOffsetModifier.swift; sourceTree = "<group>"; };
 		0A115B642BC7DBBE002628A1 /* AnimationEndCallBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationEndCallBack.swift; sourceTree = "<group>"; };
+		0A22E0AB2BDB9571004C833B /* RangeSliderContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSliderContentView.swift; sourceTree = "<group>"; };
 		0A27EA422B8B28C400AF1A2E /* AlertConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertConfig.swift; sourceTree = "<group>"; };
 		0A27EA442B8B28EB00AF1A2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A27EA462B8B293200AF1A2E /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
@@ -392,6 +394,14 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		0A22E0AA2BDB955E004C833B /* RangeSlider */ = {
+			isa = PBXGroup;
+			children = (
+				0A22E0AB2BDB9571004C833B /* RangeSliderContentView.swift */,
+			);
+			path = RangeSlider;
+			sourceTree = "<group>";
+		};
 		0A3815762BDA268300634A8B /* MaterialCarousel */ = {
 			isa = PBXGroup;
 			children = (
@@ -513,6 +523,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0A22E0AA2BDB955E004C833B /* RangeSlider */,
 				0A3815762BDA268300634A8B /* MaterialCarousel */,
 				0A5ECA082BDA618900BDFB72 /* MovableGrid */,
 				0ABBD0182BD8F18F00CE9EDF /* ParticleEmitter */,
@@ -1320,6 +1331,7 @@
 				0A55A1032B8A165300FB6C1E /* PokedexView.swift in Sources */,
 				0A55A0A72B89F75100FB6C1E /* MapsBottomSheetContentView.swift in Sources */,
 				0A55A0F92B8A019300FB6C1E /* BiometricPINLockContentView.swift in Sources */,
+				0A22E0AC2BDB9571004C833B /* RangeSliderContentView.swift in Sources */,
 				0A55A10E2B8A282800FB6C1E /* CacheAsyncImage.swift in Sources */,
 				0AFDFDA12BCD095E00DF7DF4 /* DynamicTabIndicatorsHomeView.swift in Sources */,
 				0A55A0FD2B8A121200FB6C1E /* PokemonLoader.swift in Sources */,
