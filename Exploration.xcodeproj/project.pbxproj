@@ -131,6 +131,8 @@
 		0AC96E992BC71A3800C31CC1 /* CarouselPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC96E982BC71A3800C31CC1 /* CarouselPage.swift */; };
 		0ACFD6E42BA5DD3A0014336E /* HorizontalWheelPickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACFD6E32BA5DD3A0014336E /* HorizontalWheelPickerContentView.swift */; };
 		0ACFD6E72BA5DDA80014336E /* WheelPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACFD6E62BA5DDA80014336E /* WheelPicker.swift */; };
+		0AE4FC9B2BE4E366005558AD /* CustomDialogContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE4FC9A2BE4E366005558AD /* CustomDialogContentView.swift */; };
+		0AE4FC9D2BE4E391005558AD /* CustomDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE4FC9C2BE4E391005558AD /* CustomDialog.swift */; };
 		0AFC0ABF2BB708F300B339D0 /* IGPinchZoomContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0ABE2BB708F300B339D0 /* IGPinchZoomContentView.swift */; };
 		0AFC0AC22BB7090C00B339D0 /* IGPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0AC12BB7090C00B339D0 /* IGPost.swift */; };
 		0AFDFD932BCCF83900DF7DF4 /* LoopingScrollViewContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDFD922BCCF83900DF7DF4 /* LoopingScrollViewContentView.swift */; };
@@ -294,6 +296,8 @@
 		0AC96E982BC71A3800C31CC1 /* CarouselPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselPage.swift; sourceTree = "<group>"; };
 		0ACFD6E32BA5DD3A0014336E /* HorizontalWheelPickerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalWheelPickerContentView.swift; sourceTree = "<group>"; };
 		0ACFD6E62BA5DDA80014336E /* WheelPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelPicker.swift; sourceTree = "<group>"; };
+		0AE4FC9A2BE4E366005558AD /* CustomDialogContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDialogContentView.swift; sourceTree = "<group>"; };
+		0AE4FC9C2BE4E391005558AD /* CustomDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDialog.swift; sourceTree = "<group>"; };
 		0AFC0ABE2BB708F300B339D0 /* IGPinchZoomContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGPinchZoomContentView.swift; sourceTree = "<group>"; };
 		0AFC0AC12BB7090C00B339D0 /* IGPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGPost.swift; sourceTree = "<group>"; };
 		0AFDFD922BCCF83900DF7DF4 /* LoopingScrollViewContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopingScrollViewContentView.swift; sourceTree = "<group>"; };
@@ -525,6 +529,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0AE4FC992BE4E351005558AD /* CustomDialog */,
 				0A77C0DA2BDCC2D30016F835 /* FlipBook */,
 				0A22E0AA2BDB955E004C833B /* RangeSlider */,
 				0A3815762BDA268300634A8B /* MaterialCarousel */,
@@ -1100,6 +1105,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		0AE4FC992BE4E351005558AD /* CustomDialog */ = {
+			isa = PBXGroup;
+			children = (
+				0AE4FC9A2BE4E366005558AD /* CustomDialogContentView.swift */,
+				0AE4FC9C2BE4E391005558AD /* CustomDialog.swift */,
+			);
+			path = CustomDialog;
+			sourceTree = "<group>";
+		};
 		0AFC0ABD2BB708D100B339D0 /* InstagramPinchZoom */ = {
 			isa = PBXGroup;
 			children = (
@@ -1291,12 +1305,14 @@
 				0A55A09F2B89F6A300FB6C1E /* Photo.swift in Sources */,
 				0A38157C2BDA279800634A8B /* MaterialCarouselCard.swift in Sources */,
 				0A48B6FF2BBC554B00060277 /* DebtCardView.swift in Sources */,
+				0AE4FC9B2BE4E366005558AD /* CustomDialogContentView.swift in Sources */,
 				0A9232152BD3AD42008B5F24 /* Interpolation.swift in Sources */,
 				0A55A0F22B8A003100FB6C1E /* ContentView.swift in Sources */,
 				0A0FA8742BBE992D0036139E /* InteractiveFloatingButtonContentView.swift in Sources */,
 				0A55A0F32B8A003100FB6C1E /* ThemeChangeView.swift in Sources */,
 				0ACFD6E42BA5DD3A0014336E /* HorizontalWheelPickerContentView.swift in Sources */,
 				0ABBD0222BD8F81300CE9EDF /* Particle.swift in Sources */,
+				0AE4FC9D2BE4E391005558AD /* CustomDialog.swift in Sources */,
 				0A6F0E982BC129590038D412 /* AnimatedChartsContentView.swift in Sources */,
 				0A6F0E9B2BC129940038D412 /* Download.swift in Sources */,
 				0A8B70FE2BCC60E90032F794 /* ReelView.swift in Sources */,
