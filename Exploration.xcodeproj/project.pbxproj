@@ -35,6 +35,8 @@
 		0A48B7052BBC66B900060277 /* ListsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A48B7042BBC66B900060277 /* ListsCardView.swift */; };
 		0A48B7072BBC6D4B00060277 /* OverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A48B7062BBC6D4B00060277 /* OverviewView.swift */; };
 		0A48B7092BBC6DE900060277 /* RatioMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A48B7082BBC6DE900060277 /* RatioMainView.swift */; };
+		0A4BDBB42BE6C47A00B4E8E7 /* DateTextFieldContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BDBB32BE6C47A00B4E8E7 /* DateTextFieldContentView.swift */; };
+		0A4BDBB72BE6C4A200B4E8E7 /* DateTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BDBB62BE6C4A200B4E8E7 /* DateTF.swift */; };
 		0A4DCE4D2BC9CD2B0042C928 /* CropImageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4DCE4C2BC9CD2B0042C928 /* CropImageContentView.swift */; };
 		0A4DCE512BC9CF3E0042C928 /* CropImageHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4DCE502BC9CF3E0042C928 /* CropImageHomeView.swift */; };
 		0A4DCE532BC9CF6B0042C928 /* Crop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4DCE522BC9CF6B0042C928 /* Crop.swift */; };
@@ -198,6 +200,8 @@
 		0A48B7042BBC66B900060277 /* ListsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsCardView.swift; sourceTree = "<group>"; };
 		0A48B7062BBC6D4B00060277 /* OverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewView.swift; sourceTree = "<group>"; };
 		0A48B7082BBC6DE900060277 /* RatioMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatioMainView.swift; sourceTree = "<group>"; };
+		0A4BDBB32BE6C47A00B4E8E7 /* DateTextFieldContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTextFieldContentView.swift; sourceTree = "<group>"; };
+		0A4BDBB62BE6C4A200B4E8E7 /* DateTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTF.swift; sourceTree = "<group>"; };
 		0A4DCE4C2BC9CD2B0042C928 /* CropImageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropImageContentView.swift; sourceTree = "<group>"; };
 		0A4DCE502BC9CF3E0042C928 /* CropImageHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropImageHomeView.swift; sourceTree = "<group>"; };
 		0A4DCE522BC9CF6B0042C928 /* Crop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crop.swift; sourceTree = "<group>"; };
@@ -437,6 +441,23 @@
 			path = RatioOverview;
 			sourceTree = "<group>";
 		};
+		0A4BDBB22BE6C43F00B4E8E7 /* DateTextField */ = {
+			isa = PBXGroup;
+			children = (
+				0A4BDBB52BE6C49200B4E8E7 /* Helpers */,
+				0A4BDBB32BE6C47A00B4E8E7 /* DateTextFieldContentView.swift */,
+			);
+			path = DateTextField;
+			sourceTree = "<group>";
+		};
+		0A4BDBB52BE6C49200B4E8E7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0A4BDBB62BE6C4A200B4E8E7 /* DateTF.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		0A4DCE4B2BC9CD180042C928 /* CropImageView */ = {
 			isa = PBXGroup;
 			children = (
@@ -530,6 +551,7 @@
 			isa = PBXGroup;
 			children = (
 				0AE4FC992BE4E351005558AD /* CustomDialog */,
+				0A4BDBB22BE6C43F00B4E8E7 /* DateTextField */,
 				0A77C0DA2BDCC2D30016F835 /* FlipBook */,
 				0A22E0AA2BDB955E004C833B /* RangeSlider */,
 				0A3815762BDA268300634A8B /* MaterialCarousel */,
@@ -1299,9 +1321,11 @@
 				0A8B70F12BCC35A50032F794 /* AnimatedPageIndicatorHomeView.swift in Sources */,
 				0A55A0A02B89F6A300FB6C1E /* URLImage.swift in Sources */,
 				0AFDFD9E2BCD093D00DF7DF4 /* DynamicTabIndicatorsContentView.swift in Sources */,
+				0A4BDBB72BE6C4A200B4E8E7 /* DateTF.swift in Sources */,
 				0A115B652BC7DBBE002628A1 /* AnimationEndCallBack.swift in Sources */,
 				0A48B7092BBC6DE900060277 /* RatioMainView.swift in Sources */,
 				0AFDFD932BCCF83900DF7DF4 /* LoopingScrollViewContentView.swift in Sources */,
+				0A4BDBB42BE6C47A00B4E8E7 /* DateTextFieldContentView.swift in Sources */,
 				0A55A09F2B89F6A300FB6C1E /* Photo.swift in Sources */,
 				0A38157C2BDA279800634A8B /* MaterialCarouselCard.swift in Sources */,
 				0A48B6FF2BBC554B00060277 /* DebtCardView.swift in Sources */,
