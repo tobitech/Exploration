@@ -25,6 +25,16 @@ struct GridAnimationHomeView: View {
 				coordinator.scrollView = $0
 			}))
 		}
+		.opacity(coordinator.hideRootView ? 0 : 1)
+		.scrollDisabled(coordinator.hideRootView)
+		/// Disabling user interaction for the source view when the detail view is expanded, and vice versa
+		.allowsHitTesting(!coordinator.hideRootView)
+		.overlay {
+			DetailView()
+				.environment(coordinator)
+			/// Disabling user interaction for the source view when the detail view is expanded, and vice versa
+				.allowsHitTesting(coordinator.hideLayer)
+		}
 	}
 	
 	// Post Card View
@@ -32,21 +42,14 @@ struct GridAnimationHomeView: View {
 	func PostCardView(_ post: PGridItem) -> some View {
 		GeometryReader {
 			let frame = $0.frame(in: .global)
-			if let image = post.image {
-				Image(uiImage: image)
-					.resizable()
-					.aspectRatio(contentMode: .fill)
-					.frame(width: frame.width, height: frame.height, alignment: .center)
-					.clipShape(.rect(cornerRadius: 10))
-					.contentShape(.rect(cornerRadius: 10))
-					.onTapGesture {
-						// Store View's rect
-						coordinator.rect = frame
-						// Generating ScrollView's visible area Snapshot.
-						
-					}
-			}
+			ImageView(post: post)
+				.clipShape(.rect(cornerRadius: 10))
+				.contentShape(.rect(cornerRadius: 10))
+				.onTapGesture {
+					coordinator.toggleView(show: true, frame: frame, post: post)
+				}
 		}
+		/// You can change the height of the card view and the animation will still work perfectly.
 		.frame(height: 180)
 	}
 }

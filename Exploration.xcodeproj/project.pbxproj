@@ -117,6 +117,10 @@
 		0AA76A9E2BDA2F1000B246F5 /* MaterialOffsetReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA76A9D2BDA2F1000B246F5 /* MaterialOffsetReader.swift */; };
 		0AA952EE2BBFD836007E62B1 /* HoldDownButtonContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA952ED2BBFD836007E62B1 /* HoldDownButtonContentView.swift */; };
 		0AA952F12BBFD86E007E62B1 /* HoldDownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA952F02BBFD86E007E62B1 /* HoldDownButton.swift */; };
+		0AB429382BE9F20F00FF20D4 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB429372BE9F20F00FF20D4 /* DetailView.swift */; };
+		0AB4293A2BEA053300FF20D4 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB429392BEA053300FF20D4 /* ImageView.swift */; };
+		0AB4293C2BEA090B00FF20D4 /* DummyContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB4293B2BEA090B00FF20D4 /* DummyContentView.swift */; };
+		0AB4293F2BEA0FC900FF20D4 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB4293E2BEA0FC900FF20D4 /* View+Extensions.swift */; };
 		0AB9BD442BCA515C00288609 /* ControlCenterContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB9BD432BCA515C00288609 /* ControlCenterContentView.swift */; };
 		0AB9BD482BCA51DB00288609 /* ControlCenterHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB9BD472BCA51DB00288609 /* ControlCenterHomeView.swift */; };
 		0AB9BD4B2BCA564700288609 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB9BD4A2BCA564700288609 /* Extensions.swift */; };
@@ -288,6 +292,10 @@
 		0AA76A9D2BDA2F1000B246F5 /* MaterialOffsetReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialOffsetReader.swift; sourceTree = "<group>"; };
 		0AA952ED2BBFD836007E62B1 /* HoldDownButtonContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldDownButtonContentView.swift; sourceTree = "<group>"; };
 		0AA952F02BBFD86E007E62B1 /* HoldDownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldDownButton.swift; sourceTree = "<group>"; };
+		0AB429372BE9F20F00FF20D4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		0AB429392BEA053300FF20D4 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		0AB4293B2BEA090B00FF20D4 /* DummyContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyContentView.swift; sourceTree = "<group>"; };
+		0AB4293E2BEA0FC900FF20D4 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		0AB9BD432BCA515C00288609 /* ControlCenterContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlCenterContentView.swift; sourceTree = "<group>"; };
 		0AB9BD472BCA51DB00288609 /* ControlCenterHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlCenterHomeView.swift; sourceTree = "<group>"; };
 		0AB9BD4A2BCA564700288609 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -434,6 +442,7 @@
 		0A426D7D2BE8F55100809254 /* PinterestGridAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				0AB4293D2BEA0FB900FF20D4 /* Helpers */,
 				0A426D812BE8F5E300809254 /* Views */,
 				0A426D802BE8F5D300809254 /* Models */,
 				0A426D7E2BE8F57800809254 /* GridAnimationContentView.swift */,
@@ -454,6 +463,9 @@
 			isa = PBXGroup;
 			children = (
 				0A426D842BE8F90800809254 /* GridAnimationHomeView.swift */,
+				0AB429372BE9F20F00FF20D4 /* DetailView.swift */,
+				0AB4293B2BEA090B00FF20D4 /* DummyContentView.swift */,
+				0AB429392BEA053300FF20D4 /* ImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1020,6 +1032,14 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		0AB4293D2BEA0FB900FF20D4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0AB4293E2BEA0FC900FF20D4 /* View+Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		0AB9BD422BCA514900288609 /* ControlCenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -1418,6 +1438,7 @@
 				0A48B6FD2BBC550400060277 /* SavingsCardView.swift in Sources */,
 				0A0790F62B8DD14500CFB197 /* BottomCustomAlertHomeView.swift in Sources */,
 				0A4DCE512BC9CF3E0042C928 /* CropImageHomeView.swift in Sources */,
+				0AB4293A2BEA053300FF20D4 /* ImageView.swift in Sources */,
 				0A426D872BE8FD5E00809254 /* UICoordinator.swift in Sources */,
 				0A55A1032B8A165300FB6C1E /* PokedexView.swift in Sources */,
 				0A55A0A72B89F75100FB6C1E /* MapsBottomSheetContentView.swift in Sources */,
@@ -1427,6 +1448,7 @@
 				0AFDFDA12BCD095E00DF7DF4 /* DynamicTabIndicatorsHomeView.swift in Sources */,
 				0A55A0FD2B8A121200FB6C1E /* PokemonLoader.swift in Sources */,
 				0A29EF422BB05B75007D411E /* CameraPickerView.swift in Sources */,
+				0AB429382BE9F20F00FF20D4 /* DetailView.swift in Sources */,
 				0A4DCE532BC9CF6B0042C928 /* Crop.swift in Sources */,
 				0A55A1052B8A168F00FB6C1E /* PokemonList.swift in Sources */,
 				0AFDFD962BCCF86900DF7DF4 /* LoopingScrollViewHomeView.swift in Sources */,
@@ -1466,6 +1488,7 @@
 				0A70AD492BB297A6008794F4 /* MainView.swift in Sources */,
 				0A8118E42BB712AF00889DA7 /* PinchZoom.swift in Sources */,
 				0AB9BD442BCA515C00288609 /* ControlCenterContentView.swift in Sources */,
+				0AB4293C2BEA090B00FF20D4 /* DummyContentView.swift in Sources */,
 				0A115B572BC7C13D002628A1 /* PageControl.swift in Sources */,
 				0A4DCE4D2BC9CD2B0042C928 /* CropImageContentView.swift in Sources */,
 				0A9232112BD39E6E008B5F24 /* TabModel.swift in Sources */,
@@ -1477,6 +1500,7 @@
 				0A115B5A2BC7C6C5002628A1 /* AutoScrollingTabContentView.swift in Sources */,
 				0A55A0F82B8A019300FB6C1E /* LockView.swift in Sources */,
 				0AB9BD4D2BCA5C6100288609 /* SliderConfig.swift in Sources */,
+				0AB4293F2BEA0FC900FF20D4 /* View+Extensions.swift in Sources */,
 				0A55A09E2B89F6A300FB6C1E /* PhotoListViewModel.swift in Sources */,
 				0A27EA432B8B28C400AF1A2E /* AlertConfig.swift in Sources */,
 				0AB9BD552BCA8B4C00288609 /* IGStoryTimerHomeView.swift in Sources */,
