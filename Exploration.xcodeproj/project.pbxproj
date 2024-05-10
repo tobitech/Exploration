@@ -141,6 +141,8 @@
 		0AC96E992BC71A3800C31CC1 /* CarouselPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC96E982BC71A3800C31CC1 /* CarouselPage.swift */; };
 		0ACFD6E42BA5DD3A0014336E /* HorizontalWheelPickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACFD6E32BA5DD3A0014336E /* HorizontalWheelPickerContentView.swift */; };
 		0ACFD6E72BA5DDA80014336E /* WheelPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACFD6E62BA5DDA80014336E /* WheelPicker.swift */; };
+		0ADA7E922BEB54C7003D6DAC /* CalendarScrollAnimationContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADA7E912BEB54C7003D6DAC /* CalendarScrollAnimationContentView.swift */; };
+		0ADA7E962BEB57D4003D6DAC /* CalendarScrollAnimationHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADA7E952BEB57D4003D6DAC /* CalendarScrollAnimationHomeView.swift */; };
 		0AE4FC9B2BE4E366005558AD /* CustomDialogContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE4FC9A2BE4E366005558AD /* CustomDialogContentView.swift */; };
 		0AE4FC9D2BE4E391005558AD /* CustomDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE4FC9C2BE4E391005558AD /* CustomDialog.swift */; };
 		0AFC0ABF2BB708F300B339D0 /* IGPinchZoomContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0ABE2BB708F300B339D0 /* IGPinchZoomContentView.swift */; };
@@ -316,6 +318,8 @@
 		0AC96E982BC71A3800C31CC1 /* CarouselPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselPage.swift; sourceTree = "<group>"; };
 		0ACFD6E32BA5DD3A0014336E /* HorizontalWheelPickerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalWheelPickerContentView.swift; sourceTree = "<group>"; };
 		0ACFD6E62BA5DDA80014336E /* WheelPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelPicker.swift; sourceTree = "<group>"; };
+		0ADA7E912BEB54C7003D6DAC /* CalendarScrollAnimationContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarScrollAnimationContentView.swift; sourceTree = "<group>"; };
+		0ADA7E952BEB57D4003D6DAC /* CalendarScrollAnimationHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarScrollAnimationHomeView.swift; sourceTree = "<group>"; };
 		0AE4FC9A2BE4E366005558AD /* CustomDialogContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDialogContentView.swift; sourceTree = "<group>"; };
 		0AE4FC9C2BE4E391005558AD /* CustomDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDialog.swift; sourceTree = "<group>"; };
 		0AFC0ABE2BB708F300B339D0 /* IGPinchZoomContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGPinchZoomContentView.swift; sourceTree = "<group>"; };
@@ -597,6 +601,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0ADA7E902BEB5491003D6DAC /* CalendarScrollAnimation */,
 				0A426D7D2BE8F55100809254 /* PinterestGridAnimation */,
 				0AE4FC992BE4E351005558AD /* CustomDialog */,
 				0A4BDBB22BE6C43F00B4E8E7 /* DateTextField */,
@@ -1183,6 +1188,31 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		0ADA7E902BEB5491003D6DAC /* CalendarScrollAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				0ADA7E942BEB57B0003D6DAC /* Models */,
+				0ADA7E932BEB57AB003D6DAC /* Views */,
+				0ADA7E912BEB54C7003D6DAC /* CalendarScrollAnimationContentView.swift */,
+			);
+			path = CalendarScrollAnimation;
+			sourceTree = "<group>";
+		};
+		0ADA7E932BEB57AB003D6DAC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0ADA7E952BEB57D4003D6DAC /* CalendarScrollAnimationHomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0ADA7E942BEB57B0003D6DAC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		0AE4FC992BE4E351005558AD /* CustomDialog */ = {
 			isa = PBXGroup;
 			children = (
@@ -1443,6 +1473,7 @@
 				0A55A1032B8A165300FB6C1E /* PokedexView.swift in Sources */,
 				0A55A0A72B89F75100FB6C1E /* MapsBottomSheetContentView.swift in Sources */,
 				0A55A0F92B8A019300FB6C1E /* BiometricPINLockContentView.swift in Sources */,
+				0ADA7E962BEB57D4003D6DAC /* CalendarScrollAnimationHomeView.swift in Sources */,
 				0A22E0AC2BDB9571004C833B /* RangeSliderContentView.swift in Sources */,
 				0A55A10E2B8A282800FB6C1E /* CacheAsyncImage.swift in Sources */,
 				0AFDFDA12BCD095E00DF7DF4 /* DynamicTabIndicatorsHomeView.swift in Sources */,
@@ -1475,6 +1506,7 @@
 				0A4DCE552BC9D1D70042C928 /* CustomImagePicker.swift in Sources */,
 				0A55A0AB2B89F79100FB6C1E /* CachingImagesContentView.swift in Sources */,
 				0ABBD0202BD8F78900CE9EDF /* ParticleEffect.swift in Sources */,
+				0ADA7E922BEB54C7003D6DAC /* CalendarScrollAnimationContentView.swift in Sources */,
 				0A70AD472BB29662008794F4 /* Post.swift in Sources */,
 				0A5333972BCFA8CD00EE2D05 /* FlipTransitionContentView.swift in Sources */,
 				0AB9BD482BCA51DB00288609 /* ControlCenterHomeView.swift in Sources */,
