@@ -3,10 +3,12 @@ import SwiftUI
 struct CalendarScrollAnimationHomeView: View {
 	// View Properties
 	@State private var selectedMonth: Date = .currentMonth
+	@State private var selectedDate: Date = .now
 	
 	var safeArea: EdgeInsets
 	
 	var body: some View {
+		let maxHeight = calendarHeight - (calendarTitleViewHeight + weekLabelHeight + safeArea.top + 50 + topPadding + bottomPadding - 50)
 		ScrollView(.vertical) {
 			VStack(spacing: 0) {
 				CalendarView()
@@ -20,6 +22,8 @@ struct CalendarScrollAnimationHomeView: View {
 			}
 		}
 		.scrollIndicators(.hidden)
+		/// So now, when the scroll is finished before the maximum height, it will reset to its initial position. Otherwise, it will end in its desired position.
+		.scrollTargetBehavior(CustomScrollBehaviour(maxHeight: maxHeight))
 	}
 	
 	// Test Card View (For Scroll Content)
@@ -47,66 +51,106 @@ struct CalendarScrollAnimationHomeView: View {
 	// Calendar View
 	@ViewBuilder
 	func CalendarView() -> some View {
-		VStack(alignment: .leading, spacing: 0) {
-			Text(currentMonth)
-				.font(.system(size: 35))
-				.frame(maxHeight: .infinity, alignment: .bottom)
-				.overlay(alignment: .topLeading) {
-					GeometryReader {
-						let size = $0.size
-						Text(year)
-							.font(.system(size: 25))
-					}
-				}
-				.frame(maxWidth: .infinity, alignment: .leading)
-				.overlay(alignment: .topTrailing) {
-					HStack(spacing: 15) {
-						Button("", systemImage: "chevron.left") {
-							// Update to previous month
-							monthUpdate(false)
-						}
-						.contentShape(.rect)
-						Button("", systemImage: "chevron.right") {
-							// Update to next month
-							monthUpdate(true)
-						}
-						.contentShape(.rect)
-					}
-					.foregroundStyle(.primary)
-				}
-				.frame(height: calendarTitleViewHeight)
+		/// As you can already know, the geometry reader needs explicit height. This is the reason why I maintained each view with a height tag, and now we can merge all their heights to get the exact height value for the geometry reader.
+		GeometryReader {
+			let size = $0.size
+			let minY = $0.frame(in: .scrollView(axis: .vertical)).minY
 			
-			VStack(spacing: 0) {
-				// Day Labels
-				HStack(spacing: 0) {
-					ForEach(Calendar.autoupdatingCurrent.weekdaySymbols, id: \.self) { symbol in
-						Text(symbol.prefix(3))
-							.font(.caption)
-							.frame(maxWidth: .infinity)
-							.foregroundStyle(.secondary)
+			// Converting Scroll into Progress
+			/// So I simply didn't add the calendar grid height, which results in the view exactly stopping before the grid view. Now what I need is to simply display a single row of the grid view, and as we know, each grid row height is 50, Thus, adding 50 to the max height will result in the view stopping at the first row of the grid view.
+			/// Since the title moved up by 50 removing 50 from maxHeight should fix the header position.
+			let maxHeight = size.height - (calendarTitleViewHeight + weekLabelHeight + safeArea.top + 50 + topPadding + bottomPadding - 50)
+			let progress = max(min((-minY / maxHeight), 1), 0)
+			
+			VStack(alignment: .leading, spacing: 0) {
+				Text(currentMonth)
+					.font(.system(size: 35 - (10 * progress)))
+					.offset(y: -50 * progress)
+					.frame(maxHeight: .infinity, alignment: .bottom)
+					.overlay(alignment: .topLeading) {
+						GeometryReader {
+							let size = $0.size
+							Text(year)
+								.font(.system(size: 25 - (10 * progress)))
+								.offset(x: (size.width + 5) * progress, y: progress * 3)
+						}
 					}
-				}
-				.frame(height: weekLabelHeight, alignment: .bottom)
-				
-				// Calendar Grid View
-				LazyVGrid(columns: Array(repeating: GridItem(spacing: 0), count: 7), spacing: 0, content: {
-					ForEach(selectedMonthDates) { day in
-						Text(day.shortSymbol)
-							.foregroundStyle(day.ignored ? .secondary : .primary)
-							.frame(maxWidth: .infinity)
-							.frame(height: 50)
+					.frame(maxWidth: .infinity, alignment: .leading)
+					.overlay(alignment: .topTrailing) {
+						HStack(spacing: 15) {
+							Button("", systemImage: "chevron.left") {
+								// Update to previous month
+								monthUpdate(false)
+							}
 							.contentShape(.rect)
+							Button("", systemImage: "chevron.right") {
+								// Update to next month
+								monthUpdate(true)
+							}
+							.contentShape(.rect)
+						}
+						.font(.title3)
+						.foregroundStyle(.primary)
+						.offset(x: 150 * progress)
 					}
-				})
-				.frame(height: calendarGridHeight)
+					.frame(height: calendarTitleViewHeight)
+				
+				VStack(spacing: 0) {
+					// Day Labels
+					HStack(spacing: 0) {
+						ForEach(Calendar.autoupdatingCurrent.weekdaySymbols, id: \.self) { symbol in
+							Text(symbol.prefix(3))
+								.font(.caption)
+								.frame(maxWidth: .infinity)
+								.foregroundStyle(.secondary)
+						}
+					}
+					.frame(height: weekLabelHeight, alignment: .bottom)
+					
+					// Calendar Grid View
+					LazyVGrid(columns: Array(repeating: GridItem(spacing: 0), count: 7), spacing: 0, content: {
+						ForEach(selectedMonthDates) { day in
+							Text(day.shortSymbol)
+								.foregroundStyle(day.ignored ? .secondary : .primary)
+								.frame(maxWidth: .infinity)
+								.frame(height: 50)
+								.overlay(alignment: .bottom) {
+									Circle()
+										.fill(.white)
+										.frame(width: 5, height: 5)
+										.opacity(Calendar.current.isDate(day.date, inSameDayAs: selectedDate) ? 1 : 0)
+									// Moving the indicator a little bit above.
+										.offset(y: progress * -2)
+								}
+								.contentShape(.rect)
+								.onTapGesture {
+									selectedDate = day.date
+								}
+						}
+					})
+					/// As you can notice, the selection changes to upcoming weeks even though there is no visibility of those dates, so what l'm ! going to do is clip the boundaries of the grid view by changing the grid view height to only 50 based on the scroll progress, Thus, it will clip its boundaries and avoid unwanted interactions.
+					.frame(height: calendarGridHeight - ((calendarGridHeight - 50) * progress), alignment: .top)
+					.offset(y: (monthProgress * -50) * progress)
+					.contentShape(.rect)
+					.clipped()
+				}
+				.offset(y: progress * -50)
 			}
+			.foregroundStyle(.white)
+			.padding(.horizontal, horizontalPadding)
+			.padding(.top, topPadding)
+			.padding(.top, safeArea.top)
+			.padding(.bottom, bottomPadding)
+			.frame(maxHeight: .infinity)
+			.frame(height: size.height - (maxHeight * progress), alignment: .top)
+			.background(.red.gradient)
+			// Sticking it to the top
+			.clipped()
+			.contentShape(.rect)
+			.offset(y: -minY) // Applying offset before content shape doesn't allow interaction here.
 		}
-		.foregroundStyle(.white)
-		.padding(.horizontal, horizontalPadding)
-		.padding(.top, topPadding)
-		.padding(.top, safeArea.top)
-		.padding(.bottom, bottomPadding)
-		.background(.red.gradient)
+		.frame(height: calendarHeight)
+		.zIndex(1000)
 	}
 	
 	// Date Formatter
@@ -120,7 +164,10 @@ struct CalendarScrollAnimationHomeView: View {
 	func monthUpdate(_ increment: Bool = true) {
 		let calendar = Calendar.autoupdatingCurrent
 		guard let month = calendar.date(byAdding: .month, value: increment ? 1 : -1, to: selectedMonth) else { return }
+		// Update selected date when month changes.
+		guard let date = calendar.date(byAdding: .month, value: increment ? 1 : -1, to: selectedDate) else { return }
 		selectedMonth = month
+		selectedDate = date
 	}
 	
 	// Selected Month Dates
@@ -133,12 +180,26 @@ struct CalendarScrollAnimationHomeView: View {
 		return format("MMMM")
 	}
 	
+	/// To show selected week when we scroll.
+	/// In order to get the precise row value where the date is located, I am finding the selected date index from the array and dividing it by 7 because the grid has 7 columns. Given that each grid row height is 50, multiplying it by 50 gives the precise grid scroll value for the selected date's week.
+	var monthProgress: CGFloat {
+		let calendar = Calendar.autoupdatingCurrent
+		if let index = selectedMonthDates.firstIndex(where: { calendar.isDate($0.date, inSameDayAs: selectedDate) }) {
+			return CGFloat(index / 7).rounded()
+		}
+		return 1.0
+	}
+	
 	// Selected Year
 	var year: String {
 		return format("YYYY")
 	}
 	
 	// View Heights & Paddings
+	var calendarHeight: CGFloat {
+		return calendarTitleViewHeight + weekLabelHeight + calendarGridHeight + safeArea.top + topPadding + bottomPadding
+	}
+	
 	/// Each component of the calendar view will have a defined height, and this will be used later in the scroll animation.
 	var calendarTitleViewHeight: CGFloat {
 		return 75.0
@@ -168,6 +229,17 @@ struct CalendarScrollAnimationHomeView: View {
 
 #Preview {
 	CalendarScrollAnimationContentView()
+}
+
+// Custom Scroll Behaviour
+/// With the help of iOS 17 scrollview updates, we can read where the scroll will end and change its position as per our needs.
+struct CustomScrollBehaviour: ScrollTargetBehavior {
+	var maxHeight: CGFloat
+	func updateTarget(_ target: inout ScrollTarget, context: TargetContext) {
+		if target.rect.minY < maxHeight {
+			target.rect = .zero
+		}
+	}
 }
 
 // Date Extensions
