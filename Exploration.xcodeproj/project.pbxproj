@@ -101,6 +101,7 @@
 		0A70AD442BB2936B008794F4 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A70AD432BB2936B008794F4 /* FeedView.swift */; };
 		0A70AD472BB29662008794F4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A70AD462BB29662008794F4 /* Post.swift */; };
 		0A70AD492BB297A6008794F4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A70AD482BB297A6008794F4 /* MainView.swift */; };
+		0A76438B2BF360C100BB6D5D /* PhotosView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A76438A2BF360C100BB6D5D /* PhotosView+Extensions.swift */; };
 		0A77C0DC2BDCC2E00016F835 /* FlipBookContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77C0DB2BDCC2E00016F835 /* FlipBookContentView.swift */; };
 		0A8118E42BB712AF00889DA7 /* PinchZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8118E32BB712AF00889DA7 /* PinchZoom.swift */; };
 		0A8B70EF2BCC35460032F794 /* AnimatedPageIndicatorContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8B70EE2BCC35460032F794 /* AnimatedPageIndicatorContentView.swift */; };
@@ -285,6 +286,7 @@
 		0A70AD432BB2936B008794F4 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		0A70AD462BB29662008794F4 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		0A70AD482BB297A6008794F4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		0A76438A2BF360C100BB6D5D /* PhotosView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotosView+Extensions.swift"; sourceTree = "<group>"; };
 		0A77C0DB2BDCC2E00016F835 /* FlipBookContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipBookContentView.swift; sourceTree = "<group>"; };
 		0A8118E32BB712AF00889DA7 /* PinchZoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchZoom.swift; sourceTree = "<group>"; };
 		0A8B70EE2BCC35460032F794 /* AnimatedPageIndicatorContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedPageIndicatorContentView.swift; sourceTree = "<group>"; };
@@ -944,6 +946,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		0A7643892BF360AB00BB6D5D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0A76438A2BF360C100BB6D5D /* PhotosView+Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		0A77C0DA2BDCC2D30016F835 /* FlipBook */ = {
 			isa = PBXGroup;
 			children = (
@@ -1240,6 +1250,7 @@
 		0AFB85102BEF55D500203CEF /* PhotosApp */ = {
 			isa = PBXGroup;
 			children = (
+				0A7643892BF360AB00BB6D5D /* Helpers */,
 				0AFB85142BEF564200203CEF /* Models */,
 				0AFB85132BEF563C00203CEF /* Views */,
 				0AFB85112BEF55E500203CEF /* PhotosAppContentView.swift */,
@@ -1485,6 +1496,7 @@
 				0A55A1112B8A528F00FB6C1E /* CustomAlertContentView.swift in Sources */,
 				0ABBD01A2BD8F1A700CE9EDF /* ParticleEmitterContentView.swift in Sources */,
 				0AFB85182BEF567D00203CEF /* PhotosAppHomeView.swift in Sources */,
+				0A76438B2BF360C100BB6D5D /* PhotosView+Extensions.swift in Sources */,
 				0AC5D0852BBD50BC007CF93E /* ReportCardView.swift in Sources */,
 				0A4F4C682BD24DD300247B3D /* AutoOTPFieldContentView.swift in Sources */,
 				0A8B70FA2BCC5D720032F794 /* LikeAnimation.swift in Sources */,

@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct TPhotoItem: Identifiable {
+struct TPhotoItem: Identifiable, Equatable {
 	var id = UUID().uuidString
 	var title: String
 	var image: UIImage?
