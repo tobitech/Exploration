@@ -50,6 +50,9 @@
 		0A4F4C652BD15F0B00247B3D /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F4C642BD15F0B00247B3D /* ShareSheet.swift */; };
 		0A4F4C682BD24DD300247B3D /* AutoOTPFieldContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F4C672BD24DD300247B3D /* AutoOTPFieldContentView.swift */; };
 		0A4F4C6B2BD24DF900247B3D /* OTPVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4F4C6A2BD24DF900247B3D /* OTPVerificationView.swift */; };
+		0A506E6F2BF108F4006775B9 /* PhotosDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A506E6E2BF108F4006775B9 /* PhotosDetailView.swift */; };
+		0A506E712BF10C42006775B9 /* HeroLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A506E702BF10C42006775B9 /* HeroLayer.swift */; };
+		0A506E732BF10C9C006775B9 /* HeroKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A506E722BF10C9C006775B9 /* HeroKey.swift */; };
 		0A5333972BCFA8CD00EE2D05 /* FlipTransitionContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5333962BCFA8CD00EE2D05 /* FlipTransitionContentView.swift */; };
 		0A55A0882B89F5FD00FB6C1E /* ExplorationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55A0872B89F5FD00FB6C1E /* ExplorationApp.swift */; };
 		0A55A08C2B89F5FE00FB6C1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A55A08B2B89F5FE00FB6C1E /* Assets.xcassets */; };
@@ -145,6 +148,10 @@
 		0ADA7E962BEB57D4003D6DAC /* CalendarScrollAnimationHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADA7E952BEB57D4003D6DAC /* CalendarScrollAnimationHomeView.swift */; };
 		0AE4FC9B2BE4E366005558AD /* CustomDialogContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE4FC9A2BE4E366005558AD /* CustomDialogContentView.swift */; };
 		0AE4FC9D2BE4E391005558AD /* CustomDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE4FC9C2BE4E391005558AD /* CustomDialog.swift */; };
+		0AFB85122BEF55E500203CEF /* PhotosAppContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFB85112BEF55E500203CEF /* PhotosAppContentView.swift */; };
+		0AFB85162BEF565C00203CEF /* TPhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFB85152BEF565C00203CEF /* TPhotoItem.swift */; };
+		0AFB85182BEF567D00203CEF /* PhotosAppHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFB85172BEF567D00203CEF /* PhotosAppHomeView.swift */; };
+		0AFB851A2BEF587000203CEF /* PhotoUICoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFB85192BEF587000203CEF /* PhotoUICoordinator.swift */; };
 		0AFC0ABF2BB708F300B339D0 /* IGPinchZoomContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0ABE2BB708F300B339D0 /* IGPinchZoomContentView.swift */; };
 		0AFC0AC22BB7090C00B339D0 /* IGPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0AC12BB7090C00B339D0 /* IGPost.swift */; };
 		0AFDFD932BCCF83900DF7DF4 /* LoopingScrollViewContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDFD922BCCF83900DF7DF4 /* LoopingScrollViewContentView.swift */; };
@@ -225,6 +232,9 @@
 		0A4F4C642BD15F0B00247B3D /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
 		0A4F4C672BD24DD300247B3D /* AutoOTPFieldContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoOTPFieldContentView.swift; sourceTree = "<group>"; };
 		0A4F4C6A2BD24DF900247B3D /* OTPVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVerificationView.swift; sourceTree = "<group>"; };
+		0A506E6E2BF108F4006775B9 /* PhotosDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosDetailView.swift; sourceTree = "<group>"; };
+		0A506E702BF10C42006775B9 /* HeroLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroLayer.swift; sourceTree = "<group>"; };
+		0A506E722BF10C9C006775B9 /* HeroKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroKey.swift; sourceTree = "<group>"; };
 		0A5333962BCFA8CD00EE2D05 /* FlipTransitionContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipTransitionContentView.swift; sourceTree = "<group>"; };
 		0A55A0842B89F5FD00FB6C1E /* Exploration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exploration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A55A0872B89F5FD00FB6C1E /* ExplorationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorationApp.swift; sourceTree = "<group>"; };
@@ -322,6 +332,10 @@
 		0ADA7E952BEB57D4003D6DAC /* CalendarScrollAnimationHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarScrollAnimationHomeView.swift; sourceTree = "<group>"; };
 		0AE4FC9A2BE4E366005558AD /* CustomDialogContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDialogContentView.swift; sourceTree = "<group>"; };
 		0AE4FC9C2BE4E391005558AD /* CustomDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDialog.swift; sourceTree = "<group>"; };
+		0AFB85112BEF55E500203CEF /* PhotosAppContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosAppContentView.swift; sourceTree = "<group>"; };
+		0AFB85152BEF565C00203CEF /* TPhotoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPhotoItem.swift; sourceTree = "<group>"; };
+		0AFB85172BEF567D00203CEF /* PhotosAppHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosAppHomeView.swift; sourceTree = "<group>"; };
+		0AFB85192BEF587000203CEF /* PhotoUICoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoUICoordinator.swift; sourceTree = "<group>"; };
 		0AFC0ABE2BB708F300B339D0 /* IGPinchZoomContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGPinchZoomContentView.swift; sourceTree = "<group>"; };
 		0AFC0AC12BB7090C00B339D0 /* IGPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGPost.swift; sourceTree = "<group>"; };
 		0AFDFD922BCCF83900DF7DF4 /* LoopingScrollViewContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopingScrollViewContentView.swift; sourceTree = "<group>"; };
@@ -601,6 +615,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0AFB85102BEF55D500203CEF /* PhotosApp */,
 				0ADA7E902BEB5491003D6DAC /* CalendarScrollAnimation */,
 				0A426D7D2BE8F55100809254 /* PinterestGridAnimation */,
 				0AE4FC992BE4E351005558AD /* CustomDialog */,
@@ -1222,6 +1237,36 @@
 			path = CustomDialog;
 			sourceTree = "<group>";
 		};
+		0AFB85102BEF55D500203CEF /* PhotosApp */ = {
+			isa = PBXGroup;
+			children = (
+				0AFB85142BEF564200203CEF /* Models */,
+				0AFB85132BEF563C00203CEF /* Views */,
+				0AFB85112BEF55E500203CEF /* PhotosAppContentView.swift */,
+			);
+			path = PhotosApp;
+			sourceTree = "<group>";
+		};
+		0AFB85132BEF563C00203CEF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0AFB85172BEF567D00203CEF /* PhotosAppHomeView.swift */,
+				0A506E6E2BF108F4006775B9 /* PhotosDetailView.swift */,
+				0A506E702BF10C42006775B9 /* HeroLayer.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0AFB85142BEF564200203CEF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0AFB85152BEF565C00203CEF /* TPhotoItem.swift */,
+				0AFB85192BEF587000203CEF /* PhotoUICoordinator.swift */,
+				0A506E722BF10C9C006775B9 /* HeroKey.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		0AFC0ABD2BB708D100B339D0 /* InstagramPinchZoom */ = {
 			isa = PBXGroup;
 			children = (
@@ -1439,6 +1484,7 @@
 				0A92320E2BD39DE4008B5F24 /* ScrollableIndicatorsHomeView.swift in Sources */,
 				0A55A1112B8A528F00FB6C1E /* CustomAlertContentView.swift in Sources */,
 				0ABBD01A2BD8F1A700CE9EDF /* ParticleEmitterContentView.swift in Sources */,
+				0AFB85182BEF567D00203CEF /* PhotosAppHomeView.swift in Sources */,
 				0AC5D0852BBD50BC007CF93E /* ReportCardView.swift in Sources */,
 				0A4F4C682BD24DD300247B3D /* AutoOTPFieldContentView.swift in Sources */,
 				0A8B70FA2BCC5D720032F794 /* LikeAnimation.swift in Sources */,
@@ -1452,6 +1498,7 @@
 				0AC5D0832BBD3B35007CF93E /* RatioChartData.swift in Sources */,
 				0A8B710E2BCC6B310032F794 /* OffsetKey.swift in Sources */,
 				0A4F4C652BD15F0B00247B3D /* ShareSheet.swift in Sources */,
+				0AFB85122BEF55E500203CEF /* PhotosAppContentView.swift in Sources */,
 				0A55A1002B8A131C00FB6C1E /* PokemonData.swift in Sources */,
 				0ABBD01E2BD8F1DD00CE9EDF /* ParticleEmitterHomeView.swift in Sources */,
 				0A8B70F82BCC5CC30032F794 /* IGReel.swift in Sources */,
@@ -1487,6 +1534,7 @@
 				0AFDFD9B2BCCF9AE00DF7DF4 /* LoopingScrollView.swift in Sources */,
 				0AC96E962BC7199800C31CC1 /* CarouselHomeView.swift in Sources */,
 				0A70AD422BB28A71008794F4 /* HomeView.swift in Sources */,
+				0A506E712BF10C42006775B9 /* HeroLayer.swift in Sources */,
 				0AC96E992BC71A3800C31CC1 /* CarouselPage.swift in Sources */,
 				0ACFD6E72BA5DDA80014336E /* WheelPicker.swift in Sources */,
 				0A115B552BC7BB23002628A1 /* OffsetReader.swift in Sources */,
@@ -1503,6 +1551,7 @@
 				0A55A0882B89F5FD00FB6C1E /* ExplorationApp.swift in Sources */,
 				0A4F4C6B2BD24DF900247B3D /* OTPVerificationView.swift in Sources */,
 				0A48B7012BBC556C00060277 /* NetworthCardView.swift in Sources */,
+				0AFB851A2BEF587000203CEF /* PhotoUICoordinator.swift in Sources */,
 				0A4DCE552BC9D1D70042C928 /* CustomImagePicker.swift in Sources */,
 				0A55A0AB2B89F79100FB6C1E /* CachingImagesContentView.swift in Sources */,
 				0ABBD0202BD8F78900CE9EDF /* ParticleEffect.swift in Sources */,
@@ -1523,6 +1572,7 @@
 				0AB4293C2BEA090B00FF20D4 /* DummyContentView.swift in Sources */,
 				0A115B572BC7C13D002628A1 /* PageControl.swift in Sources */,
 				0A4DCE4D2BC9CD2B0042C928 /* CropImageContentView.swift in Sources */,
+				0A506E6F2BF108F4006775B9 /* PhotosDetailView.swift in Sources */,
 				0A9232112BD39E6E008B5F24 /* TabModel.swift in Sources */,
 				0A5ECA0A2BDA61CE00BDFB72 /* MovableGridContentView.swift in Sources */,
 				0A48B6F92BBC51D500060277 /* RatioContentView.swift in Sources */,
@@ -1534,11 +1584,13 @@
 				0AB9BD4D2BCA5C6100288609 /* SliderConfig.swift in Sources */,
 				0AB4293F2BEA0FC900FF20D4 /* View+Extensions.swift in Sources */,
 				0A55A09E2B89F6A300FB6C1E /* PhotoListViewModel.swift in Sources */,
+				0A506E732BF10C9C006775B9 /* HeroKey.swift in Sources */,
 				0A27EA432B8B28C400AF1A2E /* AlertConfig.swift in Sources */,
 				0AB9BD552BCA8B4C00288609 /* IGStoryTimerHomeView.swift in Sources */,
 				0A48B6FB2BBC524C00060277 /* CashFlowView.swift in Sources */,
 				0AFDFD992BCCF8C900DF7DF4 /* Item.swift in Sources */,
 				0A115B5D2BC7CD11002628A1 /* AutoScrollingHomeView.swift in Sources */,
+				0AFB85162BEF565C00203CEF /* TPhotoItem.swift in Sources */,
 				0AB9BD572BCA8DA400288609 /* StoryBundle.swift in Sources */,
 				0AA952F12BBFD86E007E62B1 /* HoldDownButton.swift in Sources */,
 				0A55A09C2B89F6A300FB6C1E /* ImageLoader.swift in Sources */,
