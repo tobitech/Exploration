@@ -5,6 +5,9 @@
 //  Created by Oluwatobi Omotayo on 11/05/2024.
 //  Source - https://youtu.be/ktaGsPwGZpA?si=RfyBlwRc5r6kcNoD
 
+// Useful comment from the video
+/// Very cool! Only a couple missing touches from the actual Photos app people may want to try adding - scaling the image when swiping off screen, allowing swiping from anywhere in the image (not just the leading edge, which must work simultaneously with the ScrollView swipe gesture), hiding the navigation and bottom bars when tapping on the image (and re-appearing when tapping again), and showing an image details view when swiping up on the image. Some of this is pretty trivial to implement, thanks to how well documented your process is!
+
 import SwiftUI
 
 struct PhotosAppContentView: View {
