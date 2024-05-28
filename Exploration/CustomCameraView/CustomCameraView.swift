@@ -11,7 +11,7 @@ class CameraModel: NSObject, ObservableObject {
 	@Published var preview = AVCaptureVideoPreviewLayer()
 	// Pic data
 	@Published var isSaved: Bool = false
-	@Published var picData = Data()
+	@Published var picData = Data(count: 0)
 	
 	func check() {
 		// first check for camera permission
@@ -62,6 +62,7 @@ class CameraModel: NSObject, ObservableObject {
 	func takePic() {
 		DispatchQueue.global(qos: .background).async {
 			self.output.capturePhoto(with: AVCapturePhotoSettings(), delegate: self)
+			// There is a problem here where only when I set a break point this take pic will work.
 			self.session.stopRunning()
 			
 			DispatchQueue.main.async {
@@ -119,7 +120,7 @@ struct CustomCameraView: View {
 						Spacer()
 						Button { camera.reTake() } label: {
 							Image(systemName: "arrow.triangle.2.circlepath.camera")
-								.foregroundStyle(.primary)
+								.foregroundStyle(.black)
 								.padding()
 								.background(.white)
 								.clipShape(.circle)
@@ -139,7 +140,7 @@ struct CustomCameraView: View {
 							}
 						} label: {
 							Text(camera.isSaved ? "Saved" : "Save")
-								.foregroundStyle(.primary)
+								.foregroundStyle(.black)
 								.fontWeight(.semibold)
 								.padding(.vertical, 10)
 								.padding(.horizontal, 20)
@@ -156,7 +157,7 @@ struct CustomCameraView: View {
 				.frame(height: 75)
 			}
 			.onAppear {
-				// self.camera.check()
+				self.camera.check()
 			}
 		}
 	}
