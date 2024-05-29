@@ -152,6 +152,8 @@
 		0ADA7E962BEB57D4003D6DAC /* CalendarScrollAnimationHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADA7E952BEB57D4003D6DAC /* CalendarScrollAnimationHomeView.swift */; };
 		0AE4FC9B2BE4E366005558AD /* CustomDialogContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE4FC9A2BE4E366005558AD /* CustomDialogContentView.swift */; };
 		0AE4FC9D2BE4E391005558AD /* CustomDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE4FC9C2BE4E391005558AD /* CustomDialog.swift */; };
+		0AE8FFF72C06F649000B0A5A /* FlipClockContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8FFF62C06F649000B0A5A /* FlipClockContentView.swift */; };
+		0AE8FFFA2C06F67C000B0A5A /* FlipClockTextEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8FFF92C06F67C000B0A5A /* FlipClockTextEffect.swift */; };
 		0AE9DC1F2BFBDCE7004989C8 /* CustomCameraContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE9DC1E2BFBDCE7004989C8 /* CustomCameraContentView.swift */; };
 		0AE9DC212BFBDF15004989C8 /* CustomCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE9DC202BFBDF15004989C8 /* CustomCameraView.swift */; };
 		0AFB85122BEF55E500203CEF /* PhotosAppContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFB85112BEF55E500203CEF /* PhotosAppContentView.swift */; };
@@ -345,6 +347,8 @@
 		0ADA7E952BEB57D4003D6DAC /* CalendarScrollAnimationHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarScrollAnimationHomeView.swift; sourceTree = "<group>"; };
 		0AE4FC9A2BE4E366005558AD /* CustomDialogContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDialogContentView.swift; sourceTree = "<group>"; };
 		0AE4FC9C2BE4E391005558AD /* CustomDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDialog.swift; sourceTree = "<group>"; };
+		0AE8FFF62C06F649000B0A5A /* FlipClockContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipClockContentView.swift; sourceTree = "<group>"; };
+		0AE8FFF92C06F67C000B0A5A /* FlipClockTextEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipClockTextEffect.swift; sourceTree = "<group>"; };
 		0AE9DC1E2BFBDCE7004989C8 /* CustomCameraContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraContentView.swift; sourceTree = "<group>"; };
 		0AE9DC202BFBDF15004989C8 /* CustomCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraView.swift; sourceTree = "<group>"; };
 		0AFB85112BEF55E500203CEF /* PhotosAppContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosAppContentView.swift; sourceTree = "<group>"; };
@@ -643,6 +647,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0AE8FFF52C06F636000B0A5A /* FlipClockAnimation */,
 				0ABA53B02C059D0A00F35879 /* ShimmerEffect */,
 				0AE9DC1D2BFBDCCD004989C8 /* CustomCameraView */,
 				0A5342222BF4857800D965B2 /* StackedNotifications */,
@@ -1293,6 +1298,23 @@
 			path = CustomDialog;
 			sourceTree = "<group>";
 		};
+		0AE8FFF52C06F636000B0A5A /* FlipClockAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				0AE8FFF82C06F65D000B0A5A /* Helpers */,
+				0AE8FFF62C06F649000B0A5A /* FlipClockContentView.swift */,
+			);
+			path = FlipClockAnimation;
+			sourceTree = "<group>";
+		};
+		0AE8FFF82C06F65D000B0A5A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0AE8FFF92C06F67C000B0A5A /* FlipClockTextEffect.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		0AE9DC1D2BFBDCCD004989C8 /* CustomCameraView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1545,6 +1567,7 @@
 				0A38157C2BDA279800634A8B /* MaterialCarouselCard.swift in Sources */,
 				0A48B6FF2BBC554B00060277 /* DebtCardView.swift in Sources */,
 				0AE4FC9B2BE4E366005558AD /* CustomDialogContentView.swift in Sources */,
+				0AE8FFFA2C06F67C000B0A5A /* FlipClockTextEffect.swift in Sources */,
 				0A9232152BD3AD42008B5F24 /* Interpolation.swift in Sources */,
 				0ABA53B22C059D1900F35879 /* ShimmerEffectContentView.swift in Sources */,
 				0A55A0F22B8A003100FB6C1E /* ContentView.swift in Sources */,
@@ -1631,6 +1654,7 @@
 				0AA952EE2BBFD836007E62B1 /* HoldDownButtonContentView.swift in Sources */,
 				0A77C0DC2BDCC2E00016F835 /* FlipBookContentView.swift in Sources */,
 				0A115B632BC7D4C6002628A1 /* ScrollOffsetModifier.swift in Sources */,
+				0AE8FFF72C06F649000B0A5A /* FlipClockContentView.swift in Sources */,
 				0AFC0ABF2BB708F300B339D0 /* IGPinchZoomContentView.swift in Sources */,
 				0A55A1092B8A1EA500FB6C1E /* PokemonDescriptionView.swift in Sources */,
 				0A55A0A82B89F75100FB6C1E /* Tab.swift in Sources */,
