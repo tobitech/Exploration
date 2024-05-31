@@ -162,6 +162,8 @@
 		0AFB851A2BEF587000203CEF /* PhotoUICoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFB85192BEF587000203CEF /* PhotoUICoordinator.swift */; };
 		0AFC0ABF2BB708F300B339D0 /* IGPinchZoomContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0ABE2BB708F300B339D0 /* IGPinchZoomContentView.swift */; };
 		0AFC0AC22BB7090C00B339D0 /* IGPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0AC12BB7090C00B339D0 /* IGPost.swift */; };
+		0AFD278E2C098F110031AA77 /* TabViewOffsetContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFD278D2C098F110031AA77 /* TabViewOffsetContentView.swift */; };
+		0AFD27912C098F4B0031AA77 /* DummyTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFD27902C098F4B0031AA77 /* DummyTab.swift */; };
 		0AFDFD932BCCF83900DF7DF4 /* LoopingScrollViewContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDFD922BCCF83900DF7DF4 /* LoopingScrollViewContentView.swift */; };
 		0AFDFD962BCCF86900DF7DF4 /* LoopingScrollViewHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDFD952BCCF86900DF7DF4 /* LoopingScrollViewHomeView.swift */; };
 		0AFDFD992BCCF8C900DF7DF4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDFD982BCCF8C900DF7DF4 /* Item.swift */; };
@@ -357,6 +359,8 @@
 		0AFB85192BEF587000203CEF /* PhotoUICoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoUICoordinator.swift; sourceTree = "<group>"; };
 		0AFC0ABE2BB708F300B339D0 /* IGPinchZoomContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGPinchZoomContentView.swift; sourceTree = "<group>"; };
 		0AFC0AC12BB7090C00B339D0 /* IGPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGPost.swift; sourceTree = "<group>"; };
+		0AFD278D2C098F110031AA77 /* TabViewOffsetContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewOffsetContentView.swift; sourceTree = "<group>"; };
+		0AFD27902C098F4B0031AA77 /* DummyTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyTab.swift; sourceTree = "<group>"; };
 		0AFDFD922BCCF83900DF7DF4 /* LoopingScrollViewContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopingScrollViewContentView.swift; sourceTree = "<group>"; };
 		0AFDFD952BCCF86900DF7DF4 /* LoopingScrollViewHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopingScrollViewHomeView.swift; sourceTree = "<group>"; };
 		0AFDFD982BCCF8C900DF7DF4 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -647,6 +651,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0AFD278C2C098EDE0031AA77 /* TabViewOffset */,
 				0AE8FFF52C06F636000B0A5A /* FlipClockAnimation */,
 				0ABA53B02C059D0A00F35879 /* ShimmerEffect */,
 				0AE9DC1D2BFBDCCD004989C8 /* CustomCameraView */,
@@ -1373,6 +1378,23 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		0AFD278C2C098EDE0031AA77 /* TabViewOffset */ = {
+			isa = PBXGroup;
+			children = (
+				0AFD278F2C098F3A0031AA77 /* Model */,
+				0AFD278D2C098F110031AA77 /* TabViewOffsetContentView.swift */,
+			);
+			path = TabViewOffset;
+			sourceTree = "<group>";
+		};
+		0AFD278F2C098F3A0031AA77 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0AFD27902C098F4B0031AA77 /* DummyTab.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0AFDFD912BCCF81900DF7DF4 /* InfiniteLoopingScrollView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1592,6 +1614,7 @@
 				0A5F00EB2BD77E8C007DD17D /* CircularSliderHomeView.swift in Sources */,
 				0A92320E2BD39DE4008B5F24 /* ScrollableIndicatorsHomeView.swift in Sources */,
 				0ABA53B52C059D4E00F35879 /* ShimmerEffect.swift in Sources */,
+				0AFD27912C098F4B0031AA77 /* DummyTab.swift in Sources */,
 				0A55A1112B8A528F00FB6C1E /* CustomAlertContentView.swift in Sources */,
 				0ABBD01A2BD8F1A700CE9EDF /* ParticleEmitterContentView.swift in Sources */,
 				0AFB85182BEF567D00203CEF /* PhotosAppHomeView.swift in Sources */,
@@ -1606,6 +1629,7 @@
 				0AB9BD4B2BCA564700288609 /* Extensions.swift in Sources */,
 				0AFDFDA52BCD0A5700DF7DF4 /* DynamicTab.swift in Sources */,
 				0A426D852BE8F90800809254 /* GridAnimationHomeView.swift in Sources */,
+				0AFD278E2C098F110031AA77 /* TabViewOffsetContentView.swift in Sources */,
 				0AC5D0832BBD3B35007CF93E /* RatioChartData.swift in Sources */,
 				0A8B710E2BCC6B310032F794 /* OffsetKey.swift in Sources */,
 				0A4F4C652BD15F0B00247B3D /* ShareSheet.swift in Sources */,
