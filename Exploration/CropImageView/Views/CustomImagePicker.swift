@@ -204,8 +204,8 @@ struct CropView: View {
 										withAnimation(.easeInOut(duration: 0.2)) {
 											if rect.minX > 0 {
 												// Resetting to last location.
-												/// So consider that minx is above zero, like 45, and if we set offset to 0, then it will reset to its initial state, so reducing the minX from the offset will set the image to its start.
-												/// Example: minx = 45 width of offset = 145; As a result, we must remove the excess 45 by doing offset. width - minX.
+												/// So consider that minX is above zero, like 45, and if we set offset to 0, then it will reset to its initial state, so reducing the minX from the offset will set the image to its start.
+												/// Example: minX = 45 width of offset = 145; As a result, we must remove the excess 45 by doing offset. width - minX.
 												offset.width = (offset.width - rect.minX)
 												haptics(.medium)
 											}
@@ -217,7 +217,7 @@ struct CropView: View {
 											// Doing the same for maxX,Y
 											if rect.maxX < size.width {
 												/// So, since maxX is less than the image's width, say 230, and the image's width is 300, we need to reset at its extent; let's see how.
-												/// Example: offset.width = -110, image width = 300, minX = -150, maxx = 230; Thus, doing (imageWidth - maxX) + offset. width will give the extend's offset, but instead of doing this, we simply did (minX - offset.width). Essentially, we will get the same result. (300 - 230) - 110 = -40 || (-150 + 110) = -40
+												/// Example: offset.width = -110, image width = 300, minX = -150, maxX = 230; Thus, doing (imageWidth - maxX) + offset. width will give the extend's offset, but instead of doing this, we simply did (minX - offset.width). Essentially, we will get the same result. (300 - 230) - 110 = -40 || (-150 + 110) = -40
 												offset.width = (rect.minX - offset.width)
 												haptics(.medium)
 											}
@@ -277,7 +277,7 @@ struct CropView: View {
 		)
 		.frame(cropSize)
 		.cornerRadius(crop == .circle ? cropSize.height / 2 : 0)
-		// .clipShape(crop == Crop.circle ? Circle() : Rectangle())
+		//.clipShape(crop == Crop.circle ? Circle() : Rectangle())
 	}
 	
 	// Grids

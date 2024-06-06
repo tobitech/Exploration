@@ -95,6 +95,9 @@
 		0A5ECA0A2BDA61CE00BDFB72 /* MovableGridContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5ECA092BDA61CE00BDFB72 /* MovableGridContentView.swift */; };
 		0A5F00E82BD77E51007DD17D /* CircularSliderContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5F00E72BD77E51007DD17D /* CircularSliderContentView.swift */; };
 		0A5F00EB2BD77E8C007DD17D /* CircularSliderHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5F00EA2BD77E8C007DD17D /* CircularSliderHomeView.swift */; };
+		0A6B1A0A2C117F52005F372A /* VerticalCarouselContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6B1A092C117F52005F372A /* VerticalCarouselContentView.swift */; };
+		0A6B1A0D2C117F94005F372A /* VCarouselCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6B1A0C2C117F94005F372A /* VCarouselCard.swift */; };
+		0A6B1A102C11820D005F372A /* VerticalCarouselHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6B1A0F2C11820D005F372A /* VerticalCarouselHomeView.swift */; };
 		0A6F0E982BC129590038D412 /* AnimatedChartsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6F0E972BC129590038D412 /* AnimatedChartsContentView.swift */; };
 		0A6F0E9B2BC129940038D412 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6F0E9A2BC129940038D412 /* Download.swift */; };
 		0A70AD3F2BB288EB008794F4 /* SwipeableIGLayoutContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A70AD3E2BB288EB008794F4 /* SwipeableIGLayoutContentView.swift */; };
@@ -164,6 +167,7 @@
 		0AFC0AC22BB7090C00B339D0 /* IGPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC0AC12BB7090C00B339D0 /* IGPost.swift */; };
 		0AFD278E2C098F110031AA77 /* TabViewOffsetContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFD278D2C098F110031AA77 /* TabViewOffsetContentView.swift */; };
 		0AFD27912C098F4B0031AA77 /* DummyTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFD27902C098F4B0031AA77 /* DummyTab.swift */; };
+		0AFD27962C0A5FD90031AA77 /* ImageCropperContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFD27952C0A5FD90031AA77 /* ImageCropperContentView.swift */; };
 		0AFDFD932BCCF83900DF7DF4 /* LoopingScrollViewContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDFD922BCCF83900DF7DF4 /* LoopingScrollViewContentView.swift */; };
 		0AFDFD962BCCF86900DF7DF4 /* LoopingScrollViewHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDFD952BCCF86900DF7DF4 /* LoopingScrollViewHomeView.swift */; };
 		0AFDFD992BCCF8C900DF7DF4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDFD982BCCF8C900DF7DF4 /* Item.swift */; };
@@ -292,6 +296,9 @@
 		0A5ECA092BDA61CE00BDFB72 /* MovableGridContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovableGridContentView.swift; sourceTree = "<group>"; };
 		0A5F00E72BD77E51007DD17D /* CircularSliderContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularSliderContentView.swift; sourceTree = "<group>"; };
 		0A5F00EA2BD77E8C007DD17D /* CircularSliderHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularSliderHomeView.swift; sourceTree = "<group>"; };
+		0A6B1A092C117F52005F372A /* VerticalCarouselContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalCarouselContentView.swift; sourceTree = "<group>"; };
+		0A6B1A0C2C117F94005F372A /* VCarouselCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCarouselCard.swift; sourceTree = "<group>"; };
+		0A6B1A0F2C11820D005F372A /* VerticalCarouselHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalCarouselHomeView.swift; sourceTree = "<group>"; };
 		0A6F0E972BC129590038D412 /* AnimatedChartsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedChartsContentView.swift; sourceTree = "<group>"; };
 		0A6F0E9A2BC129940038D412 /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
 		0A70AD3E2BB288EB008794F4 /* SwipeableIGLayoutContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableIGLayoutContentView.swift; sourceTree = "<group>"; };
@@ -361,6 +368,7 @@
 		0AFC0AC12BB7090C00B339D0 /* IGPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGPost.swift; sourceTree = "<group>"; };
 		0AFD278D2C098F110031AA77 /* TabViewOffsetContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewOffsetContentView.swift; sourceTree = "<group>"; };
 		0AFD27902C098F4B0031AA77 /* DummyTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyTab.swift; sourceTree = "<group>"; };
+		0AFD27952C0A5FD90031AA77 /* ImageCropperContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCropperContentView.swift; sourceTree = "<group>"; };
 		0AFDFD922BCCF83900DF7DF4 /* LoopingScrollViewContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopingScrollViewContentView.swift; sourceTree = "<group>"; };
 		0AFDFD952BCCF86900DF7DF4 /* LoopingScrollViewHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopingScrollViewHomeView.swift; sourceTree = "<group>"; };
 		0AFDFD982BCCF8C900DF7DF4 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -651,6 +659,8 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0A6B1A082C117F3C005F372A /* VerticalCarousel */,
+				0AFD27942C0A5FB50031AA77 /* CustomImageCropping */,
 				0AFD278C2C098EDE0031AA77 /* TabViewOffset */,
 				0AE8FFF52C06F636000B0A5A /* FlipClockAnimation */,
 				0ABA53B02C059D0A00F35879 /* ShimmerEffect */,
@@ -936,6 +946,32 @@
 			isa = PBXGroup;
 			children = (
 				0A5F00EA2BD77E8C007DD17D /* CircularSliderHomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0A6B1A082C117F3C005F372A /* VerticalCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				0A6B1A0E2C118200005F372A /* Views */,
+				0A6B1A0B2C117F80005F372A /* Models */,
+				0A6B1A092C117F52005F372A /* VerticalCarouselContentView.swift */,
+			);
+			path = VerticalCarousel;
+			sourceTree = "<group>";
+		};
+		0A6B1A0B2C117F80005F372A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0A6B1A0C2C117F94005F372A /* VCarouselCard.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0A6B1A0E2C118200005F372A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A6B1A0F2C11820D005F372A /* VerticalCarouselHomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1395,6 +1431,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		0AFD27942C0A5FB50031AA77 /* CustomImageCropping */ = {
+			isa = PBXGroup;
+			children = (
+				0AFD27952C0A5FD90031AA77 /* ImageCropperContentView.swift */,
+			);
+			path = CustomImageCropping;
+			sourceTree = "<group>";
+		};
 		0AFDFD912BCCF81900DF7DF4 /* InfiniteLoopingScrollView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1606,6 +1650,7 @@
 				0A8B70FE2BCC60E90032F794 /* ReelView.swift in Sources */,
 				0A0790F42B8DC21E00CFB197 /* BottomCustomAlertContentView.swift in Sources */,
 				0A27EA452B8B28EB00AF1A2E /* AppDelegate.swift in Sources */,
+				0A6B1A0A2C117F52005F372A /* VerticalCarouselContentView.swift in Sources */,
 				0A3815782BDA26D600634A8B /* MaterialCarouselContentView.swift in Sources */,
 				0A8B70F42BCC5AC60032F794 /* ReelsLayoutContentView.swift in Sources */,
 				0AA76A9E2BDA2F1000B246F5 /* MaterialOffsetReader.swift in Sources */,
@@ -1624,12 +1669,14 @@
 				0A8B70FA2BCC5D720032F794 /* LikeAnimation.swift in Sources */,
 				0A70AD3F2BB288EB008794F4 /* SwipeableIGLayoutContentView.swift in Sources */,
 				0A4F4C632BD1526900247B3D /* ReceiptView.swift in Sources */,
+				0AFD27962C0A5FD90031AA77 /* ImageCropperContentView.swift in Sources */,
 				0A48B7052BBC66B900060277 /* ListsCardView.swift in Sources */,
 				0A55A0B22B89F96900FB6C1E /* CustomToastsContentView.swift in Sources */,
 				0AB9BD4B2BCA564700288609 /* Extensions.swift in Sources */,
 				0AFDFDA52BCD0A5700DF7DF4 /* DynamicTab.swift in Sources */,
 				0A426D852BE8F90800809254 /* GridAnimationHomeView.swift in Sources */,
 				0AFD278E2C098F110031AA77 /* TabViewOffsetContentView.swift in Sources */,
+				0A6B1A0D2C117F94005F372A /* VCarouselCard.swift in Sources */,
 				0AC5D0832BBD3B35007CF93E /* RatioChartData.swift in Sources */,
 				0A8B710E2BCC6B310032F794 /* OffsetKey.swift in Sources */,
 				0A4F4C652BD15F0B00247B3D /* ShareSheet.swift in Sources */,
@@ -1678,6 +1725,7 @@
 				0AA952EE2BBFD836007E62B1 /* HoldDownButtonContentView.swift in Sources */,
 				0A77C0DC2BDCC2E00016F835 /* FlipBookContentView.swift in Sources */,
 				0A115B632BC7D4C6002628A1 /* ScrollOffsetModifier.swift in Sources */,
+				0A6B1A102C11820D005F372A /* VerticalCarouselHomeView.swift in Sources */,
 				0AE8FFF72C06F649000B0A5A /* FlipClockContentView.swift in Sources */,
 				0AFC0ABF2BB708F300B339D0 /* IGPinchZoomContentView.swift in Sources */,
 				0A55A1092B8A1EA500FB6C1E /* PokemonDescriptionView.swift in Sources */,
