@@ -26,6 +26,7 @@
 		0A3815782BDA26D600634A8B /* MaterialCarouselContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3815772BDA26D600634A8B /* MaterialCarouselContentView.swift */; };
 		0A38157A2BDA270400634A8B /* MaterialCarouselHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3815792BDA270400634A8B /* MaterialCarouselHomeView.swift */; };
 		0A38157C2BDA279800634A8B /* MaterialCarouselCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A38157B2BDA279800634A8B /* MaterialCarouselCard.swift */; };
+		0A411CAE2C20566800806CFE /* MeshGradientContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A411CAD2C20566800806CFE /* MeshGradientContentView.swift */; };
 		0A426D7F2BE8F57800809254 /* GridAnimationContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A426D7E2BE8F57800809254 /* GridAnimationContentView.swift */; };
 		0A426D832BE8F71200809254 /* GridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A426D822BE8F71200809254 /* GridItem.swift */; };
 		0A426D852BE8F90800809254 /* GridAnimationHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A426D842BE8F90800809254 /* GridAnimationHomeView.swift */; };
@@ -98,6 +99,7 @@
 		0A6B1A0A2C117F52005F372A /* VerticalCarouselContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6B1A092C117F52005F372A /* VerticalCarouselContentView.swift */; };
 		0A6B1A0D2C117F94005F372A /* VCarouselCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6B1A0C2C117F94005F372A /* VCarouselCard.swift */; };
 		0A6B1A102C11820D005F372A /* VerticalCarouselHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6B1A0F2C11820D005F372A /* VerticalCarouselHomeView.swift */; };
+		0A6B1A122C118D7B005F372A /* ResizableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6B1A112C118D7B005F372A /* ResizableView.swift */; };
 		0A6F0E982BC129590038D412 /* AnimatedChartsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6F0E972BC129590038D412 /* AnimatedChartsContentView.swift */; };
 		0A6F0E9B2BC129940038D412 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6F0E9A2BC129940038D412 /* Download.swift */; };
 		0A70AD3F2BB288EB008794F4 /* SwipeableIGLayoutContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A70AD3E2BB288EB008794F4 /* SwipeableIGLayoutContentView.swift */; };
@@ -225,6 +227,7 @@
 		0A3815772BDA26D600634A8B /* MaterialCarouselContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialCarouselContentView.swift; sourceTree = "<group>"; };
 		0A3815792BDA270400634A8B /* MaterialCarouselHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialCarouselHomeView.swift; sourceTree = "<group>"; };
 		0A38157B2BDA279800634A8B /* MaterialCarouselCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialCarouselCard.swift; sourceTree = "<group>"; };
+		0A411CAD2C20566800806CFE /* MeshGradientContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshGradientContentView.swift; sourceTree = "<group>"; };
 		0A426D7E2BE8F57800809254 /* GridAnimationContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridAnimationContentView.swift; sourceTree = "<group>"; };
 		0A426D822BE8F71200809254 /* GridItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridItem.swift; sourceTree = "<group>"; };
 		0A426D842BE8F90800809254 /* GridAnimationHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridAnimationHomeView.swift; sourceTree = "<group>"; };
@@ -299,6 +302,7 @@
 		0A6B1A092C117F52005F372A /* VerticalCarouselContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalCarouselContentView.swift; sourceTree = "<group>"; };
 		0A6B1A0C2C117F94005F372A /* VCarouselCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCarouselCard.swift; sourceTree = "<group>"; };
 		0A6B1A0F2C11820D005F372A /* VerticalCarouselHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalCarouselHomeView.swift; sourceTree = "<group>"; };
+		0A6B1A112C118D7B005F372A /* ResizableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableView.swift; sourceTree = "<group>"; };
 		0A6F0E972BC129590038D412 /* AnimatedChartsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedChartsContentView.swift; sourceTree = "<group>"; };
 		0A6F0E9A2BC129940038D412 /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
 		0A70AD3E2BB288EB008794F4 /* SwipeableIGLayoutContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeableIGLayoutContentView.swift; sourceTree = "<group>"; };
@@ -491,6 +495,14 @@
 			path = MaterialCarousel;
 			sourceTree = "<group>";
 		};
+		0A411CAC2C20565200806CFE /* MeshGradient */ = {
+			isa = PBXGroup;
+			children = (
+				0A411CAD2C20566800806CFE /* MeshGradientContentView.swift */,
+			);
+			path = MeshGradient;
+			sourceTree = "<group>";
+		};
 		0A426D7D2BE8F55100809254 /* PinterestGridAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -659,6 +671,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0A411CAC2C20565200806CFE /* MeshGradient */,
 				0A6B1A082C117F3C005F372A /* VerticalCarousel */,
 				0AFD27942C0A5FB50031AA77 /* CustomImageCropping */,
 				0AFD278C2C098EDE0031AA77 /* TabViewOffset */,
@@ -1435,6 +1448,7 @@
 			isa = PBXGroup;
 			children = (
 				0AFD27952C0A5FD90031AA77 /* ImageCropperContentView.swift */,
+				0A6B1A112C118D7B005F372A /* ResizableView.swift */,
 			);
 			path = CustomImageCropping;
 			sourceTree = "<group>";
@@ -1630,6 +1644,7 @@
 				0AFDFD932BCCF83900DF7DF4 /* LoopingScrollViewContentView.swift in Sources */,
 				0A4BDBB42BE6C47A00B4E8E7 /* DateTextFieldContentView.swift in Sources */,
 				0A55A09F2B89F6A300FB6C1E /* Photo.swift in Sources */,
+				0A6B1A122C118D7B005F372A /* ResizableView.swift in Sources */,
 				0A38157C2BDA279800634A8B /* MaterialCarouselCard.swift in Sources */,
 				0A48B6FF2BBC554B00060277 /* DebtCardView.swift in Sources */,
 				0AE4FC9B2BE4E366005558AD /* CustomDialogContentView.swift in Sources */,
@@ -1744,6 +1759,7 @@
 				0ABBD0202BD8F78900CE9EDF /* ParticleEffect.swift in Sources */,
 				0ADA7E922BEB54C7003D6DAC /* CalendarScrollAnimationContentView.swift in Sources */,
 				0A70AD472BB29662008794F4 /* Post.swift in Sources */,
+				0A411CAE2C20566800806CFE /* MeshGradientContentView.swift in Sources */,
 				0A5333972BCFA8CD00EE2D05 /* FlipTransitionContentView.swift in Sources */,
 				0AB9BD482BCA51DB00288609 /* ControlCenterHomeView.swift in Sources */,
 				0A8B70EF2BCC35460032F794 /* AnimatedPageIndicatorContentView.swift in Sources */,
@@ -1946,6 +1962,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1979,6 +1996,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
