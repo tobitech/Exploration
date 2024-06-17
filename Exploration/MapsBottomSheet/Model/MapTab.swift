@@ -8,7 +8,7 @@
 import Foundation
 
 /// Tabs
-enum Tab: String, CaseIterable {
+enum MapTab: String, CaseIterable {
 	case people = "People"
 	case devices = "Devices"
 	case items = "Items"

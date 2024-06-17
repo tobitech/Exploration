@@ -29,7 +29,7 @@ struct AutoScrollingHomeView: View {
 								// scrollProgress = max(min(pageProgress, 0), -CGFloat(Tab.allCases.count - 1))
 								// Simply disable when the TapState value is true.
 								if !tapState.status {
-									scrollProgress = max(min(pageProgress, 0), -CGFloat(Tab.allCases.count - 1))
+									scrollProgress = max(min(pageProgress, 0), -CGFloat(MapTab.allCases.count - 1))
 								}
 							}
 					}

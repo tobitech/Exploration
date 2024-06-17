@@ -6,7 +6,7 @@ import SwiftUI
 // Till now, I've used the default TabView tab bar to show how to create a customised bottom sheet like Apple Maps. Now let me show you how to create an exact replica of the Apple Maps bottom sheet with Map View and a custom tab bar.
 struct MapsBottomSheetContentView: View {
 	@State private var showSheet: Bool = false
-	@State private var activeTab: Tab = .devices
+	@State private var activeTab: MapTab = .devices
 	@State private var ignoreTabBar: Bool = false
 	
 	var body: some View {
@@ -50,7 +50,7 @@ struct MapsBottomSheetContentView: View {
 	@ViewBuilder
 	func TabBar() -> some View {
 		HStack(spacing: 0) {
-			ForEach(Tab.allCases, id: \.rawValue) { tab in
+			ForEach(MapTab.allCases, id: \.rawValue) { tab in
 				Button(action: { activeTab = tab }, label: {
 					VStack {
 						Image(systemName: tab.symbol)
