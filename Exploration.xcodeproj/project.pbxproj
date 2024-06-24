@@ -23,6 +23,11 @@
 		0A27EA452B8B28EB00AF1A2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A27EA442B8B28EB00AF1A2E /* AppDelegate.swift */; };
 		0A27EA472B8B293200AF1A2E /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A27EA462B8B293200AF1A2E /* AlertView.swift */; };
 		0A29EF422BB05B75007D411E /* CameraPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A29EF412BB05B75007D411E /* CameraPickerView.swift */; };
+		0A3310F82C2937F800DC0086 /* ElasticScrollContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3310F72C2937F800DC0086 /* ElasticScrollContentView.swift */; };
+		0A3310FC2C2938AD00DC0086 /* ElasticMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3310FB2C2938A800DC0086 /* ElasticMessage.swift */; };
+		0A3310FE2C293B1700DC0086 /* ElasticScrollHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3310FD2C293B1700DC0086 /* ElasticScrollHomeView.swift */; };
+		0A3311012C29501D00DC0086 /* OffsetHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3311002C29501D00DC0086 /* OffsetHelper.swift */; };
+		0A3311032C295CBA00DC0086 /* View+ElasticExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3311022C295CBA00DC0086 /* View+ElasticExtensions.swift */; };
 		0A3815782BDA26D600634A8B /* MaterialCarouselContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3815772BDA26D600634A8B /* MaterialCarouselContentView.swift */; };
 		0A38157A2BDA270400634A8B /* MaterialCarouselHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3815792BDA270400634A8B /* MaterialCarouselHomeView.swift */; };
 		0A38157C2BDA279800634A8B /* MaterialCarouselCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A38157B2BDA279800634A8B /* MaterialCarouselCard.swift */; };
@@ -225,6 +230,11 @@
 		0A27EA442B8B28EB00AF1A2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A27EA462B8B293200AF1A2E /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		0A29EF412BB05B75007D411E /* CameraPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPickerView.swift; sourceTree = "<group>"; };
+		0A3310F72C2937F800DC0086 /* ElasticScrollContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElasticScrollContentView.swift; sourceTree = "<group>"; };
+		0A3310FB2C2938A800DC0086 /* ElasticMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElasticMessage.swift; sourceTree = "<group>"; };
+		0A3310FD2C293B1700DC0086 /* ElasticScrollHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElasticScrollHomeView.swift; sourceTree = "<group>"; };
+		0A3311002C29501D00DC0086 /* OffsetHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetHelper.swift; sourceTree = "<group>"; };
+		0A3311022C295CBA00DC0086 /* View+ElasticExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ElasticExtensions.swift"; sourceTree = "<group>"; };
 		0A3815772BDA26D600634A8B /* MaterialCarouselContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialCarouselContentView.swift; sourceTree = "<group>"; };
 		0A3815792BDA270400634A8B /* MaterialCarouselHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialCarouselHomeView.swift; sourceTree = "<group>"; };
 		0A38157B2BDA279800634A8B /* MaterialCarouselCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialCarouselCard.swift; sourceTree = "<group>"; };
@@ -486,6 +496,42 @@
 			path = RangeSlider;
 			sourceTree = "<group>";
 		};
+		0A3310F62C2937DF00DC0086 /* ElasticScrollAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				0A3310FF2C294B0500DC0086 /* Helpers */,
+				0A3310FA2C29389500DC0086 /* Views */,
+				0A3310F92C29388600DC0086 /* Models */,
+				0A3310F72C2937F800DC0086 /* ElasticScrollContentView.swift */,
+			);
+			path = ElasticScrollAnimation;
+			sourceTree = "<group>";
+		};
+		0A3310F92C29388600DC0086 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0A3310FB2C2938A800DC0086 /* ElasticMessage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0A3310FA2C29389500DC0086 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0A3310FD2C293B1700DC0086 /* ElasticScrollHomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0A3310FF2C294B0500DC0086 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0A3311002C29501D00DC0086 /* OffsetHelper.swift */,
+				0A3311022C295CBA00DC0086 /* View+ElasticExtensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		0A3815762BDA268300634A8B /* MaterialCarousel */ = {
 			isa = PBXGroup;
 			children = (
@@ -681,6 +727,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0A3310F62C2937DF00DC0086 /* ElasticScrollAnimation */,
 				0A411CAF2C20606E00806CFE /* FloatingTabBariPadOS */,
 				0A411CAC2C20565200806CFE /* MeshGradient */,
 				0A6B1A082C117F3C005F372A /* VerticalCarousel */,
@@ -1648,10 +1695,12 @@
 				0A8B70F12BCC35A50032F794 /* AnimatedPageIndicatorHomeView.swift in Sources */,
 				0A55A0A02B89F6A300FB6C1E /* URLImage.swift in Sources */,
 				0A426D832BE8F71200809254 /* GridItem.swift in Sources */,
+				0A3310F82C2937F800DC0086 /* ElasticScrollContentView.swift in Sources */,
 				0AFDFD9E2BCD093D00DF7DF4 /* DynamicTabIndicatorsContentView.swift in Sources */,
 				0A4BDBB72BE6C4A200B4E8E7 /* DateTF.swift in Sources */,
 				0A115B652BC7DBBE002628A1 /* AnimationEndCallBack.swift in Sources */,
 				0A48B7092BBC6DE900060277 /* RatioMainView.swift in Sources */,
+				0A3311012C29501D00DC0086 /* OffsetHelper.swift in Sources */,
 				0AFDFD932BCCF83900DF7DF4 /* LoopingScrollViewContentView.swift in Sources */,
 				0A4BDBB42BE6C47A00B4E8E7 /* DateTextFieldContentView.swift in Sources */,
 				0A55A09F2B89F6A300FB6C1E /* Photo.swift in Sources */,
@@ -1674,6 +1723,7 @@
 				0A6F0E9B2BC129940038D412 /* Download.swift in Sources */,
 				0A426D7F2BE8F57800809254 /* GridAnimationContentView.swift in Sources */,
 				0A8B70FE2BCC60E90032F794 /* ReelView.swift in Sources */,
+				0A3310FE2C293B1700DC0086 /* ElasticScrollHomeView.swift in Sources */,
 				0A0790F42B8DC21E00CFB197 /* BottomCustomAlertContentView.swift in Sources */,
 				0A27EA452B8B28EB00AF1A2E /* AppDelegate.swift in Sources */,
 				0A6B1A0A2C117F52005F372A /* VerticalCarouselContentView.swift in Sources */,
@@ -1699,6 +1749,8 @@
 				0A48B7052BBC66B900060277 /* ListsCardView.swift in Sources */,
 				0A55A0B22B89F96900FB6C1E /* CustomToastsContentView.swift in Sources */,
 				0AB9BD4B2BCA564700288609 /* Extensions.swift in Sources */,
+				0A3310FC2C2938AD00DC0086 /* ElasticMessage.swift in Sources */,
+				0A3311032C295CBA00DC0086 /* View+ElasticExtensions.swift in Sources */,
 				0AFDFDA52BCD0A5700DF7DF4 /* DynamicTab.swift in Sources */,
 				0A426D852BE8F90800809254 /* GridAnimationHomeView.swift in Sources */,
 				0AFD278E2C098F110031AA77 /* TabViewOffsetContentView.swift in Sources */,
