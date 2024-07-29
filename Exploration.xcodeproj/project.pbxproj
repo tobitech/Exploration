@@ -167,6 +167,9 @@
 		0AE8FFFA2C06F67C000B0A5A /* FlipClockTextEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8FFF92C06F67C000B0A5A /* FlipClockTextEffect.swift */; };
 		0AE9DC1F2BFBDCE7004989C8 /* CustomCameraContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE9DC1E2BFBDCE7004989C8 /* CustomCameraContentView.swift */; };
 		0AE9DC212BFBDF15004989C8 /* CustomCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE9DC202BFBDF15004989C8 /* CustomCameraView.swift */; };
+		0AEF03402C5804C200FA1003 /* WalkthrougAnimationContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEF033F2C5804C200FA1003 /* WalkthrougAnimationContentView.swift */; };
+		0AEF03432C5842F100FA1003 /* IntroItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEF03422C5842F100FA1003 /* IntroItem.swift */; };
+		0AEF03462C58496300FA1003 /* WalkthroughAnimationHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEF03452C58496300FA1003 /* WalkthroughAnimationHomeView.swift */; };
 		0AFB85122BEF55E500203CEF /* PhotosAppContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFB85112BEF55E500203CEF /* PhotosAppContentView.swift */; };
 		0AFB85162BEF565C00203CEF /* TPhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFB85152BEF565C00203CEF /* TPhotoItem.swift */; };
 		0AFB85182BEF567D00203CEF /* PhotosAppHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFB85172BEF567D00203CEF /* PhotosAppHomeView.swift */; };
@@ -376,6 +379,9 @@
 		0AE8FFF92C06F67C000B0A5A /* FlipClockTextEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipClockTextEffect.swift; sourceTree = "<group>"; };
 		0AE9DC1E2BFBDCE7004989C8 /* CustomCameraContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraContentView.swift; sourceTree = "<group>"; };
 		0AE9DC202BFBDF15004989C8 /* CustomCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraView.swift; sourceTree = "<group>"; };
+		0AEF033F2C5804C200FA1003 /* WalkthrougAnimationContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthrougAnimationContentView.swift; sourceTree = "<group>"; };
+		0AEF03422C5842F100FA1003 /* IntroItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroItem.swift; sourceTree = "<group>"; };
+		0AEF03452C58496300FA1003 /* WalkthroughAnimationHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughAnimationHomeView.swift; sourceTree = "<group>"; };
 		0AFB85112BEF55E500203CEF /* PhotosAppContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosAppContentView.swift; sourceTree = "<group>"; };
 		0AFB85152BEF565C00203CEF /* TPhotoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPhotoItem.swift; sourceTree = "<group>"; };
 		0AFB85172BEF567D00203CEF /* PhotosAppHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosAppHomeView.swift; sourceTree = "<group>"; };
@@ -727,6 +733,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0AEF033E2C5804AC00FA1003 /* WalkthroughAnimation */,
 				0A3310F62C2937DF00DC0086 /* ElasticScrollAnimation */,
 				0A411CAF2C20606E00806CFE /* FloatingTabBariPadOS */,
 				0A411CAC2C20565200806CFE /* MeshGradient */,
@@ -1436,6 +1443,32 @@
 			path = CustomCameraView;
 			sourceTree = "<group>";
 		};
+		0AEF033E2C5804AC00FA1003 /* WalkthroughAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				0AEF03442C58493800FA1003 /* Views */,
+				0AEF03412C5842E500FA1003 /* Model */,
+				0AEF033F2C5804C200FA1003 /* WalkthrougAnimationContentView.swift */,
+			);
+			path = WalkthroughAnimation;
+			sourceTree = "<group>";
+		};
+		0AEF03412C5842E500FA1003 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0AEF03422C5842F100FA1003 /* IntroItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0AEF03442C58493800FA1003 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0AEF03452C58496300FA1003 /* WalkthroughAnimationHomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		0AFB85102BEF55D500203CEF /* PhotosApp */ = {
 			isa = PBXGroup;
 			children = (
@@ -1729,6 +1762,7 @@
 				0A6B1A0A2C117F52005F372A /* VerticalCarouselContentView.swift in Sources */,
 				0A3815782BDA26D600634A8B /* MaterialCarouselContentView.swift in Sources */,
 				0A8B70F42BCC5AC60032F794 /* ReelsLayoutContentView.swift in Sources */,
+				0AEF03432C5842F100FA1003 /* IntroItem.swift in Sources */,
 				0AA76A9E2BDA2F1000B246F5 /* MaterialOffsetReader.swift in Sources */,
 				0A27EA472B8B293200AF1A2E /* AlertView.swift in Sources */,
 				0A70AD442BB2936B008794F4 /* FeedView.swift in Sources */,
@@ -1791,6 +1825,7 @@
 				0AB429382BE9F20F00FF20D4 /* DetailView.swift in Sources */,
 				0A4DCE532BC9CF6B0042C928 /* Crop.swift in Sources */,
 				0A55A1052B8A168F00FB6C1E /* PokemonList.swift in Sources */,
+				0AEF03402C5804C200FA1003 /* WalkthrougAnimationContentView.swift in Sources */,
 				0AFDFD962BCCF86900DF7DF4 /* LoopingScrollViewHomeView.swift in Sources */,
 				0A115B602BC7CD29002628A1 /* ScrollingTab.swift in Sources */,
 				0AFDFD9B2BCCF9AE00DF7DF4 /* LoopingScrollView.swift in Sources */,
@@ -1860,6 +1895,7 @@
 				0A115B5D2BC7CD11002628A1 /* AutoScrollingHomeView.swift in Sources */,
 				0AFB85162BEF565C00203CEF /* TPhotoItem.swift in Sources */,
 				0AB9BD572BCA8DA400288609 /* StoryBundle.swift in Sources */,
+				0AEF03462C58496300FA1003 /* WalkthroughAnimationHomeView.swift in Sources */,
 				0AA952F12BBFD86E007E62B1 /* HoldDownButton.swift in Sources */,
 				0A55A09C2B89F6A300FB6C1E /* ImageLoader.swift in Sources */,
 			);
@@ -2026,7 +2062,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2060,7 +2096,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

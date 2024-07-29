@@ -3,16 +3,13 @@ import SwiftUI
 struct NetworthCardView: View {
 	var body: some View {
 		VStack(alignment: .leading) {
-			// Label("Net worth", systemImage: "suitcase")
 			Text("Net worth")
 				.font(.footnote)
 				.fontWeight(.medium)
-				// .textCase(.uppercase)
 				.foregroundStyle(.secondary)
 			HStack {
 				Text("$232k")
 					.font(.title)
-					//.fontWeight(.medium)
 				Image(systemName: "arrow.up.right")
 					.foregroundStyle(.green)
 			}

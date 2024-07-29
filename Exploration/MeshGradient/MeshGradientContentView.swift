@@ -21,49 +21,50 @@ struct MeshGradientContentView: View {
 	]
 	
 	var body: some View {
-		MeshGradient(
-			width: 3,
-			height: 3,
-			points: [
-				/// This is a 3x3 grid, with each color location represented by x and y values.
-//				.init(0, 0), .init(0.5, 0), .init(1, 0),
-//				.init(0, 0.5), .init(0.5, 0.5), .init(1, 0.5),
-//				.init(0, 1), .init(0.5, 1), .init(1, 1),
-				.p(top[0]), .p(top[1]), .p(top[2]),
-				.p(center[0]), .p(center[1]), .p(center[2]),
-				.p(bottom[0]), .p(bottom[1]), .p(bottom[2]),
-			],
-			colors: [
-				.red, .orange, .pink,
-				.pink, .green, .yellow,
-				.indigo, .mint, .cyan
-			]
-		)
-		.overlay {
-			GeometryReader {
-				let size = $0.size
-				
-				VStack(spacing: 0) {
-					HStack(spacing: 0) {
-						CircleView($top[0], size)
-						CircleView($top[1], size)
-						CircleView($top[2], size, true)
-					}
-					HStack(spacing: 0) {
-						CircleView($center[0], size)
-						CircleView($center[1], size)
-						CircleView($center[2], size, true)
-					}
-					.frame(maxHeight: .infinity)
-					HStack(spacing: 0) {
-						CircleView($bottom[0], size)
-						CircleView($bottom[1], size)
-						CircleView($bottom[2], size, true)
-					}
-				}
-			}
-		}
-		.coordinateSpace(.named("MESH"))
+		Text("")
+//		MeshGradient(
+//			width: 3,
+//			height: 3,
+//			points: [
+//				/// This is a 3x3 grid, with each color location represented by x and y values.
+////				.init(0, 0), .init(0.5, 0), .init(1, 0),
+////				.init(0, 0.5), .init(0.5, 0.5), .init(1, 0.5),
+////				.init(0, 1), .init(0.5, 1), .init(1, 1),
+//				.p(top[0]), .p(top[1]), .p(top[2]),
+//				.p(center[0]), .p(center[1]), .p(center[2]),
+//				.p(bottom[0]), .p(bottom[1]), .p(bottom[2]),
+//			],
+//			colors: [
+//				.red, .orange, .pink,
+//				.pink, .green, .yellow,
+//				.indigo, .mint, .cyan
+//			]
+//		)
+//		.overlay {
+//			GeometryReader {
+//				let size = $0.size
+//				
+//				VStack(spacing: 0) {
+//					HStack(spacing: 0) {
+//						CircleView($top[0], size)
+//						CircleView($top[1], size)
+//						CircleView($top[2], size, true)
+//					}
+//					HStack(spacing: 0) {
+//						CircleView($center[0], size)
+//						CircleView($center[1], size)
+//						CircleView($center[2], size, true)
+//					}
+//					.frame(maxHeight: .infinity)
+//					HStack(spacing: 0) {
+//						CircleView($bottom[0], size)
+//						CircleView($bottom[1], size)
+//						CircleView($bottom[2], size, true)
+//					}
+//				}
+//			}
+//		}
+//		.coordinateSpace(.named("MESH"))
 	}
 	
 	@ViewBuilder

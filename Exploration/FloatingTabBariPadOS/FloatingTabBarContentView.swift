@@ -11,24 +11,24 @@ import SwiftUI
 struct FloatingTabBarContentView: View {
 	var body: some View {
 		TabView {
-			Tab.init("Home", systemImage: "house.fill") {
-				
-			}
-			
-			Tab.init("Search", systemImage: "magnifyingglass", role: .search) {
-				
-			}
-			
-			Tab.init("Notifications", systemImage: "bell.fill") {
-				
-			}
-			
-			Tab.init("Settings", systemImage: "gearshape") {
-				
-			}
+//			Tab.init("Home", systemImage: "house.fill") {
+//				
+//			}
+//			
+//			Tab.init("Search", systemImage: "magnifyingglass", role: .search) {
+//				
+//			}
+//			
+//			Tab.init("Notifications", systemImage: "bell.fill") {
+//				
+//			}
+//			
+//			Tab.init("Settings", systemImage: "gearshape") {
+//				
+//			}
 		}
 		// .tabViewStyle(.tabBarOnly)
-		.tabViewStyle(.sidebarAdaptable)
+		//.tabViewStyle(.sidebarAdaptable)
 	}
 }
 
