@@ -38,6 +38,7 @@
 		0A426D832BE8F71200809254 /* GridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A426D822BE8F71200809254 /* GridItem.swift */; };
 		0A426D852BE8F90800809254 /* GridAnimationHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A426D842BE8F90800809254 /* GridAnimationHomeView.swift */; };
 		0A426D872BE8FD5E00809254 /* UICoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A426D862BE8FD5E00809254 /* UICoordinator.swift */; };
+		0A4304CC2C5D2F85004040FF /* FullscreenModalContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4304CB2C5D2F85004040FF /* FullscreenModalContentView.swift */; };
 		0A46663E2C5BFADB00B9CB7C /* FloatingSheetContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A46663D2C5BFADB00B9CB7C /* FloatingSheetContentView.swift */; };
 		0A4666412C5BFB8400B9CB7C /* FloatingSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4666402C5BFB8400B9CB7C /* FloatingSheet.swift */; };
 		0A48B6F92BBC51D500060277 /* RatioContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A48B6F82BBC51D500060277 /* RatioContentView.swift */; };
@@ -251,6 +252,7 @@
 		0A426D822BE8F71200809254 /* GridItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridItem.swift; sourceTree = "<group>"; };
 		0A426D842BE8F90800809254 /* GridAnimationHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridAnimationHomeView.swift; sourceTree = "<group>"; };
 		0A426D862BE8FD5E00809254 /* UICoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICoordinator.swift; sourceTree = "<group>"; };
+		0A4304CB2C5D2F85004040FF /* FullscreenModalContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullscreenModalContentView.swift; sourceTree = "<group>"; };
 		0A46663D2C5BFADB00B9CB7C /* FloatingSheetContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingSheetContentView.swift; sourceTree = "<group>"; };
 		0A4666402C5BFB8400B9CB7C /* FloatingSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingSheet.swift; sourceTree = "<group>"; };
 		0A48B6F82BBC51D500060277 /* RatioContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatioContentView.swift; sourceTree = "<group>"; };
@@ -602,6 +604,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		0A4304CA2C5D2F6F004040FF /* CustomFullScreenModal */ = {
+			isa = PBXGroup;
+			children = (
+				0A4304CB2C5D2F85004040FF /* FullscreenModalContentView.swift */,
+			);
+			path = CustomFullScreenModal;
+			sourceTree = "<group>";
+		};
 		0A46663C2C5BFA9C00B9CB7C /* FloatingBottomSheets */ = {
 			isa = PBXGroup;
 			children = (
@@ -756,6 +766,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0A4304CA2C5D2F6F004040FF /* CustomFullScreenModal */,
 				0A46663C2C5BFA9C00B9CB7C /* FloatingBottomSheets */,
 				0AEF033E2C5804AC00FA1003 /* WalkthroughAnimation */,
 				0A3310F62C2937DF00DC0086 /* ElasticScrollAnimation */,
@@ -1855,6 +1866,7 @@
 				0AEF03402C5804C200FA1003 /* WalkthrougAnimationContentView.swift in Sources */,
 				0AFDFD962BCCF86900DF7DF4 /* LoopingScrollViewHomeView.swift in Sources */,
 				0A115B602BC7CD29002628A1 /* ScrollingTab.swift in Sources */,
+				0A4304CC2C5D2F85004040FF /* FullscreenModalContentView.swift in Sources */,
 				0AFDFD9B2BCCF9AE00DF7DF4 /* LoopingScrollView.swift in Sources */,
 				0AC96E962BC7199800C31CC1 /* CarouselHomeView.swift in Sources */,
 				0A4666412C5BFB8400B9CB7C /* FloatingSheet.swift in Sources */,
