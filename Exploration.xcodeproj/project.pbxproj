@@ -23,6 +23,7 @@
 		0A27EA452B8B28EB00AF1A2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A27EA442B8B28EB00AF1A2E /* AppDelegate.swift */; };
 		0A27EA472B8B293200AF1A2E /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A27EA462B8B293200AF1A2E /* AlertView.swift */; };
 		0A29EF422BB05B75007D411E /* CameraPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A29EF412BB05B75007D411E /* CameraPickerView.swift */; };
+		0A32C61E2C59A41F0098BE20 /* EthereumBalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A32C61D2C59A41F0098BE20 /* EthereumBalanceView.swift */; };
 		0A3310F82C2937F800DC0086 /* ElasticScrollContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3310F72C2937F800DC0086 /* ElasticScrollContentView.swift */; };
 		0A3310FC2C2938AD00DC0086 /* ElasticMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3310FB2C2938A800DC0086 /* ElasticMessage.swift */; };
 		0A3310FE2C293B1700DC0086 /* ElasticScrollHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3310FD2C293B1700DC0086 /* ElasticScrollHomeView.swift */; };
@@ -37,6 +38,8 @@
 		0A426D832BE8F71200809254 /* GridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A426D822BE8F71200809254 /* GridItem.swift */; };
 		0A426D852BE8F90800809254 /* GridAnimationHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A426D842BE8F90800809254 /* GridAnimationHomeView.swift */; };
 		0A426D872BE8FD5E00809254 /* UICoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A426D862BE8FD5E00809254 /* UICoordinator.swift */; };
+		0A46663E2C5BFADB00B9CB7C /* FloatingSheetContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A46663D2C5BFADB00B9CB7C /* FloatingSheetContentView.swift */; };
+		0A4666412C5BFB8400B9CB7C /* FloatingSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4666402C5BFB8400B9CB7C /* FloatingSheet.swift */; };
 		0A48B6F92BBC51D500060277 /* RatioContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A48B6F82BBC51D500060277 /* RatioContentView.swift */; };
 		0A48B6FB2BBC524C00060277 /* CashFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A48B6FA2BBC524C00060277 /* CashFlowView.swift */; };
 		0A48B6FD2BBC550400060277 /* SavingsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A48B6FC2BBC550400060277 /* SavingsCardView.swift */; };
@@ -233,6 +236,7 @@
 		0A27EA442B8B28EB00AF1A2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A27EA462B8B293200AF1A2E /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		0A29EF412BB05B75007D411E /* CameraPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPickerView.swift; sourceTree = "<group>"; };
+		0A32C61D2C59A41F0098BE20 /* EthereumBalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumBalanceView.swift; sourceTree = "<group>"; };
 		0A3310F72C2937F800DC0086 /* ElasticScrollContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElasticScrollContentView.swift; sourceTree = "<group>"; };
 		0A3310FB2C2938A800DC0086 /* ElasticMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElasticMessage.swift; sourceTree = "<group>"; };
 		0A3310FD2C293B1700DC0086 /* ElasticScrollHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElasticScrollHomeView.swift; sourceTree = "<group>"; };
@@ -247,6 +251,8 @@
 		0A426D822BE8F71200809254 /* GridItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridItem.swift; sourceTree = "<group>"; };
 		0A426D842BE8F90800809254 /* GridAnimationHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridAnimationHomeView.swift; sourceTree = "<group>"; };
 		0A426D862BE8FD5E00809254 /* UICoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICoordinator.swift; sourceTree = "<group>"; };
+		0A46663D2C5BFADB00B9CB7C /* FloatingSheetContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingSheetContentView.swift; sourceTree = "<group>"; };
+		0A4666402C5BFB8400B9CB7C /* FloatingSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingSheet.swift; sourceTree = "<group>"; };
 		0A48B6F82BBC51D500060277 /* RatioContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatioContentView.swift; sourceTree = "<group>"; };
 		0A48B6FA2BBC524C00060277 /* CashFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashFlowView.swift; sourceTree = "<group>"; };
 		0A48B6FC2BBC550400060277 /* SavingsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsCardView.swift; sourceTree = "<group>"; };
@@ -596,6 +602,23 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		0A46663C2C5BFA9C00B9CB7C /* FloatingBottomSheets */ = {
+			isa = PBXGroup;
+			children = (
+				0A46663F2C5BFB7600B9CB7C /* Helpers */,
+				0A46663D2C5BFADB00B9CB7C /* FloatingSheetContentView.swift */,
+			);
+			path = FloatingBottomSheets;
+			sourceTree = "<group>";
+		};
+		0A46663F2C5BFB7600B9CB7C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0A4666402C5BFB8400B9CB7C /* FloatingSheet.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		0A48B6F72BBC51BD00060277 /* RatioOverview */ = {
 			isa = PBXGroup;
 			children = (
@@ -733,6 +756,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0A46663C2C5BFA9C00B9CB7C /* FloatingBottomSheets */,
 				0AEF033E2C5804AC00FA1003 /* WalkthroughAnimation */,
 				0A3310F62C2937DF00DC0086 /* ElasticScrollAnimation */,
 				0A411CAF2C20606E00806CFE /* FloatingTabBariPadOS */,
@@ -1465,6 +1489,7 @@
 			isa = PBXGroup;
 			children = (
 				0AEF03452C58496300FA1003 /* WalkthroughAnimationHomeView.swift */,
+				0A32C61D2C59A41F0098BE20 /* EthereumBalanceView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1759,6 +1784,7 @@
 				0A3310FE2C293B1700DC0086 /* ElasticScrollHomeView.swift in Sources */,
 				0A0790F42B8DC21E00CFB197 /* BottomCustomAlertContentView.swift in Sources */,
 				0A27EA452B8B28EB00AF1A2E /* AppDelegate.swift in Sources */,
+				0A46663E2C5BFADB00B9CB7C /* FloatingSheetContentView.swift in Sources */,
 				0A6B1A0A2C117F52005F372A /* VerticalCarouselContentView.swift in Sources */,
 				0A3815782BDA26D600634A8B /* MaterialCarouselContentView.swift in Sources */,
 				0A8B70F42BCC5AC60032F794 /* ReelsLayoutContentView.swift in Sources */,
@@ -1781,6 +1807,7 @@
 				0A4F4C632BD1526900247B3D /* ReceiptView.swift in Sources */,
 				0AFD27962C0A5FD90031AA77 /* ImageCropperContentView.swift in Sources */,
 				0A48B7052BBC66B900060277 /* ListsCardView.swift in Sources */,
+				0A32C61E2C59A41F0098BE20 /* EthereumBalanceView.swift in Sources */,
 				0A55A0B22B89F96900FB6C1E /* CustomToastsContentView.swift in Sources */,
 				0AB9BD4B2BCA564700288609 /* Extensions.swift in Sources */,
 				0A3310FC2C2938AD00DC0086 /* ElasticMessage.swift in Sources */,
@@ -1830,6 +1857,7 @@
 				0A115B602BC7CD29002628A1 /* ScrollingTab.swift in Sources */,
 				0AFDFD9B2BCCF9AE00DF7DF4 /* LoopingScrollView.swift in Sources */,
 				0AC96E962BC7199800C31CC1 /* CarouselHomeView.swift in Sources */,
+				0A4666412C5BFB8400B9CB7C /* FloatingSheet.swift in Sources */,
 				0A70AD422BB28A71008794F4 /* HomeView.swift in Sources */,
 				0A506E712BF10C42006775B9 /* HeroLayer.swift in Sources */,
 				0AC96E992BC71A3800C31CC1 /* CarouselPage.swift in Sources */,
