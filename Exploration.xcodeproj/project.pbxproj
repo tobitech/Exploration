@@ -169,6 +169,7 @@
 		0AE4FC9D2BE4E391005558AD /* CustomDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE4FC9C2BE4E391005558AD /* CustomDialog.swift */; };
 		0AE717C02C6C084000DD020C /* ScrollableNavTitleContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE717BF2C6C084000DD020C /* ScrollableNavTitleContentView.swift */; };
 		0AE717C22C6C087B00DD020C /* OffsetPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE717C12C6C087B00DD020C /* OffsetPreferenceKey.swift */; };
+		0AE717C42C6C093200DD020C /* ScrollableNavTitleContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE717C32C6C093200DD020C /* ScrollableNavTitleContentView2.swift */; };
 		0AE8FFF72C06F649000B0A5A /* FlipClockContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8FFF62C06F649000B0A5A /* FlipClockContentView.swift */; };
 		0AE8FFFA2C06F67C000B0A5A /* FlipClockTextEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8FFF92C06F67C000B0A5A /* FlipClockTextEffect.swift */; };
 		0AE9DC1F2BFBDCE7004989C8 /* CustomCameraContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE9DC1E2BFBDCE7004989C8 /* CustomCameraContentView.swift */; };
@@ -387,6 +388,7 @@
 		0AE4FC9C2BE4E391005558AD /* CustomDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDialog.swift; sourceTree = "<group>"; };
 		0AE717BF2C6C084000DD020C /* ScrollableNavTitleContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableNavTitleContentView.swift; sourceTree = "<group>"; };
 		0AE717C12C6C087B00DD020C /* OffsetPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetPreferenceKey.swift; sourceTree = "<group>"; };
+		0AE717C32C6C093200DD020C /* ScrollableNavTitleContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableNavTitleContentView2.swift; sourceTree = "<group>"; };
 		0AE8FFF62C06F649000B0A5A /* FlipClockContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipClockContentView.swift; sourceTree = "<group>"; };
 		0AE8FFF92C06F67C000B0A5A /* FlipClockTextEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipClockTextEffect.swift; sourceTree = "<group>"; };
 		0AE9DC1E2BFBDCE7004989C8 /* CustomCameraContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraContentView.swift; sourceTree = "<group>"; };
@@ -1461,6 +1463,7 @@
 			isa = PBXGroup;
 			children = (
 				0AE717BF2C6C084000DD020C /* ScrollableNavTitleContentView.swift */,
+				0AE717C32C6C093200DD020C /* ScrollableNavTitleContentView2.swift */,
 				0AE717C12C6C087B00DD020C /* OffsetPreferenceKey.swift */,
 			);
 			path = ScrollableNavTitle;
@@ -1884,6 +1887,7 @@
 				0A115B602BC7CD29002628A1 /* ScrollingTab.swift in Sources */,
 				0A4304CC2C5D2F85004040FF /* FullscreenModalContentView.swift in Sources */,
 				0AFDFD9B2BCCF9AE00DF7DF4 /* LoopingScrollView.swift in Sources */,
+				0AE717C42C6C093200DD020C /* ScrollableNavTitleContentView2.swift in Sources */,
 				0AC96E962BC7199800C31CC1 /* CarouselHomeView.swift in Sources */,
 				0A4666412C5BFB8400B9CB7C /* FloatingSheet.swift in Sources */,
 				0A70AD422BB28A71008794F4 /* HomeView.swift in Sources */,
