@@ -175,6 +175,10 @@
 		0AE8FFFA2C06F67C000B0A5A /* FlipClockTextEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8FFF92C06F67C000B0A5A /* FlipClockTextEffect.swift */; };
 		0AE9DC1F2BFBDCE7004989C8 /* CustomCameraContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE9DC1E2BFBDCE7004989C8 /* CustomCameraContentView.swift */; };
 		0AE9DC212BFBDF15004989C8 /* CustomCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE9DC202BFBDF15004989C8 /* CustomCameraView.swift */; };
+		0AEC6D9A2C73A5150097D21A /* FloatingTabsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEC6D992C73A5150097D21A /* FloatingTabsContentView.swift */; };
+		0AEC6D9D2C73A57E0097D21A /* FloatingTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEC6D9C2C73A57E0097D21A /* FloatingTab.swift */; };
+		0AEC6DA02C73A6290097D21A /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEC6D9F2C73A6290097D21A /* CustomTabBar.swift */; };
+		0AEC6DA22C73B9EE0097D21A /* MorphingSymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEC6DA12C73B9ED0097D21A /* MorphingSymbolView.swift */; };
 		0AEF03402C5804C200FA1003 /* WalkthrougAnimationContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEF033F2C5804C200FA1003 /* WalkthrougAnimationContentView.swift */; };
 		0AEF03432C5842F100FA1003 /* IntroItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEF03422C5842F100FA1003 /* IntroItem.swift */; };
 		0AEF03462C58496300FA1003 /* WalkthroughAnimationHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEF03452C58496300FA1003 /* WalkthroughAnimationHomeView.swift */; };
@@ -395,6 +399,10 @@
 		0AE8FFF92C06F67C000B0A5A /* FlipClockTextEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipClockTextEffect.swift; sourceTree = "<group>"; };
 		0AE9DC1E2BFBDCE7004989C8 /* CustomCameraContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraContentView.swift; sourceTree = "<group>"; };
 		0AE9DC202BFBDF15004989C8 /* CustomCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraView.swift; sourceTree = "<group>"; };
+		0AEC6D992C73A5150097D21A /* FloatingTabsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTabsContentView.swift; sourceTree = "<group>"; };
+		0AEC6D9C2C73A57E0097D21A /* FloatingTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTab.swift; sourceTree = "<group>"; };
+		0AEC6D9F2C73A6290097D21A /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		0AEC6DA12C73B9ED0097D21A /* MorphingSymbolView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorphingSymbolView.swift; sourceTree = "<group>"; };
 		0AEF033F2C5804C200FA1003 /* WalkthrougAnimationContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthrougAnimationContentView.swift; sourceTree = "<group>"; };
 		0AEF03422C5842F100FA1003 /* IntroItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroItem.swift; sourceTree = "<group>"; };
 		0AEF03452C58496300FA1003 /* WalkthroughAnimationHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughAnimationHomeView.swift; sourceTree = "<group>"; };
@@ -774,6 +782,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0AEC6D982C73A5070097D21A /* FloatingTabBar */,
 				0AAFDD462C717E5F008C17F5 /* Clock */,
 				0AE717BE2C6C081B00DD020C /* ScrollableNavTitle */,
 				0A4304CA2C5D2F6F004040FF /* CustomFullScreenModal */,
@@ -1506,6 +1515,33 @@
 			path = CustomCameraView;
 			sourceTree = "<group>";
 		};
+		0AEC6D982C73A5070097D21A /* FloatingTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				0AEC6D9E2C73A61B0097D21A /* Views */,
+				0AEC6D9B2C73A56D0097D21A /* Model */,
+				0AEC6D992C73A5150097D21A /* FloatingTabsContentView.swift */,
+			);
+			path = FloatingTabBar;
+			sourceTree = "<group>";
+		};
+		0AEC6D9B2C73A56D0097D21A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0AEC6D9C2C73A57E0097D21A /* FloatingTab.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0AEC6D9E2C73A61B0097D21A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0AEC6D9F2C73A6290097D21A /* CustomTabBar.swift */,
+				0AEC6DA12C73B9ED0097D21A /* MorphingSymbolView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		0AEF033E2C5804AC00FA1003 /* WalkthroughAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -1817,6 +1853,7 @@
 				0ABBD0222BD8F81300CE9EDF /* Particle.swift in Sources */,
 				0AE4FC9D2BE4E391005558AD /* CustomDialog.swift in Sources */,
 				0A6F0E982BC129590038D412 /* AnimatedChartsContentView.swift in Sources */,
+				0AEC6DA02C73A6290097D21A /* CustomTabBar.swift in Sources */,
 				0A6F0E9B2BC129940038D412 /* Download.swift in Sources */,
 				0A426D7F2BE8F57800809254 /* GridAnimationContentView.swift in Sources */,
 				0A8B70FE2BCC60E90032F794 /* ReelView.swift in Sources */,
@@ -1874,6 +1911,7 @@
 				0A0FA8772BBE9AB10036139E /* FloatingButton.swift in Sources */,
 				0A8B70FC2BCC5DD20032F794 /* ReelsLayoutHomeView.swift in Sources */,
 				0A9232132BD3AB8D008B5F24 /* RectKey.swift in Sources */,
+				0AEC6D9D2C73A57E0097D21A /* FloatingTab.swift in Sources */,
 				0A8B71002BCC61320032F794 /* CustomVideoPlayer.swift in Sources */,
 				0AB9BD502BCA886C00288609 /* IGStoryTimerContentView.swift in Sources */,
 				0A48B6FD2BBC550400060277 /* SavingsCardView.swift in Sources */,
@@ -1897,6 +1935,7 @@
 				0AEF03402C5804C200FA1003 /* WalkthrougAnimationContentView.swift in Sources */,
 				0AFDFD962BCCF86900DF7DF4 /* LoopingScrollViewHomeView.swift in Sources */,
 				0A115B602BC7CD29002628A1 /* ScrollingTab.swift in Sources */,
+				0AEC6D9A2C73A5150097D21A /* FloatingTabsContentView.swift in Sources */,
 				0A4304CC2C5D2F85004040FF /* FullscreenModalContentView.swift in Sources */,
 				0AFDFD9B2BCCF9AE00DF7DF4 /* LoopingScrollView.swift in Sources */,
 				0AE717C42C6C093200DD020C /* ScrollableNavTitleContentView2.swift in Sources */,
@@ -1947,6 +1986,7 @@
 				0AB4293C2BEA090B00FF20D4 /* DummyContentView.swift in Sources */,
 				0A115B572BC7C13D002628A1 /* PageControl.swift in Sources */,
 				0A4DCE4D2BC9CD2B0042C928 /* CropImageContentView.swift in Sources */,
+				0AEC6DA22C73B9EE0097D21A /* MorphingSymbolView.swift in Sources */,
 				0A506E6F2BF108F4006775B9 /* PhotosDetailView.swift in Sources */,
 				0A9232112BD39E6E008B5F24 /* TabModel.swift in Sources */,
 				0A5ECA0A2BDA61CE00BDFB72 /* MovableGridContentView.swift in Sources */,
