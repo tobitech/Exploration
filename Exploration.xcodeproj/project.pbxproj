@@ -141,6 +141,7 @@
 		0AB4293A2BEA053300FF20D4 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB429392BEA053300FF20D4 /* ImageView.swift */; };
 		0AB4293C2BEA090B00FF20D4 /* DummyContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB4293B2BEA090B00FF20D4 /* DummyContentView.swift */; };
 		0AB4293F2BEA0FC900FF20D4 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB4293E2BEA0FC900FF20D4 /* View+Extensions.swift */; };
+		0AB74F092C6EB0D0001BDFE2 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB74F082C6EB0D0001BDFE2 /* ClockView.swift */; };
 		0AB9BD442BCA515C00288609 /* ControlCenterContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB9BD432BCA515C00288609 /* ControlCenterContentView.swift */; };
 		0AB9BD482BCA51DB00288609 /* ControlCenterHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB9BD472BCA51DB00288609 /* ControlCenterHomeView.swift */; };
 		0AB9BD4B2BCA564700288609 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB9BD4A2BCA564700288609 /* Extensions.swift */; };
@@ -360,6 +361,7 @@
 		0AB429392BEA053300FF20D4 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		0AB4293B2BEA090B00FF20D4 /* DummyContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyContentView.swift; sourceTree = "<group>"; };
 		0AB4293E2BEA0FC900FF20D4 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		0AB74F082C6EB0D0001BDFE2 /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		0AB9BD432BCA515C00288609 /* ControlCenterContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlCenterContentView.swift; sourceTree = "<group>"; };
 		0AB9BD472BCA51DB00288609 /* ControlCenterHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlCenterHomeView.swift; sourceTree = "<group>"; };
 		0AB9BD4A2BCA564700288609 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -772,6 +774,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0AAFDD462C717E5F008C17F5 /* Clock */,
 				0AE717BE2C6C081B00DD020C /* ScrollableNavTitle */,
 				0A4304CA2C5D2F6F004040FF /* CustomFullScreenModal */,
 				0A46663C2C5BFA9C00B9CB7C /* FloatingBottomSheets */,
@@ -1255,6 +1258,14 @@
 				0AA952F02BBFD86E007E62B1 /* HoldDownButton.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0AAFDD462C717E5F008C17F5 /* Clock */ = {
+			isa = PBXGroup;
+			children = (
+				0AB74F082C6EB0D0001BDFE2 /* ClockView.swift */,
+			);
+			path = Clock;
 			sourceTree = "<group>";
 		};
 		0AB4293D2BEA0FB900FF20D4 /* Helpers */ = {
@@ -1880,6 +1891,7 @@
 				0A55A0FD2B8A121200FB6C1E /* PokemonLoader.swift in Sources */,
 				0A29EF422BB05B75007D411E /* CameraPickerView.swift in Sources */,
 				0AB429382BE9F20F00FF20D4 /* DetailView.swift in Sources */,
+				0AB74F092C6EB0D0001BDFE2 /* ClockView.swift in Sources */,
 				0A4DCE532BC9CF6B0042C928 /* Crop.swift in Sources */,
 				0A55A1052B8A168F00FB6C1E /* PokemonList.swift in Sources */,
 				0AEF03402C5804C200FA1003 /* WalkthrougAnimationContentView.swift in Sources */,
