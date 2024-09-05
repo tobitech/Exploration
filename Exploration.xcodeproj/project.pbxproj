@@ -119,6 +119,8 @@
 		0A70AD442BB2936B008794F4 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A70AD432BB2936B008794F4 /* FeedView.swift */; };
 		0A70AD472BB29662008794F4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A70AD462BB29662008794F4 /* Post.swift */; };
 		0A70AD492BB297A6008794F4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A70AD482BB297A6008794F4 /* MainView.swift */; };
+		0A7111812C89925B00683DC3 /* PopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7111802C89925B00683DC3 /* PopView.swift */; };
+		0A7111832C89926D00683DC3 /* PopContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7111822C89926D00683DC3 /* PopContentView.swift */; };
 		0A76438B2BF360C100BB6D5D /* PhotosView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A76438A2BF360C100BB6D5D /* PhotosView+Extensions.swift */; };
 		0A77C0DC2BDCC2E00016F835 /* FlipBookContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77C0DB2BDCC2E00016F835 /* FlipBookContentView.swift */; };
 		0A8118E42BB712AF00889DA7 /* PinchZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8118E32BB712AF00889DA7 /* PinchZoom.swift */; };
@@ -349,6 +351,8 @@
 		0A70AD432BB2936B008794F4 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		0A70AD462BB29662008794F4 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		0A70AD482BB297A6008794F4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		0A7111802C89925B00683DC3 /* PopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopView.swift; sourceTree = "<group>"; };
+		0A7111822C89926D00683DC3 /* PopContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopContentView.swift; sourceTree = "<group>"; };
 		0A76438A2BF360C100BB6D5D /* PhotosView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PhotosView+Extensions.swift"; sourceTree = "<group>"; };
 		0A77C0DB2BDCC2E00016F835 /* FlipBookContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipBookContentView.swift; sourceTree = "<group>"; };
 		0A8118E32BB712AF00889DA7 /* PinchZoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchZoom.swift; sourceTree = "<group>"; };
@@ -804,6 +808,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0A71117F2C89920500683DC3 /* CustomAlertDialog */,
 				0AD5E4F82C79BCFF003C76BF /* QuoteTags */,
 				0A02C0112C7794F000AD8789 /* CoverFlowCarousel */,
 				0AEC6D982C73A5070097D21A /* FloatingTabBar */,
@@ -1175,6 +1180,15 @@
 				0A70AD462BB29662008794F4 /* Post.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		0A71117F2C89920500683DC3 /* CustomAlertDialog */ = {
+			isa = PBXGroup;
+			children = (
+				0A7111802C89925B00683DC3 /* PopView.swift */,
+				0A7111822C89926D00683DC3 /* PopContentView.swift */,
+			);
+			path = CustomAlertDialog;
 			sourceTree = "<group>";
 		};
 		0A7643892BF360AB00BB6D5D /* Helpers */ = {
@@ -1887,6 +1901,7 @@
 				0ACFD6E42BA5DD3A0014336E /* HorizontalWheelPickerContentView.swift in Sources */,
 				0ABBD0222BD8F81300CE9EDF /* Particle.swift in Sources */,
 				0AE4FC9D2BE4E391005558AD /* CustomDialog.swift in Sources */,
+				0A7111832C89926D00683DC3 /* PopContentView.swift in Sources */,
 				0A6F0E982BC129590038D412 /* AnimatedChartsContentView.swift in Sources */,
 				0AEC6DA02C73A6290097D21A /* CustomTabBar.swift in Sources */,
 				0A6F0E9B2BC129940038D412 /* Download.swift in Sources */,
@@ -2037,6 +2052,7 @@
 				0A55A0F82B8A019300FB6C1E /* LockView.swift in Sources */,
 				0AB9BD4D2BCA5C6100288609 /* SliderConfig.swift in Sources */,
 				0AB4293F2BEA0FC900FF20D4 /* View+Extensions.swift in Sources */,
+				0A7111812C89925B00683DC3 /* PopView.swift in Sources */,
 				0A55A09E2B89F6A300FB6C1E /* PhotoListViewModel.swift in Sources */,
 				0A506E732BF10C9C006775B9 /* HeroKey.swift in Sources */,
 				0A27EA432B8B28C400AF1A2E /* AlertConfig.swift in Sources */,
