@@ -138,6 +138,9 @@
 		0A9232112BD39E6E008B5F24 /* TabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9232102BD39E6E008B5F24 /* TabModel.swift */; };
 		0A9232132BD3AB8D008B5F24 /* RectKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9232122BD3AB8D008B5F24 /* RectKey.swift */; };
 		0A9232152BD3AD42008B5F24 /* Interpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9232142BD3AD42008B5F24 /* Interpolation.swift */; };
+		0A9BC9222C8E7AF200362FB1 /* FBGradientMaskContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9BC9212C8E7AF200362FB1 /* FBGradientMaskContentView.swift */; };
+		0A9BC9242C8E7B1500362FB1 /* FBGradientMaskHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9BC9232C8E7B1500362FB1 /* FBGradientMaskHomeView.swift */; };
+		0A9BC9262C8E7B8200362FB1 /* FBModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9BC9252C8E7B8200362FB1 /* FBModels.swift */; };
 		0AA76A9E2BDA2F1000B246F5 /* MaterialOffsetReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA76A9D2BDA2F1000B246F5 /* MaterialOffsetReader.swift */; };
 		0AA952EE2BBFD836007E62B1 /* HoldDownButtonContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA952ED2BBFD836007E62B1 /* HoldDownButtonContentView.swift */; };
 		0AA952F12BBFD86E007E62B1 /* HoldDownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA952F02BBFD86E007E62B1 /* HoldDownButton.swift */; };
@@ -370,6 +373,9 @@
 		0A9232102BD39E6E008B5F24 /* TabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabModel.swift; sourceTree = "<group>"; };
 		0A9232122BD3AB8D008B5F24 /* RectKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectKey.swift; sourceTree = "<group>"; };
 		0A9232142BD3AD42008B5F24 /* Interpolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interpolation.swift; sourceTree = "<group>"; };
+		0A9BC9212C8E7AF200362FB1 /* FBGradientMaskContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBGradientMaskContentView.swift; sourceTree = "<group>"; };
+		0A9BC9232C8E7B1500362FB1 /* FBGradientMaskHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBGradientMaskHomeView.swift; sourceTree = "<group>"; };
+		0A9BC9252C8E7B8200362FB1 /* FBModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBModels.swift; sourceTree = "<group>"; };
 		0AA76A9D2BDA2F1000B246F5 /* MaterialOffsetReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialOffsetReader.swift; sourceTree = "<group>"; };
 		0AA952ED2BBFD836007E62B1 /* HoldDownButtonContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldDownButtonContentView.swift; sourceTree = "<group>"; };
 		0AA952F02BBFD86E007E62B1 /* HoldDownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldDownButton.swift; sourceTree = "<group>"; };
@@ -808,6 +814,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0A9BC9202C8E7ADA00362FB1 /* FBMessengerGradientMask */,
 				0A71117F2C89920500683DC3 /* CustomAlertDialog */,
 				0AD5E4F82C79BCFF003C76BF /* QuoteTags */,
 				0A02C0112C7794F000AD8789 /* CoverFlowCarousel */,
@@ -1288,6 +1295,16 @@
 				0A9232142BD3AD42008B5F24 /* Interpolation.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		0A9BC9202C8E7ADA00362FB1 /* FBMessengerGradientMask */ = {
+			isa = PBXGroup;
+			children = (
+				0A9BC9212C8E7AF200362FB1 /* FBGradientMaskContentView.swift */,
+				0A9BC9252C8E7B8200362FB1 /* FBModels.swift */,
+				0A9BC9232C8E7B1500362FB1 /* FBGradientMaskHomeView.swift */,
+			);
+			path = FBMessengerGradientMask;
 			sourceTree = "<group>";
 		};
 		0AA952EC2BBFD805007E62B1 /* HoldDownButton */ = {
@@ -1900,6 +1917,7 @@
 				0AFE92DC2BF715BA00AD012B /* StackedNotificationsHomeView.swift in Sources */,
 				0ACFD6E42BA5DD3A0014336E /* HorizontalWheelPickerContentView.swift in Sources */,
 				0ABBD0222BD8F81300CE9EDF /* Particle.swift in Sources */,
+				0A9BC9262C8E7B8200362FB1 /* FBModels.swift in Sources */,
 				0AE4FC9D2BE4E391005558AD /* CustomDialog.swift in Sources */,
 				0A7111832C89926D00683DC3 /* PopContentView.swift in Sources */,
 				0A6F0E982BC129590038D412 /* AnimatedChartsContentView.swift in Sources */,
@@ -1960,6 +1978,7 @@
 				0AFE92DE2BF719B800AD012B /* StackedCards.swift in Sources */,
 				0A55A10B2B8A1EEB00FB6C1E /* ErrorView.swift in Sources */,
 				0AFE92D92BF7147D00AD012B /* NotificationItem.swift in Sources */,
+				0A9BC9242C8E7B1500362FB1 /* FBGradientMaskHomeView.swift in Sources */,
 				0A0FA8772BBE9AB10036139E /* FloatingButton.swift in Sources */,
 				0A8B70FC2BCC5DD20032F794 /* ReelsLayoutHomeView.swift in Sources */,
 				0A9232132BD3AB8D008B5F24 /* RectKey.swift in Sources */,
@@ -1983,6 +2002,7 @@
 				0A29EF422BB05B75007D411E /* CameraPickerView.swift in Sources */,
 				0AB429382BE9F20F00FF20D4 /* DetailView.swift in Sources */,
 				0AB74F092C6EB0D0001BDFE2 /* ClockView.swift in Sources */,
+				0A9BC9222C8E7AF200362FB1 /* FBGradientMaskContentView.swift in Sources */,
 				0A4DCE532BC9CF6B0042C928 /* Crop.swift in Sources */,
 				0A55A1052B8A168F00FB6C1E /* PokemonList.swift in Sources */,
 				0AEF03402C5804C200FA1003 /* WalkthrougAnimationContentView.swift in Sources */,
