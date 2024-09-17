@@ -1,7 +1,7 @@
 import SwiftUI
 
 // Enum to hold the tabs
-enum Tab: String, CaseIterable, Identifiable {
+enum MathoTab: String, CaseIterable, Identifiable {
 	case overview
 	case transactions
 	case goals
@@ -32,14 +32,14 @@ enum Tab: String, CaseIterable, Identifiable {
 }
 
 struct FamilyTabContentView: View {
-	@State private var selectedTab: Tab = .overview
-	@State private var previousTab: Tab = .overview
+	@State private var selectedTab: MathoTab = .overview
+	@State private var previousTab: MathoTab = .overview
 	
 	var body: some View {
 		VStack(spacing: 0) {
 			// Content area
 			ZStack {
-				ForEach([Tab.overview, .transactions]) { tab in
+				ForEach([MathoTab.overview, .transactions]) { tab in
 					// if tab == selectedTab || tab == previousTab {
 						tabView(for: tab)
 							.transition(transition(for: tab))
@@ -56,7 +56,7 @@ struct FamilyTabContentView: View {
 			
 			// Bottom navigation bar
 			HStack {
-				ForEach([Tab.overview, .transactions]) { tab in
+				ForEach([MathoTab.overview, .transactions]) { tab in
 					Button(action: {
 						if tab != selectedTab {
 							withAnimation {
@@ -80,7 +80,7 @@ struct FamilyTabContentView: View {
 	}
 	
 	// Function to provide the content view for each tab
-	func tabView(for tab: Tab) -> some View {
+	func tabView(for tab: MathoTab) -> some View {
 		switch tab {
 		case .overview:
 			return AnyView(OvervView())
@@ -96,9 +96,9 @@ struct FamilyTabContentView: View {
 	}
 	
 	// Corrected transition function
-	func transition(for tab: Tab) -> AnyTransition {
-			guard let fromIndex = [Tab.overview, .transactions].firstIndex(of: previousTab),
-						let toIndex = [Tab.overview, .transactions].firstIndex(of: selectedTab) else {
+	func transition(for tab: MathoTab) -> AnyTransition {
+			guard let fromIndex = [MathoTab.overview, .transactions].firstIndex(of: previousTab),
+						let toIndex = [MathoTab.overview, .transactions].firstIndex(of: selectedTab) else {
 					return .identity
 			}
 		
