@@ -146,6 +146,9 @@
 		0A9BC9222C8E7AF200362FB1 /* FBGradientMaskContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9BC9212C8E7AF200362FB1 /* FBGradientMaskContentView.swift */; };
 		0A9BC9242C8E7B1500362FB1 /* FBGradientMaskHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9BC9232C8E7B1500362FB1 /* FBGradientMaskHomeView.swift */; };
 		0A9BC9262C8E7B8200362FB1 /* FBModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9BC9252C8E7B8200362FB1 /* FBModels.swift */; };
+		0A9EE64E2C99E1A200510816 /* WheelPickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9EE64D2C99E1A200510816 /* WheelPickerContentView.swift */; };
+		0A9EE6512C99E1DE00510816 /* CircularWheelPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9EE6502C99E1DE00510816 /* CircularWheelPicker.swift */; };
+		0A9EE6532C99EE2E00510816 /* CircularWheelPickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9EE6522C99EE2E00510816 /* CircularWheelPickerContentView.swift */; };
 		0AA76A9E2BDA2F1000B246F5 /* MaterialOffsetReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA76A9D2BDA2F1000B246F5 /* MaterialOffsetReader.swift */; };
 		0AA952EE2BBFD836007E62B1 /* HoldDownButtonContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA952ED2BBFD836007E62B1 /* HoldDownButtonContentView.swift */; };
 		0AA952F12BBFD86E007E62B1 /* HoldDownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA952F02BBFD86E007E62B1 /* HoldDownButton.swift */; };
@@ -412,6 +415,9 @@
 		0A9BC9212C8E7AF200362FB1 /* FBGradientMaskContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBGradientMaskContentView.swift; sourceTree = "<group>"; };
 		0A9BC9232C8E7B1500362FB1 /* FBGradientMaskHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBGradientMaskHomeView.swift; sourceTree = "<group>"; };
 		0A9BC9252C8E7B8200362FB1 /* FBModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBModels.swift; sourceTree = "<group>"; };
+		0A9EE64D2C99E1A200510816 /* WheelPickerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelPickerContentView.swift; sourceTree = "<group>"; };
+		0A9EE6502C99E1DE00510816 /* CircularWheelPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularWheelPicker.swift; sourceTree = "<group>"; };
+		0A9EE6522C99EE2E00510816 /* CircularWheelPickerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularWheelPickerContentView.swift; sourceTree = "<group>"; };
 		0AA76A9D2BDA2F1000B246F5 /* MaterialOffsetReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialOffsetReader.swift; sourceTree = "<group>"; };
 		0AA952ED2BBFD836007E62B1 /* HoldDownButtonContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldDownButtonContentView.swift; sourceTree = "<group>"; };
 		0AA952F02BBFD86E007E62B1 /* HoldDownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldDownButton.swift; sourceTree = "<group>"; };
@@ -887,6 +893,8 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0A9EE64F2C99E1CE00510816 /* CircularWheelPicker */,
+				0A9EE64C2C99E17700510816 /* CustomHorizontalWheelPicker */,
 				0AB319212C99783200C9CABE /* ZoomTransitions */,
 				0ADDE79E2C96494300F9778C /* CustomTabAnimation */,
 				0A52359D2C956F5900312174 /* CustomCameralControlSlider */,
@@ -1383,6 +1391,23 @@
 				0A9BC9232C8E7B1500362FB1 /* FBGradientMaskHomeView.swift */,
 			);
 			path = FBMessengerGradientMask;
+			sourceTree = "<group>";
+		};
+		0A9EE64C2C99E17700510816 /* CustomHorizontalWheelPicker */ = {
+			isa = PBXGroup;
+			children = (
+				0A9EE64D2C99E1A200510816 /* WheelPickerContentView.swift */,
+			);
+			path = CustomHorizontalWheelPicker;
+			sourceTree = "<group>";
+		};
+		0A9EE64F2C99E1CE00510816 /* CircularWheelPicker */ = {
+			isa = PBXGroup;
+			children = (
+				0A9EE6502C99E1DE00510816 /* CircularWheelPicker.swift */,
+				0A9EE6522C99EE2E00510816 /* CircularWheelPickerContentView.swift */,
+			);
+			path = CircularWheelPicker;
 			sourceTree = "<group>";
 		};
 		0AA952EC2BBFD805007E62B1 /* HoldDownButton */ = {
@@ -2056,6 +2081,7 @@
 				0A0FA8742BBE992D0036139E /* InteractiveFloatingButtonContentView.swift in Sources */,
 				0AE9DC212BFBDF15004989C8 /* CustomCameraView.swift in Sources */,
 				0A55A0F32B8A003100FB6C1E /* ThemeChangeView.swift in Sources */,
+				0A9EE6512C99E1DE00510816 /* CircularWheelPicker.swift in Sources */,
 				0AFE92DC2BF715BA00AD012B /* StackedNotificationsHomeView.swift in Sources */,
 				0ACFD6E42BA5DD3A0014336E /* HorizontalWheelPickerContentView.swift in Sources */,
 				0ABBD0222BD8F81300CE9EDF /* Particle.swift in Sources */,
@@ -2212,6 +2238,7 @@
 				0A48B7032BBC558A00060277 /* UpcomingListView.swift in Sources */,
 				0AB9BD5B2BCA925200288609 /* StoryView.swift in Sources */,
 				0A70AD492BB297A6008794F4 /* MainView.swift in Sources */,
+				0A9EE64E2C99E1A200510816 /* WheelPickerContentView.swift in Sources */,
 				0A8118E42BB712AF00889DA7 /* PinchZoom.swift in Sources */,
 				0AB9BD442BCA515C00288609 /* ControlCenterContentView.swift in Sources */,
 				0AB4293C2BEA090B00FF20D4 /* DummyContentView.swift in Sources */,
@@ -2234,6 +2261,7 @@
 				0AD2083B2C97DB070024A5D2 /* DiscussionListRowView.swift in Sources */,
 				0A7111812C89925B00683DC3 /* PopView.swift in Sources */,
 				0A55A09E2B89F6A300FB6C1E /* PhotoListViewModel.swift in Sources */,
+				0A9EE6532C99EE2E00510816 /* CircularWheelPickerContentView.swift in Sources */,
 				0AD208312C97DAA50024A5D2 /* BookInfoView.swift in Sources */,
 				0A506E732BF10C9C006775B9 /* HeroKey.swift in Sources */,
 				0A27EA432B8B28C400AF1A2E /* AlertConfig.swift in Sources */,
