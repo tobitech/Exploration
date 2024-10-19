@@ -145,6 +145,8 @@
 		0A9232112BD39E6E008B5F24 /* TabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9232102BD39E6E008B5F24 /* TabModel.swift */; };
 		0A9232132BD3AB8D008B5F24 /* RectKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9232122BD3AB8D008B5F24 /* RectKey.swift */; };
 		0A9232152BD3AD42008B5F24 /* Interpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9232142BD3AD42008B5F24 /* Interpolation.swift */; };
+		0A9808692CC2F2AB006523A0 /* InteractiveToastsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9808682CC2F2AB006523A0 /* InteractiveToastsContentView.swift */; };
+		0A98086C2CC2F472006523A0 /* Toasts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98086B2CC2F472006523A0 /* Toasts.swift */; };
 		0A9BC9222C8E7AF200362FB1 /* FBGradientMaskContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9BC9212C8E7AF200362FB1 /* FBGradientMaskContentView.swift */; };
 		0A9BC9242C8E7B1500362FB1 /* FBGradientMaskHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9BC9232C8E7B1500362FB1 /* FBGradientMaskHomeView.swift */; };
 		0A9BC9262C8E7B8200362FB1 /* FBModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9BC9252C8E7B8200362FB1 /* FBModels.swift */; };
@@ -420,6 +422,8 @@
 		0A9232102BD39E6E008B5F24 /* TabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabModel.swift; sourceTree = "<group>"; };
 		0A9232122BD3AB8D008B5F24 /* RectKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectKey.swift; sourceTree = "<group>"; };
 		0A9232142BD3AD42008B5F24 /* Interpolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interpolation.swift; sourceTree = "<group>"; };
+		0A9808682CC2F2AB006523A0 /* InteractiveToastsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveToastsContentView.swift; sourceTree = "<group>"; };
+		0A98086B2CC2F472006523A0 /* Toasts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toasts.swift; sourceTree = "<group>"; };
 		0A9BC9212C8E7AF200362FB1 /* FBGradientMaskContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBGradientMaskContentView.swift; sourceTree = "<group>"; };
 		0A9BC9232C8E7B1500362FB1 /* FBGradientMaskHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBGradientMaskHomeView.swift; sourceTree = "<group>"; };
 		0A9BC9252C8E7B8200362FB1 /* FBModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBModels.swift; sourceTree = "<group>"; };
@@ -929,6 +933,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0A9808672CC2F294006523A0 /* InteractiveToasts */,
 				0A31D80E2CA430D300B1D079 /* HalfCircleProgress */,
 				0A31D80B2CA4165100B1D079 /* ActivityRings */,
 				0A52D2572C9B23E7009590DB /* CustomSplashScreen */,
@@ -1420,6 +1425,23 @@
 				0A9232142BD3AD42008B5F24 /* Interpolation.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		0A9808672CC2F294006523A0 /* InteractiveToasts */ = {
+			isa = PBXGroup;
+			children = (
+				0A98086A2CC2F46A006523A0 /* Helpers */,
+				0A9808682CC2F2AB006523A0 /* InteractiveToastsContentView.swift */,
+			);
+			path = InteractiveToasts;
+			sourceTree = "<group>";
+		};
+		0A98086A2CC2F46A006523A0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0A98086B2CC2F472006523A0 /* Toasts.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		0A9BC9202C8E7ADA00362FB1 /* FBMessengerGradientMask */ = {
@@ -2178,6 +2200,8 @@
 				0AB9BD4B2BCA564700288609 /* Extensions.swift in Sources */,
 				0A3310FC2C2938AD00DC0086 /* ElasticMessage.swift in Sources */,
 				0A3311032C295CBA00DC0086 /* View+ElasticExtensions.swift in Sources */,
+				0A9808692CC2F2AB006523A0 /* InteractiveToastsContentView.swift in Sources */,
+				0A98086C2CC2F472006523A0 /* Toasts.swift in Sources */,
 				0AFDFDA52BCD0A5700DF7DF4 /* DynamicTab.swift in Sources */,
 				0A426D852BE8F90800809254 /* GridAnimationHomeView.swift in Sources */,
 				0AFD278E2C098F110031AA77 /* TabViewOffsetContentView.swift in Sources */,
