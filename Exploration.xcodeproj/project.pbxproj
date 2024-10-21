@@ -252,6 +252,8 @@
 		0AFDFDA12BCD095E00DF7DF4 /* DynamicTabIndicatorsHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDFDA02BCD095E00DF7DF4 /* DynamicTabIndicatorsHomeView.swift */; };
 		0AFDFDA52BCD0A5700DF7DF4 /* DynamicTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDFDA42BCD0A5700DF7DF4 /* DynamicTab.swift */; };
 		0AFDFDA72BCD117700DF7DF4 /* LinearInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDFDA62BCD117700DF7DF4 /* LinearInterpolation.swift */; };
+		0AFE8D372CC6D30000FAF428 /* UniversalOverlayContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFE8D362CC6D30000FAF428 /* UniversalOverlayContentView.swift */; };
+		0AFE8D392CC6DD3800FAF428 /* UniversalOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFE8D382CC6DD3800FAF428 /* UniversalOverlay.swift */; };
 		0AFE92D92BF7147D00AD012B /* NotificationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFE92D82BF7147D00AD012B /* NotificationItem.swift */; };
 		0AFE92DC2BF715BA00AD012B /* StackedNotificationsHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFE92DB2BF715BA00AD012B /* StackedNotificationsHomeView.swift */; };
 		0AFE92DE2BF719B800AD012B /* StackedCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFE92DD2BF719B800AD012B /* StackedCards.swift */; };
@@ -529,6 +531,8 @@
 		0AFDFDA02BCD095E00DF7DF4 /* DynamicTabIndicatorsHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTabIndicatorsHomeView.swift; sourceTree = "<group>"; };
 		0AFDFDA42BCD0A5700DF7DF4 /* DynamicTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTab.swift; sourceTree = "<group>"; };
 		0AFDFDA62BCD117700DF7DF4 /* LinearInterpolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearInterpolation.swift; sourceTree = "<group>"; };
+		0AFE8D362CC6D30000FAF428 /* UniversalOverlayContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalOverlayContentView.swift; sourceTree = "<group>"; };
+		0AFE8D382CC6DD3800FAF428 /* UniversalOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalOverlay.swift; sourceTree = "<group>"; };
 		0AFE92D82BF7147D00AD012B /* NotificationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationItem.swift; sourceTree = "<group>"; };
 		0AFE92DB2BF715BA00AD012B /* StackedNotificationsHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackedNotificationsHomeView.swift; sourceTree = "<group>"; };
 		0AFE92DD2BF719B800AD012B /* StackedCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackedCards.swift; sourceTree = "<group>"; };
@@ -933,6 +937,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0AFE8D352CC6D2EE00FAF428 /* UniversalOverlay */,
 				0A9808672CC2F294006523A0 /* InteractiveToasts */,
 				0A31D80E2CA430D300B1D079 /* HalfCircleProgress */,
 				0A31D80B2CA4165100B1D079 /* ActivityRings */,
@@ -1993,6 +1998,15 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		0AFE8D352CC6D2EE00FAF428 /* UniversalOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				0AFE8D362CC6D30000FAF428 /* UniversalOverlayContentView.swift */,
+				0AFE8D382CC6DD3800FAF428 /* UniversalOverlay.swift */,
+			);
+			path = UniversalOverlay;
+			sourceTree = "<group>";
+		};
 		0AFE92D72BF7146C00AD012B /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -2222,6 +2236,7 @@
 				0A55A10B2B8A1EEB00FB6C1E /* ErrorView.swift in Sources */,
 				0AFE92D92BF7147D00AD012B /* NotificationItem.swift in Sources */,
 				0A9BC9242C8E7B1500362FB1 /* FBGradientMaskHomeView.swift in Sources */,
+				0AFE8D372CC6D30000FAF428 /* UniversalOverlayContentView.swift in Sources */,
 				0ABD46962C93A7AB00003517 /* EquationView.swift in Sources */,
 				0ABD46982C93B24C00003517 /* PickerContentView.swift in Sources */,
 				0A0FA8772BBE9AB10036139E /* FloatingButton.swift in Sources */,
@@ -2280,6 +2295,7 @@
 				0AC96E932BC7195100C31CC1 /* InfiniteCarouselContentView.swift in Sources */,
 				0AFDFDA72BCD117700DF7DF4 /* LinearInterpolation.swift in Sources */,
 				0AD208372C97DADD0024A5D2 /* TabSelectionView.swift in Sources */,
+				0AFE8D392CC6DD3800FAF428 /* UniversalOverlay.swift in Sources */,
 				0AE9DC1F2BFBDCE7004989C8 /* CustomCameraContentView.swift in Sources */,
 				0A55A1072B8A17D100FB6C1E /* PokemonCell.swift in Sources */,
 				0A55A0882B89F5FD00FB6C1E /* ExplorationApp.swift in Sources */,

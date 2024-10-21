@@ -48,20 +48,20 @@ struct InteractiveToastsContentView: View {
 			Text("iJustine's Airpods")
 				.font(.callout)
 			
-//			Spacer(minLength: 0)
-//			
-//			Button {
-//				$toasts.delete(id)
-//			} label: {
-//				Image(systemName: "xmark.circle.fill")
-//					.font(.title2)
-//			}
+			Spacer(minLength: 0)
+			
+			Button {
+				$toasts.delete(id)
+			} label: {
+				Image(systemName: "xmark.circle.fill")
+					.font(.title2)
+			}
 
 		}
 		.foregroundStyle(.primary)
 		.padding(.vertical, 12)
 		.padding(.horizontal, 15)
-		// .padding(.trailing, 10)
+		.padding(.trailing, 10)
 		.background {
 			Capsule()
 				.fill(.background)
