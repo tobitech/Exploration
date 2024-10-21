@@ -78,7 +78,9 @@ fileprivate struct UniversalOverlayModifier<ViewContent: View>: ViewModifier {
 	func body(content: Content) -> some View {
 		content
 		/// Now that we've successfully set up the overlay window and made it a passthrough one, let's add and remove views to it whenever it's toggled.
-			.onChange(of: show) { oldValue, newValue in
+			// .onChange(of: show) { oldValue, newValue in
+		/// Update: YouTube video comment.
+			.onChange(of: show, initial: true) { oldValue, newValue in
 				if newValue {
 					addView()
 				} else {
@@ -134,7 +136,9 @@ fileprivate class PassthroughWindow: UIWindow {
 			for subview in rootView.subviews.reversed() {
 				/// Finding if any of rootview's subview is receiving hit test.
 				let pointInSubView = subview.convert(point, from: rootView)
-				if subview.hitTest(pointInSubView, with: event) == subview {
+				// if subview.hitTest(pointInSubView, with: event) == subview {
+				// Update from YouTube video comment.
+				if subview.hitTest(pointInSubView, with: event) != nil {
 					return hitView
 				}
 			}
