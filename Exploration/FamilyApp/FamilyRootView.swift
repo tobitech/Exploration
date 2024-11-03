@@ -13,27 +13,31 @@ struct FamilyRootView: View {
 				.offset(y: calculatedOffset())
 				.animation(.snappy, value: showScanView)
 				.gesture(
-					DragGesture()
-						.onChanged { value in
-							if showScanView && value.translation.height < 0 {
-								dragOffset = value.translation.height
-							}
-						}
-						.onEnded { value in
-							if showScanView {
-								let threshold = UIScreen.main.bounds.height * 0.35
-								let velocity = value.predictedEndLocation.y - value.location.y
-								
-								withAnimation(.easeInOut(duration: 0.3)) {
-									if dragOffset < -threshold || velocity < -300 {
-										showScanView = false
-									}
-									dragOffset = 0
-								}
-							}
-						}
+					dragGesture
 				)
 		}
+	}
+	
+	private var dragGesture: some Gesture {
+		DragGesture()
+			.onChanged { value in
+				if showScanView && value.translation.height < 0 {
+					dragOffset = value.translation.height
+				}
+			}
+			.onEnded { value in
+				if showScanView {
+					let threshold = UIScreen.main.bounds.height * 0.35
+					let velocity = value.predictedEndLocation.y - value.location.y
+					
+					withAnimation(.snappy) {
+						if dragOffset < -threshold || velocity < -300 {
+							showScanView = false
+						}
+						dragOffset = 0
+					}
+				}
+			}
 	}
 	
 	private func calculatedOffset() -> CGFloat {

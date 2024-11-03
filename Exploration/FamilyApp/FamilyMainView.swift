@@ -13,17 +13,15 @@ struct FamilyMainView: View {
 	var body: some View {
 		ZStack {
 			VStack {
-				if showScanView {
-					HStack {
-						Spacer()
-						RoundedRectangle(cornerRadius: 2)
-							.fill(.quaternary)
-							.frame(width: 40, height: 4)
-						Spacer()
-					}
-					.padding(10)
-					.foregroundStyle(.primary)
+				HStack {
+					Spacer()
+					RoundedRectangle(cornerRadius: 2)
+						.fill(.quaternary)
+						.frame(width: 35, height: 4)
+					Spacer()
 				}
+				.padding(10)
+				.foregroundStyle(.primary)
 				
 				TabView(selection: $selectedTab) {
 					// Your tabs go here

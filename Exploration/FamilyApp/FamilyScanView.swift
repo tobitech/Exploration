@@ -5,17 +5,18 @@ struct FamilyScanView: View {
 		VStack {
 			HStack {
 				Image(systemName: "flashlight.off.fill")
-					.font(.title)
+					.font(.title2)
 				Spacer()
 				Image(systemName: "arrow.down.circle.fill")
-					.font(.title)
+					.font(.title2)
 			}
 			Spacer()
-			Text("Scan a QR code to connect with a family member")
+			Text("Scan a receipt to add it to your expenses")
+				.multilineTextAlignment(.center)
 			Spacer()
 		}
 		.padding()
-		.background(.green)
+		.background(.ultraThinMaterial)
 	}
 }
 
