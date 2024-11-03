@@ -225,6 +225,9 @@
 		0AE717C42C6C093200DD020C /* ScrollableNavTitleContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE717C32C6C093200DD020C /* ScrollableNavTitleContentView2.swift */; };
 		0AE8FFF72C06F649000B0A5A /* FlipClockContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8FFF62C06F649000B0A5A /* FlipClockContentView.swift */; };
 		0AE8FFFA2C06F67C000B0A5A /* FlipClockTextEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE8FFF92C06F67C000B0A5A /* FlipClockTextEffect.swift */; };
+		0AE941262CD7540600500D5E /* FamilyRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE941252CD7540600500D5E /* FamilyRootView.swift */; };
+		0AE941282CD7546500500D5E /* FamilyMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE941272CD7546500500D5E /* FamilyMainView.swift */; };
+		0AE9412A2CD754F700500D5E /* FamilyScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE941292CD754F700500D5E /* FamilyScanView.swift */; };
 		0AE9DC1F2BFBDCE7004989C8 /* CustomCameraContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE9DC1E2BFBDCE7004989C8 /* CustomCameraContentView.swift */; };
 		0AE9DC212BFBDF15004989C8 /* CustomCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE9DC202BFBDF15004989C8 /* CustomCameraView.swift */; };
 		0AEC6D9A2C73A5150097D21A /* FloatingTabsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEC6D992C73A5150097D21A /* FloatingTabsContentView.swift */; };
@@ -504,6 +507,9 @@
 		0AE717C32C6C093200DD020C /* ScrollableNavTitleContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableNavTitleContentView2.swift; sourceTree = "<group>"; };
 		0AE8FFF62C06F649000B0A5A /* FlipClockContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipClockContentView.swift; sourceTree = "<group>"; };
 		0AE8FFF92C06F67C000B0A5A /* FlipClockTextEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipClockTextEffect.swift; sourceTree = "<group>"; };
+		0AE941252CD7540600500D5E /* FamilyRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyRootView.swift; sourceTree = "<group>"; };
+		0AE941272CD7546500500D5E /* FamilyMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMainView.swift; sourceTree = "<group>"; };
+		0AE941292CD754F700500D5E /* FamilyScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyScanView.swift; sourceTree = "<group>"; };
 		0AE9DC1E2BFBDCE7004989C8 /* CustomCameraContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraContentView.swift; sourceTree = "<group>"; };
 		0AE9DC202BFBDF15004989C8 /* CustomCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraView.swift; sourceTree = "<group>"; };
 		0AEC6D992C73A5150097D21A /* FloatingTabsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTabsContentView.swift; sourceTree = "<group>"; };
@@ -937,6 +943,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0AE941242CD753ED00500D5E /* FamilyApp */,
 				0AFE8D352CC6D2EE00FAF428 /* UniversalOverlay */,
 				0A9808672CC2F294006523A0 /* InteractiveToasts */,
 				0A31D80E2CA430D300B1D079 /* HalfCircleProgress */,
@@ -1795,6 +1802,16 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		0AE941242CD753ED00500D5E /* FamilyApp */ = {
+			isa = PBXGroup;
+			children = (
+				0AE941252CD7540600500D5E /* FamilyRootView.swift */,
+				0AE941292CD754F700500D5E /* FamilyScanView.swift */,
+				0AE941272CD7546500500D5E /* FamilyMainView.swift */,
+			);
+			path = FamilyApp;
+			sourceTree = "<group>";
+		};
 		0AE9DC1D2BFBDCCD004989C8 /* CustomCameraView */ = {
 			isa = PBXGroup;
 			children = (
@@ -2195,6 +2212,7 @@
 				0A52D2592C9B23F8009590DB /* CustomSplashScreenContentView.swift in Sources */,
 				0AFD27912C098F4B0031AA77 /* DummyTab.swift in Sources */,
 				0A55A1112B8A528F00FB6C1E /* CustomAlertContentView.swift in Sources */,
+				0AE941262CD7540600500D5E /* FamilyRootView.swift in Sources */,
 				0ABBD01A2BD8F1A700CE9EDF /* ParticleEmitterContentView.swift in Sources */,
 				0AFB85182BEF567D00203CEF /* PhotosAppHomeView.swift in Sources */,
 				0AB319322C997FBD00C9CABE /* SharedModel.swift in Sources */,
@@ -2229,6 +2247,7 @@
 				0ABBD01E2BD8F1DD00CE9EDF /* ParticleEmitterHomeView.swift in Sources */,
 				0A8B70F82BCC5CC30032F794 /* IGReel.swift in Sources */,
 				0A55A1142B8A52DD00FB6C1E /* AlertModifier.swift in Sources */,
+				0AE941282CD7546500500D5E /* FamilyMainView.swift in Sources */,
 				0AB9BD592BCA8EF200288609 /* StoryViewModel.swift in Sources */,
 				0A48B7072BBC6D4B00060277 /* OverviewView.swift in Sources */,
 				0A55A0A92B89F75100FB6C1E /* BottomSheetHelper.swift in Sources */,
@@ -2322,6 +2341,7 @@
 				0A48B7032BBC558A00060277 /* UpcomingListView.swift in Sources */,
 				0AB9BD5B2BCA925200288609 /* StoryView.swift in Sources */,
 				0A70AD492BB297A6008794F4 /* MainView.swift in Sources */,
+				0AE9412A2CD754F700500D5E /* FamilyScanView.swift in Sources */,
 				0A9EE64E2C99E1A200510816 /* WheelPickerContentView.swift in Sources */,
 				0A8118E42BB712AF00889DA7 /* PinchZoom.swift in Sources */,
 				0AB9BD442BCA515C00288609 /* ControlCenterContentView.swift in Sources */,
