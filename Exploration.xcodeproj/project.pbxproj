@@ -135,6 +135,7 @@
 		0A8790FF2CD89E2B00C1D8CE /* MiniPlayerHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8790FE2CD89E2B00C1D8CE /* MiniPlayerHomeView.swift */; };
 		0A8791012CD8A43300C1D8CE /* ExpandableMusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8791002CD8A43300C1D8CE /* ExpandableMusicPlayer.swift */; };
 		0A8791032CD8BFD300C1D8CE /* PanGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8791022CD8BFD300C1D8CE /* PanGesture.swift */; };
+		0A8791052CD8F1B800C1D8CE /* ColorFromImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8791042CD8F1B800C1D8CE /* ColorFromImage.swift */; };
 		0A8B70EF2BCC35460032F794 /* AnimatedPageIndicatorContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8B70EE2BCC35460032F794 /* AnimatedPageIndicatorContentView.swift */; };
 		0A8B70F12BCC35A50032F794 /* AnimatedPageIndicatorHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8B70F02BCC35A50032F794 /* AnimatedPageIndicatorHomeView.swift */; };
 		0A8B70F42BCC5AC60032F794 /* ReelsLayoutContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8B70F32BCC5AC60032F794 /* ReelsLayoutContentView.swift */; };
@@ -421,6 +422,7 @@
 		0A8790FE2CD89E2B00C1D8CE /* MiniPlayerHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPlayerHomeView.swift; sourceTree = "<group>"; };
 		0A8791002CD8A43300C1D8CE /* ExpandableMusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableMusicPlayer.swift; sourceTree = "<group>"; };
 		0A8791022CD8BFD300C1D8CE /* PanGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanGesture.swift; sourceTree = "<group>"; };
+		0A8791042CD8F1B800C1D8CE /* ColorFromImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorFromImage.swift; sourceTree = "<group>"; };
 		0A8B70EE2BCC35460032F794 /* AnimatedPageIndicatorContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedPageIndicatorContentView.swift; sourceTree = "<group>"; };
 		0A8B70F02BCC35A50032F794 /* AnimatedPageIndicatorHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedPageIndicatorHomeView.swift; sourceTree = "<group>"; };
 		0A8B70F32BCC5AC60032F794 /* ReelsLayoutContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsLayoutContentView.swift; sourceTree = "<group>"; };
@@ -1377,6 +1379,7 @@
 			children = (
 				0A8790FE2CD89E2B00C1D8CE /* MiniPlayerHomeView.swift */,
 				0A8791002CD8A43300C1D8CE /* ExpandableMusicPlayer.swift */,
+				0A8791042CD8F1B800C1D8CE /* ColorFromImage.swift */,
 				0A8791022CD8BFD300C1D8CE /* PanGesture.swift */,
 				0A8790FA2CD89A1B00C1D8CE /* MiniPlayerContentView.swift */,
 			);
@@ -2170,6 +2173,7 @@
 			files = (
 				0A8B70F12BCC35A50032F794 /* AnimatedPageIndicatorHomeView.swift in Sources */,
 				0A55A0A02B89F6A300FB6C1E /* URLImage.swift in Sources */,
+				0A8791052CD8F1B800C1D8CE /* ColorFromImage.swift in Sources */,
 				0A426D832BE8F71200809254 /* GridItem.swift in Sources */,
 				0A3310F82C2937F800DC0086 /* ElasticScrollContentView.swift in Sources */,
 				0AFDFD9E2BCD093D00DF7DF4 /* DynamicTabIndicatorsContentView.swift in Sources */,

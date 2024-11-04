@@ -4,6 +4,7 @@ struct ExpandableMusicPlayer: View {
 	@Binding var show: Bool
 	
 	// View Properties
+	@State private var gradient: AnyGradient = Color.clear.gradient
 	@State private var expandPlayer: Bool = false
 	@State private var offsetY: CGFloat = 0.0
 	@State private var mainWindow: UIWindow?
@@ -22,8 +23,11 @@ struct ExpandableMusicPlayer: View {
 					Rectangle()
 						.fill(.ultraThinMaterial)
 					
+//					Rectangle()
+//						.fill(.linearGradient(colors: [.artwork1, .artwork2, .artwork3], startPoint: .top, endPoint: .bottom))
+//						.opacity(expandPlayer ? 1 : 0)
 					Rectangle()
-						.fill(.linearGradient(colors: [.artwork1, .artwork2, .artwork3], startPoint: .top, endPoint: .bottom))
+						.fill(gradient)
 						.opacity(expandPlayer ? 1 : 0)
 				}
 				/// you can customize the corner radius based on the device.
@@ -89,6 +93,12 @@ struct ExpandableMusicPlayer: View {
 		.onAppear {
 			if let window = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.keyWindow, mainWindow == nil {
 				mainWindow = window
+			}
+			gradient = Color(UIImage(named: "artwork")?.prominentColor ?? .clear).gradient
+		}
+		.onReceive(NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification)) { _ in
+			if expandPlayer {
+				mainWindow?.subviews.first?.transform = .identity
 			}
 		}
 	}
