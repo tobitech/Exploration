@@ -6,6 +6,8 @@ struct ExpandableMusicPlayer: View {
 	// View Properties
 	@State private var expandPlayer: Bool = false
 	@State private var offsetY: CGFloat = 0.0
+	@State private var mainWindow: UIWindow?
+	@State private var windowProgress: CGFloat = 0.0
 	// Let's make it better by adding matchedGeometry effect to the artwork image view.
 	@Namespace private var animation
 	
@@ -50,6 +52,9 @@ struct ExpandableMusicPlayer: View {
 						guard expandPlayer else { return }
 						let translation = max(value.translation.height, 0)
 						offsetY = translation
+						windowProgress = max(min(translation / size.height, 1), 0) * 0.1
+						
+						resizeWindow(0.1 - windowProgress)
 					},
 					onEnd: { value in
 						guard expandPlayer else { return }
@@ -59,6 +64,13 @@ struct ExpandableMusicPlayer: View {
 							if (translation + velocity) > (size.height * 0.3) {
 								// Closing View
 								expandPlayer = false
+								// Resetting Window To Identity With Animation
+								resetWindowWithAnimation()
+							} else {
+								// Reset Window To 0.1 with Animation
+								UIView.animate(withDuration: 0.3) {
+									resizeWindow(0.1)
+								}
 							}
 							
 							offsetY = 0
@@ -67,6 +79,17 @@ struct ExpandableMusicPlayer: View {
 				)
 			)
 			.ignoresSafeArea()
+			
+//			Slider(value: $windowProgress, in: 0...0.1)
+//				.padding(15)
+//				.onChange(of: windowProgress) { oldValue, newValue in
+//					resizeWindow(newValue)
+//				}
+		}
+		.onAppear {
+			if let window = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.keyWindow, mainWindow == nil {
+				mainWindow = window
+			}
 		}
 	}
 	
@@ -107,6 +130,11 @@ struct ExpandableMusicPlayer: View {
 		.onTapGesture {
 			withAnimation(.smooth(duration: 0.3, extraBounce: 0)) {
 				expandPlayer = true
+			}
+			
+			// Resizing window when opening the player
+			UIView.animate(withDuration: 0.3) {
+				resizeWindow(0.1)
 			}
 		}
 	}
@@ -158,6 +186,31 @@ struct ExpandableMusicPlayer: View {
 		}
 		.padding(15)
 		.padding(.top, safeArea.top)
+	}
+	
+	func resizeWindow(_ progress: CGFloat) {
+		if let mainWindow = mainWindow?.subviews.first {
+			/// let's set the scaling anchor to bottom, and set some corner radius while scaling
+			let offsetY = (mainWindow.frame.height * progress) / 2
+			// Your custom corner radius
+			mainWindow.layer.cornerRadius = (progress / 0.1) * 30
+			mainWindow.layer.masksToBounds = true
+			
+			/// The first subview of the key window is our SwiftUl app content, and all the other subviews are sheets/fullscreencovers/inspector, etc.
+			/// And since the max window progress value is 0.1 and the maximum scaling that will be applied will be 0.9, let's see how it looks by creating a slider to stimulate the effect.
+			mainWindow.transform = .identity
+				.scaledBy(x: 1 - progress, y: 1 - progress)
+				.translatedBy(x: 0, y: offsetY)
+		}
+	}
+	
+	func resetWindowWithAnimation() {
+		if let mainWindow = mainWindow?.subviews.first {
+			UIView.animate(withDuration: 0.3) {
+				mainWindow.layer.cornerRadius = 0.0
+				mainWindow.transform = .identity
+			}
+		}
 	}
 }
 
