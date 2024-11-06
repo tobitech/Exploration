@@ -94,7 +94,7 @@ struct ExpandableMusicPlayer: View {
 			if let window = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.keyWindow, mainWindow == nil {
 				mainWindow = window
 			}
-			gradient = Color(UIImage(named: "artwork")?.prominentColor ?? .clear).gradient
+			gradient = Color(UIImage(named: "artwork2")?.prominentColor ?? .clear).gradient
 		}
 		.onReceive(NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification)) { _ in
 			if expandPlayer {
@@ -109,7 +109,7 @@ struct ExpandableMusicPlayer: View {
 		HStack(spacing: 12) {
 			ZStack {
 				if !expandPlayer {
-					Image(.artwork)
+					Image(.artwork2)
 						.resizable()
 						.aspectRatio(contentMode: .fill)
 						.clipShape(.rect(cornerRadius: 10))
@@ -161,7 +161,7 @@ struct ExpandableMusicPlayer: View {
 			HStack(spacing: 12) {
 				ZStack {
 					if expandPlayer {
-						Image(.artwork)
+						Image(.artwork2)
 							.resizable()
 							.aspectRatio(contentMode: .fill)
 							.clipShape(.rect(cornerRadius: 10))
