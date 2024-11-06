@@ -4,26 +4,108 @@ struct ColorFromImage: View {
 	@State private var gradient: AnyGradient = Color.clear.gradient
 	
 	var body: some View {
-		VStack {
-			Image(.pic13)
-				.resizable()
-				.aspectRatio(contentMode: .fill)
-				.frame(height: 300)
-				.clipShape(.rect(cornerRadius: 20))
-			RoundedRectangle(cornerRadius: 20)
-				.fill(gradient)
-				.frame(height: 300)
-			Spacer()
-		}
-		.padding()
-		.onAppear {
-			gradient = Color(UIImage(named: "Pic 13")?.prominentColor ?? .clear).gradient
+		ScrollView {
+			VStack {
+				HStack {
+					Image(.pic13)
+						.resizable()
+						.aspectRatio(contentMode: .fill)
+						.clipShape(.rect(cornerRadius: 20))
+					Image(.pic13)
+						.resizable()
+						.aspectRatio(contentMode: .fill)
+						.clipShape(.rect(cornerRadius: 20))
+				}
+				ZStack(alignment: .bottom) {
+					RoundedRectangle(cornerRadius: 20)
+						.fill(.mint)
+						.fill(LinearGradient(colors: [.black, .mint], startPoint: .bottom, endPoint: .top).opacity(0.8))
+					VStack(alignment: .leading) {
+						Text(".linear")
+							.font(.title)
+							.foregroundStyle(.white)
+					}
+					.padding()
+					.frame(maxWidth: .infinity, alignment: .leading)
+				}
+				.frame(height: 200)
+				HStack {
+					ZStack(alignment: .bottom) {
+						RoundedRectangle(cornerRadius: 20)
+							.fill(.mint)
+							.fill(Gradient(from: .yellow, to: .blue, with: .easeIn))
+						VStack(alignment: .leading) {
+							Text(".easeIn")
+								.font(.title)
+								.foregroundStyle(.white)
+						}
+						.padding()
+						.frame(maxWidth: .infinity, alignment: .leading)
+					}
+					ZStack(alignment: .bottom) {
+						RoundedRectangle(cornerRadius: 20)
+							.fill(.mint)
+							.fill(Gradient(from: .yellow, to: .blue, with: .easeOut))
+						VStack(alignment: .leading) {
+							Text(".easeOut")
+								.font(.title)
+								.foregroundStyle(.white)
+						}
+						.padding()
+						.frame(maxWidth: .infinity, alignment: .leading)
+					}
+				}
+				.frame(height: 200)
+				HStack {
+					ZStack(alignment: .bottom) {
+						RoundedRectangle(cornerRadius: 20)
+							.fill(.mint)
+							.fill(Gradient(from: .yellow, to: .blue, with: .easeInOut))
+						VStack(alignment: .leading) {
+							Text(".easeInOut")
+								.font(.title)
+								.foregroundStyle(.white)
+						}
+						.padding()
+						.frame(maxWidth: .infinity, alignment: .leading)
+					}
+					ZStack(alignment: .bottom) {
+						RoundedRectangle(cornerRadius: 20)
+							.fill(.mint)
+							.fill(Gradient(from: .yellow, to: .blue, with: .linear))
+						VStack(alignment: .leading) {
+							Text(".linear")
+								.font(.title)
+								.foregroundStyle(.white)
+						}
+						.padding()
+						.frame(maxWidth: .infinity, alignment: .leading)
+					}
+				}
+				.frame(height: 200)
+			}
+			.padding()
+			.onAppear {
+				gradient = Color(UIImage(named: "Pic 13")?.prominentColor ?? .clear).gradient
+			}
 		}
 	}
 }
 
 #Preview {
 	ColorFromImage()
+}
+
+
+// Source - https://x.com/dlx/status/1803497996195090879?s=46
+extension Gradient {
+	init(from: Color, to: Color, with curve: UnitCurve, steps: Int = 10) {
+		let colors = stride(from: 0.0, through: 1.0, by: 1.0 / Double(steps))
+			.map {
+				from.mix(with: to, by: curve.value(at: $0))
+			}
+		self.init(colors: colors)
+	}
 }
 
 extension UIImage {
