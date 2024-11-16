@@ -37,8 +37,8 @@ struct CircularSliderHomeView: View {
 								.shadow(color: .black.opacity(0.15), radius: 5, x: 5, y: 5)
 								.visualEffect { view, proxy in
 									view
-										.offset(y: offset(proxy))
-										.offset(y: scale(proxy) * 15)
+										//.offset(y: offset(proxy))
+										//.offset(y: scale(proxy) * 15)
 								}
 								.scrollTransition(.interactive, axis: .horizontal) { view, phase in
 									/// By using the activelD, we can scale the centre view with the help of the scrollTransitions API.
