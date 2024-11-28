@@ -17,6 +17,12 @@ struct CircularSliderHomeView: View {
 			.pickerStyle(.segmented)
 			.padding()
 			
+			Button("move") {
+				withAnimation {
+					activeID = (activeID ?? 0) + 1
+				}
+			}
+			
 			Spacer(minLength: 0)
 			
 			GeometryReader {
@@ -37,10 +43,10 @@ struct CircularSliderHomeView: View {
 								.shadow(color: .black.opacity(0.15), radius: 5, x: 5, y: 5)
 								.visualEffect { view, proxy in
 									view
-										//.offset(y: offset(proxy))
-										//.offset(y: scale(proxy) * 15)
+										.offset(y: offset(proxy))
+										.offset(y: scale(proxy) * 15)
 								}
-								.scrollTransition(.interactive, axis: .horizontal) { view, phase in
+								.scrollTransition(.interactive, axis: .horizontal) {[activeID, pickerType] view, phase in
 									/// By using the activelD, we can scale the centre view with the help of the scrollTransitions API.
 									view
 //										.offset(y: phase.isIdentity && activeID == index ? 15 : 0)
@@ -83,7 +89,7 @@ struct CircularSliderHomeView: View {
 	/// EG: Progress = -1.2
 	/// Now the offset will be:
 	/// Offset = (-1.2) * -30 = 36 /View Goes down)
-	func offset(_ proxy: GeometryProxy) -> CGFloat {
+	nonisolated func offset(_ proxy: GeometryProxy) -> CGFloat {
 		// View Width
 		let progress = progress(proxy)
 		// Simply moving view up/down based on progress
@@ -92,12 +98,12 @@ struct CircularSliderHomeView: View {
 	
 	/// Using scroll progress approach rather than scroll transition
 	/// Basically, It will only provide a range of 1-0 when the view reaches its centre, allowing us to use this range to change the centre view offset as necessary.
-	func scale(_ proxy: GeometryProxy) -> CGFloat {
+	nonisolated func scale(_ proxy: GeometryProxy) -> CGFloat {
 		let progress = min(max(progress(proxy), -1), 1)
 		return progress < 0 ? 1 + progress : 1 - progress
 	}
 	
-	func progress(_ proxy: GeometryProxy) -> CGFloat {
+	nonisolated func progress(_ proxy: GeometryProxy) -> CGFloat {
 		let viewWidth = proxy.size.width
 		let minX = (proxy.bounds(of: .scrollView)?.minX ?? 0)
 		let progress = minX / viewWidth
