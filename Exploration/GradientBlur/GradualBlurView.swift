@@ -100,7 +100,7 @@ extension View {
 	}
 }
 
-struct GradientBlurView: View {
+struct GradualBlurView: View {
 	@Environment(\.layoutDirection) var direction
 	
 	@State private var radius: CGFloat = 16
@@ -177,6 +177,6 @@ struct GradientBlurView: View {
 }
 
 #Preview {
-	GradientBlurView()
+	GradualBlurView()
 		// .environment(\.layoutDirection, .rightToLeft)
 }
