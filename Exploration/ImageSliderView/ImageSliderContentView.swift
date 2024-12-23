@@ -14,6 +14,7 @@ struct ImageSliderContentView: View {
 			VStack {
 				ImageViewer {
 					ForEach(ImageDataModel.sampleImages) { image in
+						/// Animations will work even when image is loading
 						AsyncImage(url: URL(string: image.link)) { image in
 							image
 								.resizable()
@@ -28,8 +29,12 @@ struct ImageSliderContentView: View {
 										.frame(maxWidth: .infinity, maxHeight: .infinity)
 								}
 						}
+						.containerValue(\.activeViewID, image.id)
 					}
 				}
+//				updates: { isPresented, activeViewID in
+//					print(isPresented, activeViewID)
+//				}
 			}
 			.padding()
 			.navigationTitle("Image Viewer")

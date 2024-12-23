@@ -1,9 +1,14 @@
 import SwiftUI
 
+/// Sometimes, we may require a custom overlay view for custom controls or to display additional information in the detail view. Therefore, let's update the view to accommodate custom overlay views
+
 struct ImageViewer<Content: View>: View {
 	// Config
 	var config = ImageSliderConfig()
 	@ViewBuilder var content: Content
+	
+	// Giving updates to the main view:
+	var updates: (Bool, AnyHashable?) -> () = { _, _ in }
 	
 	// View Properties
 	@State private var isPresented: Bool = false
@@ -78,14 +83,29 @@ struct ImageViewer<Content: View>: View {
 				.navigationTransition(.zoom(sourceID: transitionSource, in: animation))
 				// Hiding tool bar
 				.toolbarVisibility(.hidden, for: .navigationBar)
-				/// Updating transitionSource when tab item get changed
-				.onChange(of: activeTabID) { oldValue, newValue in
-					/// Consider this example: when the tab view at detail view is at index 6 or 7 and when it dismisses, the zoom transition won't have any effect because there's no matchedTransitionSource for that index. Therefore, indexes greater than 4 will always have a transition ID of 3
-					transitionSource = min(collection.index(newValue), 3)
-				}
+			}
+			/// Updating transitionSource when tab item get changed
+			.onChange(of: activeTabID) { oldValue, newValue in
+				/// Consider this example: when the tab view at detail view is at index 6 or 7 and when it dismisses, the zoom transition won't have any effect because there's no matchedTransitionSource for that index. Therefore, indexes greater than 4 will always have a transition ID of 3
+				transitionSource = min(collection.index(newValue), 3)
+				sendUpdate(collection, id: newValue)
+			}
+			.onChange(of: isPresented) { oldValue, newValue in
+				sendUpdate(collection, id: activeTabID)
 			}
 		}
 	}
+	
+	private func sendUpdate(_ collection: SubviewsCollection, id: Subview.ID?) {
+		if let viewID = collection.first(where: { $0.id == id })?.containerValues.activeViewID {
+			updates(isPresented, viewID)
+		}
+	}
+}
+
+/// To retrieve the current active ID, we can utilise container values to pass the ID to the view and then extract it from subview.
+extension ContainerValues {
+	@Entry var activeViewID: AnyHashable?
 }
 
 struct ImageSliderConfig {
