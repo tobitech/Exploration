@@ -212,6 +212,9 @@
 		0AC455402C77D4E40029767A /* CustomCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC4553F2C77D4E40029767A /* CustomCarousel.swift */; };
 		0AC5D0832BBD3B35007CF93E /* RatioChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC5D0822BBD3B35007CF93E /* RatioChartData.swift */; };
 		0AC5D0852BBD50BC007CF93E /* ReportCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC5D0842BBD50BC007CF93E /* ReportCardView.swift */; };
+		0AC967112D17DE4500555DE3 /* ImageSliderContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC967102D17DE4500555DE3 /* ImageSliderContentView.swift */; };
+		0AC967132D17DE9300555DE3 /* ImageSliderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC967122D17DE9300555DE3 /* ImageSliderModel.swift */; };
+		0AC967152D17E4A600555DE3 /* ImageViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC967142D17E4A600555DE3 /* ImageViewer.swift */; };
 		0AC96E932BC7195100C31CC1 /* InfiniteCarouselContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC96E922BC7195100C31CC1 /* InfiniteCarouselContentView.swift */; };
 		0AC96E962BC7199800C31CC1 /* CarouselHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC96E952BC7199800C31CC1 /* CarouselHomeView.swift */; };
 		0AC96E992BC71A3800C31CC1 /* CarouselPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC96E982BC71A3800C31CC1 /* CarouselPage.swift */; };
@@ -509,6 +512,9 @@
 		0AC4553F2C77D4E40029767A /* CustomCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCarousel.swift; sourceTree = "<group>"; };
 		0AC5D0822BBD3B35007CF93E /* RatioChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatioChartData.swift; sourceTree = "<group>"; };
 		0AC5D0842BBD50BC007CF93E /* ReportCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportCardView.swift; sourceTree = "<group>"; };
+		0AC967102D17DE4500555DE3 /* ImageSliderContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSliderContentView.swift; sourceTree = "<group>"; };
+		0AC967122D17DE9300555DE3 /* ImageSliderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSliderModel.swift; sourceTree = "<group>"; };
+		0AC967142D17E4A600555DE3 /* ImageViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewer.swift; sourceTree = "<group>"; };
 		0AC96E922BC7195100C31CC1 /* InfiniteCarouselContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteCarouselContentView.swift; sourceTree = "<group>"; };
 		0AC96E952BC7199800C31CC1 /* CarouselHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselHomeView.swift; sourceTree = "<group>"; };
 		0AC96E982BC71A3800C31CC1 /* CarouselPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselPage.swift; sourceTree = "<group>"; };
@@ -981,6 +987,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0AC9670F2D17DE3600555DE3 /* ImageSliderView */,
 				0AB86C992CFC3AB80031DDD4 /* TransparentBlur */,
 				0AF5607B2CF1879E00A367E4 /* GaphicsAndDrawing */,
 				0A47C8B62CEDAF88009623F2 /* OptionalModifiers */,
@@ -1755,6 +1762,16 @@
 			path = Matho;
 			sourceTree = "<group>";
 		};
+		0AC9670F2D17DE3600555DE3 /* ImageSliderView */ = {
+			isa = PBXGroup;
+			children = (
+				0AC967102D17DE4500555DE3 /* ImageSliderContentView.swift */,
+				0AC967122D17DE9300555DE3 /* ImageSliderModel.swift */,
+				0AC967142D17E4A600555DE3 /* ImageViewer.swift */,
+			);
+			path = ImageSliderView;
+			sourceTree = "<group>";
+		};
 		0AC96E912BC7193200C31CC1 /* InfiniteCarousel */ = {
 			isa = PBXGroup;
 			children = (
@@ -2395,6 +2412,7 @@
 				0AD208352C97DACF0024A5D2 /* HorizontalButtonView.swift in Sources */,
 				0AFDFD962BCCF86900DF7DF4 /* LoopingScrollViewHomeView.swift in Sources */,
 				0A115B602BC7CD29002628A1 /* ScrollingTab.swift in Sources */,
+				0AC967132D17DE9300555DE3 /* ImageSliderModel.swift in Sources */,
 				0AEC6D9A2C73A5150097D21A /* FloatingTabsContentView.swift in Sources */,
 				0A4304CC2C5D2F85004040FF /* FullscreenModalContentView.swift in Sources */,
 				0AFDFD9B2BCCF9AE00DF7DF4 /* LoopingScrollView.swift in Sources */,
@@ -2433,11 +2451,13 @@
 				0ADA7E922BEB54C7003D6DAC /* CalendarScrollAnimationContentView.swift in Sources */,
 				0A70AD472BB29662008794F4 /* Post.swift in Sources */,
 				0A411CAE2C20566800806CFE /* MeshGradientContentView.swift in Sources */,
+				0AC967152D17E4A600555DE3 /* ImageViewer.swift in Sources */,
 				0A5333972BCFA8CD00EE2D05 /* FlipTransitionContentView.swift in Sources */,
 				0AB9BD482BCA51DB00288609 /* ControlCenterHomeView.swift in Sources */,
 				0A8B70EF2BCC35460032F794 /* AnimatedPageIndicatorContentView.swift in Sources */,
 				0A411CB12C20608300806CFE /* FloatingTabBarContentView.swift in Sources */,
 				0A9D58AC2CAF21E8009F0412 /* GoogleLensViewV2.swift in Sources */,
+				0AC967112D17DE4500555DE3 /* ImageSliderContentView.swift in Sources */,
 				0A4F4C602BD1524400247B3D /* ImageRendererContentView.swift in Sources */,
 				0A90B4E92CEA50F900F7D223 /* BlurViewContentView.swift in Sources */,
 				0A5342242BF485A600D965B2 /* StackedNotificationsContentView.swift in Sources */,
