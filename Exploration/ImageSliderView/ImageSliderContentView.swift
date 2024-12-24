@@ -31,6 +31,8 @@ struct ImageSliderContentView: View {
 						}
 						.containerValue(\.activeViewID, image.id)
 					}
+				} overlay: {
+					OverlayView()
 				}
 //				updates: { isPresented, activeViewID in
 //					print(isPresented, activeViewID)
@@ -39,6 +41,28 @@ struct ImageSliderContentView: View {
 			.padding()
 			.navigationTitle("Image Viewer")
 		}
+	}
+}
+
+// Overlay View
+struct OverlayView: View {
+	@Environment(\.dismiss) private var dismiss
+	var body: some View {
+		VStack {
+			Button {
+				dismiss()
+			} label: {
+				Image(systemName: "xmark.circle.fill")
+					.font(.title)
+					.foregroundStyle(.ultraThinMaterial)
+					.padding(10)
+					.contentShape(.rect)
+			}
+			.frame(maxWidth: .infinity, alignment: .leading)
+			
+			Spacer(minLength: 0)
+		}
+		.padding(15)
 	}
 }
 

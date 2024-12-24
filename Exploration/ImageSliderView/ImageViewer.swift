@@ -2,10 +2,11 @@ import SwiftUI
 
 /// Sometimes, we may require a custom overlay view for custom controls or to display additional information in the detail view. Therefore, let's update the view to accommodate custom overlay views
 
-struct ImageViewer<Content: View>: View {
+struct ImageViewer<Content: View, Overlay: View>: View {
 	// Config
 	var config = ImageSliderConfig()
 	@ViewBuilder var content: Content
+	@ViewBuilder var overlay: Overlay
 	
 	// Giving updates to the main view:
 	var updates: (Bool, AnyHashable?) -> () = { _, _ in }
@@ -71,6 +72,7 @@ struct ImageViewer<Content: View>: View {
 					ForEach(collection) { item in
 						item
 							.aspectRatio(contentMode: .fit)
+							.frame(maxWidth: .infinity, maxHeight: .infinity)
 							.tag(item.id)
 					}
 				}
@@ -79,6 +81,9 @@ struct ImageViewer<Content: View>: View {
 					Rectangle()
 						.fill(.black)
 						.ignoresSafeArea()
+				}
+				.overlay {
+					overlay
 				}
 				.navigationTransition(.zoom(sourceID: transitionSource, in: animation))
 				// Hiding tool bar
