@@ -36,6 +36,7 @@
 		0A38157A2BDA270400634A8B /* MaterialCarouselHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3815792BDA270400634A8B /* MaterialCarouselHomeView.swift */; };
 		0A38157C2BDA279800634A8B /* MaterialCarouselCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A38157B2BDA279800634A8B /* MaterialCarouselCard.swift */; };
 		0A3A26E52C78A0B700196632 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3A26E42C78A0B700196632 /* ImageModel.swift */; };
+		0A404C862D1B9D3300B0AA5D /* ScrollTransitionContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A404C852D1B9D3300B0AA5D /* ScrollTransitionContentView.swift */; };
 		0A411CAE2C20566800806CFE /* MeshGradientContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A411CAD2C20566800806CFE /* MeshGradientContentView.swift */; };
 		0A411CB12C20608300806CFE /* FloatingTabBarContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A411CB02C20608300806CFE /* FloatingTabBarContentView.swift */; };
 		0A426D7F2BE8F57800809254 /* GridAnimationContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A426D7E2BE8F57800809254 /* GridAnimationContentView.swift */; };
@@ -334,6 +335,7 @@
 		0A3815792BDA270400634A8B /* MaterialCarouselHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialCarouselHomeView.swift; sourceTree = "<group>"; };
 		0A38157B2BDA279800634A8B /* MaterialCarouselCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialCarouselCard.swift; sourceTree = "<group>"; };
 		0A3A26E42C78A0B700196632 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		0A404C852D1B9D3300B0AA5D /* ScrollTransitionContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollTransitionContentView.swift; sourceTree = "<group>"; };
 		0A411CAD2C20566800806CFE /* MeshGradientContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshGradientContentView.swift; sourceTree = "<group>"; };
 		0A411CB02C20608300806CFE /* FloatingTabBarContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTabBarContentView.swift; sourceTree = "<group>"; };
 		0A426D7E2BE8F57800809254 /* GridAnimationContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridAnimationContentView.swift; sourceTree = "<group>"; };
@@ -751,6 +753,14 @@
 			path = MaterialCarousel;
 			sourceTree = "<group>";
 		};
+		0A404C842D1B9D2400B0AA5D /* ScrollTransition */ = {
+			isa = PBXGroup;
+			children = (
+				0A404C852D1B9D3300B0AA5D /* ScrollTransitionContentView.swift */,
+			);
+			path = ScrollTransition;
+			sourceTree = "<group>";
+		};
 		0A411CAC2C20565200806CFE /* MeshGradient */ = {
 			isa = PBXGroup;
 			children = (
@@ -987,6 +997,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0A404C842D1B9D2400B0AA5D /* ScrollTransition */,
 				0AC9670F2D17DE3600555DE3 /* ImageSliderView */,
 				0AB86C992CFC3AB80031DDD4 /* TransparentBlur */,
 				0AF5607B2CF1879E00A367E4 /* GaphicsAndDrawing */,
@@ -2266,6 +2277,7 @@
 				0AFDFD9E2BCD093D00DF7DF4 /* DynamicTabIndicatorsContentView.swift in Sources */,
 				0A4BDBB72BE6C4A200B4E8E7 /* DateTF.swift in Sources */,
 				0A115B652BC7DBBE002628A1 /* AnimationEndCallBack.swift in Sources */,
+				0A404C862D1B9D3300B0AA5D /* ScrollTransitionContentView.swift in Sources */,
 				0A48B7092BBC6DE900060277 /* RatioMainView.swift in Sources */,
 				0AABFF4F2CFC3D5B00552D06 /* TransparentBlurView.swift in Sources */,
 				0A3311012C29501D00DC0086 /* OffsetHelper.swift in Sources */,
