@@ -13,13 +13,22 @@ struct ScrollTransitionContentView: View {
 			let size = $0.size
 
 			ScrollView(.horizontal) {
-				LazyHStack(spacing: 0) {
+				LazyHStack(spacing: 12) {
 					ForEach(images) { image in
 						Image(image.image)
 							.resizable()
 							.aspectRatio(contentMode: .fill)
+						/* Type 2: Parallax
+							/// Extend the image with how much shifting you've applied in the scrollTransition modifier. In my case, I shifted the view about 80, and thus I used the value `80` here.
+							.frame(width: 220 + 80)
+							.scrollTransition(.interactive, axis: .horizontal) { content, phase in
+								content
+									.offset(x: phase == .identity ? 0 : -phase.value * 80)
+							}
+						*/
 							.frame(width: 220, height: size.height)
 							.clipShape(.rect(cornerRadius: 25))
+						/* Type 1: Circular Carousel
 							.scrollTransition(.interactive, axis: .horizontal) { content, phase in
 								content
 									/// Let's make the inactive cards blurry.
@@ -29,6 +38,7 @@ struct ScrollTransitionContentView: View {
 									.offset(y: phase == .identity ? 0 : 35)
 									.rotationEffect(.init(degrees: phase == .identity ? 0 : phase.value * 15), anchor: .bottom)
 							}
+						*/
 					}
 				}
 				.scrollTargetLayout()
