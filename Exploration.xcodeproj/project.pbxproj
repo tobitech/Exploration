@@ -167,6 +167,9 @@
 		0A9EE64E2C99E1A200510816 /* WheelPickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9EE64D2C99E1A200510816 /* WheelPickerContentView.swift */; };
 		0A9EE6512C99E1DE00510816 /* CircularWheelPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9EE6502C99E1DE00510816 /* CircularWheelPicker.swift */; };
 		0A9EE6532C99EE2E00510816 /* CircularWheelPickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9EE6522C99EE2E00510816 /* CircularWheelPickerContentView.swift */; };
+		0AA61C9F2D28B9A900A7A9B7 /* BackdropCarouselContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA61C9E2D28B9A900A7A9B7 /* BackdropCarouselContentView.swift */; };
+		0AA61CA12D28BA2200A7A9B7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA61CA02D28BA1F00A7A9B7 /* Model.swift */; };
+		0AA61CA32D28BC2D00A7A9B7 /* BackdropCarouselHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA61CA22D28BC2D00A7A9B7 /* BackdropCarouselHomeView.swift */; };
 		0AA76A9E2BDA2F1000B246F5 /* MaterialOffsetReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA76A9D2BDA2F1000B246F5 /* MaterialOffsetReader.swift */; };
 		0AA952EE2BBFD836007E62B1 /* HoldDownButtonContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA952ED2BBFD836007E62B1 /* HoldDownButtonContentView.swift */; };
 		0AA952F12BBFD86E007E62B1 /* HoldDownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA952F02BBFD86E007E62B1 /* HoldDownButton.swift */; };
@@ -468,6 +471,9 @@
 		0A9EE64D2C99E1A200510816 /* WheelPickerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelPickerContentView.swift; sourceTree = "<group>"; };
 		0A9EE6502C99E1DE00510816 /* CircularWheelPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularWheelPicker.swift; sourceTree = "<group>"; };
 		0A9EE6522C99EE2E00510816 /* CircularWheelPickerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularWheelPickerContentView.swift; sourceTree = "<group>"; };
+		0AA61C9E2D28B9A900A7A9B7 /* BackdropCarouselContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackdropCarouselContentView.swift; sourceTree = "<group>"; };
+		0AA61CA02D28BA1F00A7A9B7 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		0AA61CA22D28BC2D00A7A9B7 /* BackdropCarouselHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackdropCarouselHomeView.swift; sourceTree = "<group>"; };
 		0AA76A9D2BDA2F1000B246F5 /* MaterialOffsetReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialOffsetReader.swift; sourceTree = "<group>"; };
 		0AA952ED2BBFD836007E62B1 /* HoldDownButtonContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldDownButtonContentView.swift; sourceTree = "<group>"; };
 		0AA952F02BBFD86E007E62B1 /* HoldDownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoldDownButton.swift; sourceTree = "<group>"; };
@@ -997,6 +1003,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0AA61C9D2D28B9A100A7A9B7 /* BackdropCarousel */,
 				0A404C842D1B9D2400B0AA5D /* ScrollTransition */,
 				0AC9670F2D17DE3600555DE3 /* ImageSliderView */,
 				0AB86C992CFC3AB80031DDD4 /* TransparentBlur */,
@@ -1565,6 +1572,16 @@
 				0A9EE6522C99EE2E00510816 /* CircularWheelPickerContentView.swift */,
 			);
 			path = CircularWheelPicker;
+			sourceTree = "<group>";
+		};
+		0AA61C9D2D28B9A100A7A9B7 /* BackdropCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				0AA61CA02D28BA1F00A7A9B7 /* Model.swift */,
+				0AA61CA22D28BC2D00A7A9B7 /* BackdropCarouselHomeView.swift */,
+				0AA61C9E2D28B9A900A7A9B7 /* BackdropCarouselContentView.swift */,
+			);
+			path = BackdropCarousel;
 			sourceTree = "<group>";
 		};
 		0AA952EC2BBFD805007E62B1 /* HoldDownButton */ = {
@@ -2341,6 +2358,7 @@
 				0A55A1112B8A528F00FB6C1E /* CustomAlertContentView.swift in Sources */,
 				0A5EEF7B2CF8452100ABFB22 /* GradualBlurView.swift in Sources */,
 				0AE941262CD7540600500D5E /* FamilyRootView.swift in Sources */,
+				0AA61C9F2D28B9A900A7A9B7 /* BackdropCarouselContentView.swift in Sources */,
 				0ABBD01A2BD8F1A700CE9EDF /* ParticleEmitterContentView.swift in Sources */,
 				0A8791012CD8A43300C1D8CE /* ExpandableMusicPlayer.swift in Sources */,
 				0AFB85182BEF567D00203CEF /* PhotosAppHomeView.swift in Sources */,
@@ -2464,6 +2482,7 @@
 				0A70AD472BB29662008794F4 /* Post.swift in Sources */,
 				0A411CAE2C20566800806CFE /* MeshGradientContentView.swift in Sources */,
 				0AC967152D17E4A600555DE3 /* ImageViewer.swift in Sources */,
+				0AA61CA12D28BA2200A7A9B7 /* Model.swift in Sources */,
 				0A5333972BCFA8CD00EE2D05 /* FlipTransitionContentView.swift in Sources */,
 				0AB9BD482BCA51DB00288609 /* ControlCenterHomeView.swift in Sources */,
 				0A8B70EF2BCC35460032F794 /* AnimatedPageIndicatorContentView.swift in Sources */,
@@ -2480,6 +2499,7 @@
 				0AB9BD5B2BCA925200288609 /* StoryView.swift in Sources */,
 				0A70AD492BB297A6008794F4 /* MainView.swift in Sources */,
 				0AE9412A2CD754F700500D5E /* FamilyScanView.swift in Sources */,
+				0AA61CA32D28BC2D00A7A9B7 /* BackdropCarouselHomeView.swift in Sources */,
 				0A9EE64E2C99E1A200510816 /* WheelPickerContentView.swift in Sources */,
 				0A8118E42BB712AF00889DA7 /* PinchZoom.swift in Sources */,
 				0AB9BD442BCA515C00288609 /* ControlCenterContentView.swift in Sources */,
