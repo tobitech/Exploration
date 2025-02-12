@@ -9,11 +9,9 @@ struct IntroPage: View {
 			AmbientBackground()
 			
 			VStack(spacing: 40) {
-				ScrollView(.horizontal) {
-					HStack(spacing: 10) {
-						ForEach(InviteCard.cards) { card in
-							CarouselCardView(card)
-						}
+				InfiniteScrollView {
+					ForEach(InviteCard.cards) { card in
+						CarouselCardView(card)
 					}
 				}
 				.scrollIndicators(.hidden)
