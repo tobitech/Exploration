@@ -159,6 +159,7 @@
 		0A9232112BD39E6E008B5F24 /* TabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9232102BD39E6E008B5F24 /* TabModel.swift */; };
 		0A9232132BD3AB8D008B5F24 /* RectKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9232122BD3AB8D008B5F24 /* RectKey.swift */; };
 		0A9232152BD3AD42008B5F24 /* Interpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9232142BD3AD42008B5F24 /* Interpolation.swift */; };
+		0A9571F82D5DCEE100725569 /* CustomTextEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9571F72D5DCEE100725569 /* CustomTextEffect.swift */; };
 		0A9808692CC2F2AB006523A0 /* InteractiveToastsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9808682CC2F2AB006523A0 /* InteractiveToastsContentView.swift */; };
 		0A98086C2CC2F472006523A0 /* Toasts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A98086B2CC2F472006523A0 /* Toasts.swift */; };
 		0A9BC9222C8E7AF200362FB1 /* FBGradientMaskContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9BC9212C8E7AF200362FB1 /* FBGradientMaskContentView.swift */; };
@@ -467,6 +468,7 @@
 		0A9232102BD39E6E008B5F24 /* TabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabModel.swift; sourceTree = "<group>"; };
 		0A9232122BD3AB8D008B5F24 /* RectKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectKey.swift; sourceTree = "<group>"; };
 		0A9232142BD3AD42008B5F24 /* Interpolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interpolation.swift; sourceTree = "<group>"; };
+		0A9571F72D5DCEE100725569 /* CustomTextEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextEffect.swift; sourceTree = "<group>"; };
 		0A9808682CC2F2AB006523A0 /* InteractiveToastsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveToastsContentView.swift; sourceTree = "<group>"; };
 		0A98086B2CC2F472006523A0 /* Toasts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toasts.swift; sourceTree = "<group>"; };
 		0A9BC9212C8E7AF200362FB1 /* FBGradientMaskContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBGradientMaskContentView.swift; sourceTree = "<group>"; };
@@ -1315,6 +1317,7 @@
 		0A55CFE42D5D3B5600A7CF2F /* AppleInvitesIntro */ = {
 			isa = PBXGroup;
 			children = (
+				0A9571F72D5DCEE100725569 /* CustomTextEffect.swift */,
 				0A55CFE52D5D3B7F00A7CF2F /* InviteCard.swift */,
 				0A55CFE72D5D3BFC00A7CF2F /* IntroPage.swift */,
 				0A55CFEB2D5D573800A7CF2F /* InfiniteScrollView.swift */,
@@ -2366,6 +2369,7 @@
 				0A6B1A0A2C117F52005F372A /* VerticalCarouselContentView.swift in Sources */,
 				0A02C0132C77950500AD8789 /* CoverFlowContentView.swift in Sources */,
 				0A3815782BDA26D600634A8B /* MaterialCarouselContentView.swift in Sources */,
+				0A9571F82D5DCEE100725569 /* CustomTextEffect.swift in Sources */,
 				0A8B70F42BCC5AC60032F794 /* ReelsLayoutContentView.swift in Sources */,
 				0AEF03432C5842F100FA1003 /* IntroItem.swift in Sources */,
 				0AA76A9E2BDA2F1000B246F5 /* MaterialOffsetReader.swift in Sources */,

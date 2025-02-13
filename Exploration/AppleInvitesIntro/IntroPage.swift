@@ -7,11 +7,14 @@ struct IntroPage: View {
 	@State private var currentScrollOffset: CGFloat = 0
 	@State private var timer = Timer.publish(every: 0.01, on: .current, in: .default).autoconnect()
 	@State private var initialAnimation: Bool = false
+	@State private var titleProgress: CGFloat = 0
+	@State private var scrollPhase: ScrollPhase = .idle
 	
 	var body: some View {
 		ZStack {
 			// Ambient background View
 			AmbientBackground()
+				.animation(.easeInOut(duration: 1), value: activeCard)
 			
 			VStack(spacing: 40) {
 				InfiniteScrollView {
@@ -21,13 +24,22 @@ struct IntroPage: View {
 				}
 				.scrollIndicators(.hidden)
 				.scrollPosition($scrollPosition)
+				.scrollClipDisabled()
 				.containerRelativeFrame(.vertical) { value, _ in
 					value * 0.45
+				}
+				.onScrollPhaseChange { oldPhase, newPhase in
+					scrollPhase = newPhase
 				}
 				.onScrollGeometryChange(for: CGFloat.self) {
 					$0.contentOffset.x + $0.contentInsets.leading
 				} action: { oldValue, newValue in
 					currentScrollOffset = newValue
+					
+					if scrollPhase != .decelerating || scrollPhase != .animating {
+						let activeIndex = Int((currentScrollOffset / 220).rounded()) % InviteCard.cards.count
+						activeCard = InviteCard.cards[activeIndex]
+					}
 				}
 				.visualEffect { [initialAnimation] content, proxy in
 					content
@@ -42,6 +54,7 @@ struct IntroPage: View {
 					
 					Text("Apple Invites")
 						.font(.largeTitle.bold())
+						.textRenderer(TitleTextRenderer(progress: titleProgress))
 						.padding(.bottom, 12)
 					
 					Text("Create beautiful invitations for all your events.\nAnyone can receive invitations. Sending included\n with iCloud+.")
@@ -52,7 +65,9 @@ struct IntroPage: View {
 				}
 				
 				Button {
-					
+					// Don't forget to cancel the timer before leaving!
+					timer.upstream.connect().cancel()
+					// Your action code.
 				} label: {
 					Text("Create Event")
 						.fontWeight(.semibold)
@@ -71,8 +86,13 @@ struct IntroPage: View {
 		}
 		.task {
 			try? await Task.sleep(for: .seconds(0.35))
+			
 			withAnimation(.smooth(duration: 0.75, extraBounce: 0)) {
 				initialAnimation = true
+			}
+			
+			withAnimation(.smooth(duration: 2.5, extraBounce: 0).delay(0.3)) {
+				titleProgress = 1
 			}
 		}
 	}
