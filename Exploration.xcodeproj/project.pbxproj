@@ -56,6 +56,7 @@
 		0A48B7052BBC66B900060277 /* ListsCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A48B7042BBC66B900060277 /* ListsCardView.swift */; };
 		0A48B7072BBC6D4B00060277 /* OverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A48B7062BBC6D4B00060277 /* OverviewView.swift */; };
 		0A48B7092BBC6DE900060277 /* RatioMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A48B7082BBC6DE900060277 /* RatioMainView.swift */; };
+		0A49503A2D67B6F6002167BE /* JournalImagePickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4950392D67B6F6002167BE /* JournalImagePickerContentView.swift */; };
 		0A4BDBB42BE6C47A00B4E8E7 /* DateTextFieldContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BDBB32BE6C47A00B4E8E7 /* DateTextFieldContentView.swift */; };
 		0A4BDBB72BE6C4A200B4E8E7 /* DateTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4BDBB62BE6C4A200B4E8E7 /* DateTF.swift */; };
 		0A4DCE4D2BC9CD2B0042C928 /* CropImageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4DCE4C2BC9CD2B0042C928 /* CropImageContentView.swift */; };
@@ -363,6 +364,7 @@
 		0A48B7042BBC66B900060277 /* ListsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsCardView.swift; sourceTree = "<group>"; };
 		0A48B7062BBC6D4B00060277 /* OverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewView.swift; sourceTree = "<group>"; };
 		0A48B7082BBC6DE900060277 /* RatioMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatioMainView.swift; sourceTree = "<group>"; };
+		0A4950392D67B6F6002167BE /* JournalImagePickerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalImagePickerContentView.swift; sourceTree = "<group>"; };
 		0A4BDBB32BE6C47A00B4E8E7 /* DateTextFieldContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTextFieldContentView.swift; sourceTree = "<group>"; };
 		0A4BDBB62BE6C4A200B4E8E7 /* DateTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTF.swift; sourceTree = "<group>"; };
 		0A4DCE4C2BC9CD2B0042C928 /* CropImageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropImageContentView.swift; sourceTree = "<group>"; };
@@ -875,6 +877,14 @@
 			path = RatioOverview;
 			sourceTree = "<group>";
 		};
+		0A4950382D67B637002167BE /* KeyboardAreaImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				0A4950392D67B6F6002167BE /* JournalImagePickerContentView.swift */,
+			);
+			path = KeyboardAreaImagePicker;
+			sourceTree = "<group>";
+		};
 		0A4BDBB22BE6C43F00B4E8E7 /* DateTextField */ = {
 			isa = PBXGroup;
 			children = (
@@ -1013,6 +1023,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0A4950382D67B637002167BE /* KeyboardAreaImagePicker */,
 				0A55CFE42D5D3B5600A7CF2F /* AppleInvitesIntro */,
 				0AA61C9D2D28B9A100A7A9B7 /* BackdropCarousel */,
 				0A404C842D1B9D2400B0AA5D /* ScrollTransition */,
@@ -2531,6 +2542,7 @@
 				0A8118E42BB712AF00889DA7 /* PinchZoom.swift in Sources */,
 				0AB9BD442BCA515C00288609 /* ControlCenterContentView.swift in Sources */,
 				0AB4293C2BEA090B00FF20D4 /* DummyContentView.swift in Sources */,
+				0A49503A2D67B6F6002167BE /* JournalImagePickerContentView.swift in Sources */,
 				0A115B572BC7C13D002628A1 /* PageControl.swift in Sources */,
 				0A4DCE4D2BC9CD2B0042C928 /* CropImageContentView.swift in Sources */,
 				0AEC6DA22C73B9EE0097D21A /* MorphingSymbolView.swift in Sources */,

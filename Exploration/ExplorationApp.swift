@@ -7,7 +7,9 @@ struct ExplorationApp: App {
 	// @UIApplicationDelegateAdaptor(AppDelegate.self) private var delegate
 	var body: some Scene {
 		WindowGroup {
-			PhotosAppContentView()
+			JournalImagePickerContentView()
+			// IntroPageContentView()
+			// PhotosAppContentView()
 		}
 	}
 }
