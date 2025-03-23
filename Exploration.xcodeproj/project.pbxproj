@@ -246,6 +246,9 @@
 		0AD5E4FC2C79BD47003C76BF /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD5E4FB2C79BD47003C76BF /* Models.swift */; };
 		0ADA7E922BEB54C7003D6DAC /* CalendarScrollAnimationContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADA7E912BEB54C7003D6DAC /* CalendarScrollAnimationContentView.swift */; };
 		0ADA7E962BEB57D4003D6DAC /* CalendarScrollAnimationHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADA7E952BEB57D4003D6DAC /* CalendarScrollAnimationHomeView.swift */; };
+		0ADB827C2D8FD6BE000242F8 /* AudioScrubberContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADB827B2D8FD6BE000242F8 /* AudioScrubberContentView.swift */; };
+		0ADB827E2D8FD831000242F8 /* WaveformScrubber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADB827D2D8FD831000242F8 /* WaveformScrubber.swift */; };
+		0ADB82812D8FD97B000242F8 /* openai-fm-coral-calm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0ADB82802D8FD97B000242F8 /* openai-fm-coral-calm.mp3 */; };
 		0ADDE79D2C95866A00F9778C /* CameraControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADDE79C2C95866A00F9778C /* CameraControlView.swift */; };
 		0ADDE7A02C964AD900F9778C /* AnimatedTabContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADDE79F2C964AD900F9778C /* AnimatedTabContentView.swift */; };
 		0AE4FC9B2BE4E366005558AD /* CustomDialogContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE4FC9A2BE4E366005558AD /* CustomDialogContentView.swift */; };
@@ -562,6 +565,9 @@
 		0AD5E4FB2C79BD47003C76BF /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		0ADA7E912BEB54C7003D6DAC /* CalendarScrollAnimationContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarScrollAnimationContentView.swift; sourceTree = "<group>"; };
 		0ADA7E952BEB57D4003D6DAC /* CalendarScrollAnimationHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarScrollAnimationHomeView.swift; sourceTree = "<group>"; };
+		0ADB827B2D8FD6BE000242F8 /* AudioScrubberContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioScrubberContentView.swift; sourceTree = "<group>"; };
+		0ADB827D2D8FD831000242F8 /* WaveformScrubber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformScrubber.swift; sourceTree = "<group>"; };
+		0ADB82802D8FD97B000242F8 /* openai-fm-coral-calm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "openai-fm-coral-calm.mp3"; sourceTree = "<group>"; };
 		0ADDE79C2C95866A00F9778C /* CameraControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraControlView.swift; sourceTree = "<group>"; };
 		0ADDE79F2C964AD900F9778C /* AnimatedTabContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTabContentView.swift; sourceTree = "<group>"; };
 		0AE4FC9A2BE4E366005558AD /* CustomDialogContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDialogContentView.swift; sourceTree = "<group>"; };
@@ -1038,6 +1044,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0ADB827A2D8FD68A000242F8 /* AudioScrubber */,
 				0AF9B5102D7DC2F6000BFC89 /* CustomLazyList */,
 				0A4950382D67B637002167BE /* KeyboardAreaImagePicker */,
 				0A55CFE42D5D3B5600A7CF2F /* AppleInvitesIntro */,
@@ -1930,6 +1937,24 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		0ADB827A2D8FD68A000242F8 /* AudioScrubber */ = {
+			isa = PBXGroup;
+			children = (
+				0ADB827F2D8FD96F000242F8 /* Audio */,
+				0ADB827B2D8FD6BE000242F8 /* AudioScrubberContentView.swift */,
+				0ADB827D2D8FD831000242F8 /* WaveformScrubber.swift */,
+			);
+			path = AudioScrubber;
+			sourceTree = "<group>";
+		};
+		0ADB827F2D8FD96F000242F8 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				0ADB82802D8FD97B000242F8 /* openai-fm-coral-calm.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
 		0ADDE79E2C96494300F9778C /* CustomTabAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -2323,6 +2348,7 @@
 			files = (
 				0A55A08F2B89F5FE00FB6C1E /* Preview Assets.xcassets in Resources */,
 				0AB3192A2C99798F00C9CABE /* Reel 1.mp4 in Resources */,
+				0ADB82812D8FD97B000242F8 /* openai-fm-coral-calm.mp3 in Resources */,
 				0AB3192B2C99798F00C9CABE /* Reel 3.mp4 in Resources */,
 				0AB3192C2C99798F00C9CABE /* Reel 4.mp4 in Resources */,
 				0AB3192D2C99798F00C9CABE /* Reel 2.mp4 in Resources */,
@@ -2466,6 +2492,7 @@
 				0AE941282CD7546500500D5E /* FamilyMainView.swift in Sources */,
 				0AB9BD592BCA8EF200288609 /* StoryViewModel.swift in Sources */,
 				0A48B7072BBC6D4B00060277 /* OverviewView.swift in Sources */,
+				0ADB827C2D8FD6BE000242F8 /* AudioScrubberContentView.swift in Sources */,
 				0A55A0A92B89F75100FB6C1E /* BottomSheetHelper.swift in Sources */,
 				0AFE92DE2BF719B800AD012B /* StackedCards.swift in Sources */,
 				0A55A10B2B8A1EEB00FB6C1E /* ErrorView.swift in Sources */,
@@ -2585,6 +2612,7 @@
 				0A92320B2BD39DA8008B5F24 /* ScrollableIndicatorsContentView.swift in Sources */,
 				0A55A0E42B89FCC800FB6C1E /* InteractiveWidgetsContentView.swift in Sources */,
 				0A115B5A2BC7C6C5002628A1 /* AutoScrollingTabContentView.swift in Sources */,
+				0ADB827E2D8FD831000242F8 /* WaveformScrubber.swift in Sources */,
 				0A31D8102CA430ED00B1D079 /* HalfCircleProgressContentView.swift in Sources */,
 				0A3A26E52C78A0B700196632 /* ImageModel.swift in Sources */,
 				0A55A0F82B8A019300FB6C1E /* LockView.swift in Sources */,
