@@ -60,10 +60,13 @@ struct ShimmerEffectContentView: View {
 				.padding(.horizontal, 30)
 				.shimmer(ShimmerConfig(tint: .gray.opacity(0.3), highlight: .white, blur: 5))
 				
-				RoundedRectangle(cornerRadius: 20)
-					.frame(height: 200)
-					.padding()
-					.shimmer(ShimmerConfig(tint: .gray.opacity(0.3), highlight: .white, blur: 5))
+				HStack {
+					RoundedRectangle(cornerRadius: 20)
+						.frame(width: 150, height: 200)
+						.padding()
+						.shimmer(ShimmerConfig(tint: .gray.opacity(0.3), highlight: .white, blur: 1))
+					Spacer()
+				}
 			}
 			.navigationTitle("Shimmer Effect")
 			//.preferredColorScheme(.dark)
