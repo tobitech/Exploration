@@ -102,7 +102,7 @@ struct ZoomCardView: View {
 }
 
 /// NavigationLink is a form of button, but I don't want this opacity effect when we click the link. Thus, let's create a custom button style to remove this effect.
-struct CustomButtonStyle: ButtonStyle {
+fileprivate struct CustomButtonStyle: ButtonStyle {
 	func makeBody(configuration: Configuration) -> some View {
 		configuration.label
 	}

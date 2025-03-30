@@ -32,6 +32,10 @@
 		0A3310FE2C293B1700DC0086 /* ElasticScrollHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3310FD2C293B1700DC0086 /* ElasticScrollHomeView.swift */; };
 		0A3311012C29501D00DC0086 /* OffsetHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3311002C29501D00DC0086 /* OffsetHelper.swift */; };
 		0A3311032C295CBA00DC0086 /* View+ElasticExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3311022C295CBA00DC0086 /* View+ElasticExtensions.swift */; };
+		0A36D4642D99C8FC00AA046A /* AnimatedDialogContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A36D4632D99C8FC00AA046A /* AnimatedDialogContentView.swift */; };
+		0A36D4662D99CAA800AA046A /* CustomAlertDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A36D4652D99CAA800AA046A /* CustomAlertDrawer.swift */; };
+		0A36D4682D99CF6F00AA046A /* DrawerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A36D4672D99CF6F00AA046A /* DrawerButton.swift */; };
+		0A36D46A2D99CF9A00AA046A /* DrawerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A36D4692D99CF9A00AA046A /* DrawerConfig.swift */; };
 		0A3815782BDA26D600634A8B /* MaterialCarouselContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3815772BDA26D600634A8B /* MaterialCarouselContentView.swift */; };
 		0A38157A2BDA270400634A8B /* MaterialCarouselHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3815792BDA270400634A8B /* MaterialCarouselHomeView.swift */; };
 		0A38157C2BDA279800634A8B /* MaterialCarouselCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A38157B2BDA279800634A8B /* MaterialCarouselCard.swift */; };
@@ -349,6 +353,10 @@
 		0A3310FD2C293B1700DC0086 /* ElasticScrollHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElasticScrollHomeView.swift; sourceTree = "<group>"; };
 		0A3311002C29501D00DC0086 /* OffsetHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetHelper.swift; sourceTree = "<group>"; };
 		0A3311022C295CBA00DC0086 /* View+ElasticExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ElasticExtensions.swift"; sourceTree = "<group>"; };
+		0A36D4632D99C8FC00AA046A /* AnimatedDialogContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedDialogContentView.swift; sourceTree = "<group>"; };
+		0A36D4652D99CAA800AA046A /* CustomAlertDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertDrawer.swift; sourceTree = "<group>"; };
+		0A36D4672D99CF6F00AA046A /* DrawerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerButton.swift; sourceTree = "<group>"; };
+		0A36D4692D99CF9A00AA046A /* DrawerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerConfig.swift; sourceTree = "<group>"; };
 		0A3815772BDA26D600634A8B /* MaterialCarouselContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialCarouselContentView.swift; sourceTree = "<group>"; };
 		0A3815792BDA270400634A8B /* MaterialCarouselHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialCarouselHomeView.swift; sourceTree = "<group>"; };
 		0A38157B2BDA279800634A8B /* MaterialCarouselCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialCarouselCard.swift; sourceTree = "<group>"; };
@@ -778,6 +786,17 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		0A36D4622D99C8EB00AA046A /* AnimatedDialog */ = {
+			isa = PBXGroup;
+			children = (
+				0A36D4632D99C8FC00AA046A /* AnimatedDialogContentView.swift */,
+				0A36D4652D99CAA800AA046A /* CustomAlertDrawer.swift */,
+				0A36D4692D99CF9A00AA046A /* DrawerConfig.swift */,
+				0A36D4672D99CF6F00AA046A /* DrawerButton.swift */,
+			);
+			path = AnimatedDialog;
+			sourceTree = "<group>";
+		};
 		0A3815762BDA268300634A8B /* MaterialCarousel */ = {
 			isa = PBXGroup;
 			children = (
@@ -1044,6 +1063,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0A36D4622D99C8EB00AA046A /* AnimatedDialog */,
 				0ADB827A2D8FD68A000242F8 /* AudioScrubber */,
 				0AF9B5102D7DC2F6000BFC89 /* CustomLazyList */,
 				0A4950382D67B637002167BE /* KeyboardAreaImagePicker */,
@@ -2498,6 +2518,7 @@
 				0A55A10B2B8A1EEB00FB6C1E /* ErrorView.swift in Sources */,
 				0AFE92D92BF7147D00AD012B /* NotificationItem.swift in Sources */,
 				0A9BC9242C8E7B1500362FB1 /* FBGradientMaskHomeView.swift in Sources */,
+				0A36D4642D99C8FC00AA046A /* AnimatedDialogContentView.swift in Sources */,
 				0AFE8D372CC6D30000FAF428 /* UniversalOverlayContentView.swift in Sources */,
 				0ABD46962C93A7AB00003517 /* EquationView.swift in Sources */,
 				0ABD46982C93B24C00003517 /* PickerContentView.swift in Sources */,
@@ -2512,6 +2533,7 @@
 				0A0790F62B8DD14500CFB197 /* BottomCustomAlertHomeView.swift in Sources */,
 				0A4DCE512BC9CF3E0042C928 /* CropImageHomeView.swift in Sources */,
 				0AB4293A2BEA053300FF20D4 /* ImageView.swift in Sources */,
+				0A36D4662D99CAA800AA046A /* CustomAlertDrawer.swift in Sources */,
 				0A426D872BE8FD5E00809254 /* UICoordinator.swift in Sources */,
 				0A55A1032B8A165300FB6C1E /* PokedexView.swift in Sources */,
 				0A55A0A72B89F75100FB6C1E /* MapsBottomSheetContentView.swift in Sources */,
@@ -2599,6 +2621,7 @@
 				0A9EE64E2C99E1A200510816 /* WheelPickerContentView.swift in Sources */,
 				0A8118E42BB712AF00889DA7 /* PinchZoom.swift in Sources */,
 				0AB9BD442BCA515C00288609 /* ControlCenterContentView.swift in Sources */,
+				0A36D4682D99CF6F00AA046A /* DrawerButton.swift in Sources */,
 				0AB4293C2BEA090B00FF20D4 /* DummyContentView.swift in Sources */,
 				0A49503A2D67B6F6002167BE /* JournalImagePickerContentView.swift in Sources */,
 				0A115B572BC7C13D002628A1 /* PageControl.swift in Sources */,
@@ -2615,6 +2638,7 @@
 				0ADB827E2D8FD831000242F8 /* WaveformScrubber.swift in Sources */,
 				0A31D8102CA430ED00B1D079 /* HalfCircleProgressContentView.swift in Sources */,
 				0A3A26E52C78A0B700196632 /* ImageModel.swift in Sources */,
+				0A36D46A2D99CF9A00AA046A /* DrawerConfig.swift in Sources */,
 				0A55A0F82B8A019300FB6C1E /* LockView.swift in Sources */,
 				0AF9B5162D7DD0BC000BFC89 /* OffsetLayout.swift in Sources */,
 				0ABD46902C93A66E00003517 /* StepViewModel.swift in Sources */,
