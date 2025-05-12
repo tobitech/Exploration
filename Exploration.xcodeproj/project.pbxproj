@@ -180,6 +180,8 @@
 		0A9EE64E2C99E1A200510816 /* WheelPickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9EE64D2C99E1A200510816 /* WheelPickerContentView.swift */; };
 		0A9EE6512C99E1DE00510816 /* CircularWheelPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9EE6502C99E1DE00510816 /* CircularWheelPicker.swift */; };
 		0A9EE6532C99EE2E00510816 /* CircularWheelPickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9EE6522C99EE2E00510816 /* CircularWheelPickerContentView.swift */; };
+		0AA310FC2DD26F9C0058D07A /* PaywallStoreKitContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA310FB2DD26F9C0058D07A /* PaywallStoreKitContentView.swift */; };
+		0AA310FE2DD2704A0058D07A /* Subscription.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 0AA310FD2DD2704A0058D07A /* Subscription.storekit */; };
 		0AA61C9F2D28B9A900A7A9B7 /* BackdropCarouselContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA61C9E2D28B9A900A7A9B7 /* BackdropCarouselContentView.swift */; };
 		0AA61CA12D28BA2200A7A9B7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA61CA02D28BA1F00A7A9B7 /* Model.swift */; };
 		0AA61CA32D28BC2D00A7A9B7 /* BackdropCarouselHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA61CA22D28BC2D00A7A9B7 /* BackdropCarouselHomeView.swift */; };
@@ -503,6 +505,8 @@
 		0A9EE64D2C99E1A200510816 /* WheelPickerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelPickerContentView.swift; sourceTree = "<group>"; };
 		0A9EE6502C99E1DE00510816 /* CircularWheelPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularWheelPicker.swift; sourceTree = "<group>"; };
 		0A9EE6522C99EE2E00510816 /* CircularWheelPickerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularWheelPickerContentView.swift; sourceTree = "<group>"; };
+		0AA310FB2DD26F9C0058D07A /* PaywallStoreKitContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallStoreKitContentView.swift; sourceTree = "<group>"; };
+		0AA310FD2DD2704A0058D07A /* Subscription.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Subscription.storekit; sourceTree = "<group>"; };
 		0AA61C9E2D28B9A900A7A9B7 /* BackdropCarouselContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackdropCarouselContentView.swift; sourceTree = "<group>"; };
 		0AA61CA02D28BA1F00A7A9B7 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		0AA61CA22D28BC2D00A7A9B7 /* BackdropCarouselHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackdropCarouselHomeView.swift; sourceTree = "<group>"; };
@@ -1063,6 +1067,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0AA310FA2DD26F850058D07A /* PaywallStoreKit */,
 				0A36D4622D99C8EB00AA046A /* AnimatedDialog */,
 				0ADB827A2D8FD68A000242F8 /* AudioScrubber */,
 				0AF9B5102D7DC2F6000BFC89 /* CustomLazyList */,
@@ -1649,6 +1654,15 @@
 				0A9EE6522C99EE2E00510816 /* CircularWheelPickerContentView.swift */,
 			);
 			path = CircularWheelPicker;
+			sourceTree = "<group>";
+		};
+		0AA310FA2DD26F850058D07A /* PaywallStoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				0AA310FB2DD26F9C0058D07A /* PaywallStoreKitContentView.swift */,
+				0AA310FD2DD2704A0058D07A /* Subscription.storekit */,
+			);
+			path = PaywallStoreKit;
 			sourceTree = "<group>";
 		};
 		0AA61C9D2D28B9A100A7A9B7 /* BackdropCarousel */ = {
@@ -2366,6 +2380,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA310FE2DD2704A0058D07A /* Subscription.storekit in Resources */,
 				0A55A08F2B89F5FE00FB6C1E /* Preview Assets.xcassets in Resources */,
 				0AB3192A2C99798F00C9CABE /* Reel 1.mp4 in Resources */,
 				0ADB82812D8FD97B000242F8 /* openai-fm-coral-calm.mp3 in Resources */,
@@ -2608,6 +2623,7 @@
 				0A9D58AC2CAF21E8009F0412 /* GoogleLensViewV2.swift in Sources */,
 				0AC967112D17DE4500555DE3 /* ImageSliderContentView.swift in Sources */,
 				0A4F4C602BD1524400247B3D /* ImageRendererContentView.swift in Sources */,
+				0AA310FC2DD26F9C0058D07A /* PaywallStoreKitContentView.swift in Sources */,
 				0A90B4E92CEA50F900F7D223 /* BlurViewContentView.swift in Sources */,
 				0A5342242BF485A600D965B2 /* StackedNotificationsContentView.swift in Sources */,
 				0A38157A2BDA270400634A8B /* MaterialCarouselHomeView.swift in Sources */,

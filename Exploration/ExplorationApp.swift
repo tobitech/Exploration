@@ -8,12 +8,14 @@ struct ExplorationApp: App {
 	var body: some Scene {
 		WindowGroup {
 			// JournalImagePickerContentView()
-			// IntroPageContentView()
+			IntroPageContentView()
 			// PhotosAppContentView()
 			// MessagesImagePickerContentView()
-			NavigationView {
-				CommentsView()
-			}
+//			NavigationView {
+//				CommentsView()
+//			}
+			// AnimatedDialogContentView()
+			PaywallStoreKitContentView()
 		}
 	}
 }
