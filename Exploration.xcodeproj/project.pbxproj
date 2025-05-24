@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A0248162DE22F3800B86858 /* iMessageMenuContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0248152DE22F3800B86858 /* iMessageMenuContentView.swift */; };
+		0A0248182DE22F6400B86858 /* CustomMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0248172DE22F6400B86858 /* CustomMenuView.swift */; };
 		0A02C0132C77950500AD8789 /* CoverFlowContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A02C0122C77950500AD8789 /* CoverFlowContentView.swift */; };
 		0A0790F42B8DC21E00CFB197 /* BottomCustomAlertContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0790F32B8DC21E00CFB197 /* BottomCustomAlertContentView.swift */; };
 		0A0790F62B8DD14500CFB197 /* BottomCustomAlertHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0790F52B8DD14500CFB197 /* BottomCustomAlertHomeView.swift */; };
@@ -330,6 +332,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A0248152DE22F3800B86858 /* iMessageMenuContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMessageMenuContentView.swift; sourceTree = "<group>"; };
+		0A0248172DE22F6400B86858 /* CustomMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMenuView.swift; sourceTree = "<group>"; };
 		0A02C0122C77950500AD8789 /* CoverFlowContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverFlowContentView.swift; sourceTree = "<group>"; };
 		0A0790F32B8DC21E00CFB197 /* BottomCustomAlertContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomCustomAlertContentView.swift; sourceTree = "<group>"; };
 		0A0790F52B8DD14500CFB197 /* BottomCustomAlertHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomCustomAlertHomeView.swift; sourceTree = "<group>"; };
@@ -650,6 +654,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A0248142DE22EF900B86858 /* iMessageMenu */ = {
+			isa = PBXGroup;
+			children = (
+				0A0248152DE22F3800B86858 /* iMessageMenuContentView.swift */,
+				0A0248172DE22F6400B86858 /* CustomMenuView.swift */,
+			);
+			path = iMessageMenu;
+			sourceTree = "<group>";
+		};
 		0A02C0112C7794F000AD8789 /* CoverFlowCarousel */ = {
 			isa = PBXGroup;
 			children = (
@@ -1067,6 +1080,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0A0248142DE22EF900B86858 /* iMessageMenu */,
 				0AA310FA2DD26F850058D07A /* PaywallStoreKit */,
 				0A36D4622D99C8EB00AA046A /* AnimatedDialog */,
 				0ADB827A2D8FD68A000242F8 /* AudioScrubber */,
@@ -2564,6 +2578,7 @@
 				0A29EF422BB05B75007D411E /* CameraPickerView.swift in Sources */,
 				0AB429382BE9F20F00FF20D4 /* DetailView.swift in Sources */,
 				0A6C96C42C99931600DFCEB3 /* VideoDetailView.swift in Sources */,
+				0A0248182DE22F6400B86858 /* CustomMenuView.swift in Sources */,
 				0AB74F092C6EB0D0001BDFE2 /* ClockView.swift in Sources */,
 				0A9BC9222C8E7AF200362FB1 /* FBGradientMaskContentView.swift in Sources */,
 				0A4DCE532BC9CF6B0042C928 /* Crop.swift in Sources */,
@@ -2616,6 +2631,7 @@
 				0AC967152D17E4A600555DE3 /* ImageViewer.swift in Sources */,
 				0AA61CA12D28BA2200A7A9B7 /* Model.swift in Sources */,
 				0A5333972BCFA8CD00EE2D05 /* FlipTransitionContentView.swift in Sources */,
+				0A0248162DE22F3800B86858 /* iMessageMenuContentView.swift in Sources */,
 				0AB9BD482BCA51DB00288609 /* ControlCenterHomeView.swift in Sources */,
 				0AF9B5142D7DC66C000BFC89 /* CustomLazyListContentView.swift in Sources */,
 				0A8B70EF2BCC35460032F794 /* AnimatedPageIndicatorContentView.swift in Sources */,
