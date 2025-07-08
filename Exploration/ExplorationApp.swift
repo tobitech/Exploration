@@ -15,8 +15,8 @@ struct ExplorationApp: App {
 //				CommentsView()
 //			}
 			// AnimatedDialogContentView()
-			// PaywallStoreKitContentView()
-			iMessageMenuContentView()
+			PaywallStoreKitContentView()
+			// iMessageMenuContentView()
 		}
 	}
 }

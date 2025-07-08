@@ -19,6 +19,7 @@ struct iMessageMenuContentView: View {
 					ScrollView(.vertical) {
 						
 					}
+					.scrollDismissesKeyboard(.interactively)
 					.navigationTitle("Messages")
 					.safeAreaInset(edge: .bottom) {
 						BottomBar()

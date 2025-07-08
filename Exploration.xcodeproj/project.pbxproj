@@ -132,6 +132,8 @@
 		0A6582E92D74ED3A0076FD7F /* MessagesImagePickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6582E82D74ED3A0076FD7F /* MessagesImagePickerContentView.swift */; };
 		0A67C5022D7B78C400D858D7 /* MessagesUIkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A67C5012D7B78BE00D858D7 /* MessagesUIkit.swift */; };
 		0A67C5042D7B8C0600D858D7 /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A67C5032D7B8C0100D858D7 /* CommentsView.swift */; };
+		0A692FFE2E0CB0790049ADBA /* MorphingFABContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A692FFD2E0CB0790049ADBA /* MorphingFABContentView.swift */; };
+		0A6930002E0CB0B10049ADBA /* MorphingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A692FFF2E0CB0B10049ADBA /* MorphingButton.swift */; };
 		0A6B1A0A2C117F52005F372A /* VerticalCarouselContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6B1A092C117F52005F372A /* VerticalCarouselContentView.swift */; };
 		0A6B1A0D2C117F94005F372A /* VCarouselCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6B1A0C2C117F94005F372A /* VCarouselCard.swift */; };
 		0A6B1A102C11820D005F372A /* VerticalCarouselHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6B1A0F2C11820D005F372A /* VerticalCarouselHomeView.swift */; };
@@ -459,6 +461,8 @@
 		0A6582E82D74ED3A0076FD7F /* MessagesImagePickerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesImagePickerContentView.swift; sourceTree = "<group>"; };
 		0A67C5012D7B78BE00D858D7 /* MessagesUIkit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesUIkit.swift; sourceTree = "<group>"; };
 		0A67C5032D7B8C0100D858D7 /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
+		0A692FFD2E0CB0790049ADBA /* MorphingFABContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorphingFABContentView.swift; sourceTree = "<group>"; };
+		0A692FFF2E0CB0B10049ADBA /* MorphingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorphingButton.swift; sourceTree = "<group>"; };
 		0A6B1A092C117F52005F372A /* VerticalCarouselContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalCarouselContentView.swift; sourceTree = "<group>"; };
 		0A6B1A0C2C117F94005F372A /* VCarouselCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCarouselCard.swift; sourceTree = "<group>"; };
 		0A6B1A0F2C11820D005F372A /* VerticalCarouselHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalCarouselHomeView.swift; sourceTree = "<group>"; };
@@ -1080,6 +1084,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0A692FFC2E0CB0650049ADBA /* MorphingFAB */,
 				0A0248142DE22EF900B86858 /* iMessageMenu */,
 				0AA310FA2DD26F850058D07A /* PaywallStoreKit */,
 				0A36D4622D99C8EB00AA046A /* AnimatedDialog */,
@@ -1422,6 +1427,15 @@
 				0A5F00EA2BD77E8C007DD17D /* CircularSliderHomeView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		0A692FFC2E0CB0650049ADBA /* MorphingFAB */ = {
+			isa = PBXGroup;
+			children = (
+				0A692FFD2E0CB0790049ADBA /* MorphingFABContentView.swift */,
+				0A692FFF2E0CB0B10049ADBA /* MorphingButton.swift */,
+			);
+			path = MorphingFAB;
 			sourceTree = "<group>";
 		};
 		0A6B1A082C117F3C005F372A /* VerticalCarousel */ = {
@@ -2459,6 +2473,7 @@
 				0ABBD0222BD8F81300CE9EDF /* Particle.swift in Sources */,
 				0A9BC9262C8E7B8200362FB1 /* FBModels.swift in Sources */,
 				0A5235A32C957D7900312174 /* MeshingSlider.swift in Sources */,
+				0A692FFE2E0CB0790049ADBA /* MorphingFABContentView.swift in Sources */,
 				0AE4FC9D2BE4E391005558AD /* CustomDialog.swift in Sources */,
 				0A55CFEA2D5D3C2500A7CF2F /* IntroPageContentView.swift in Sources */,
 				0AF5607D2CF187B600A367E4 /* DrawingView.swift in Sources */,
@@ -2493,6 +2508,7 @@
 				0A92320E2BD39DE4008B5F24 /* ScrollableIndicatorsHomeView.swift in Sources */,
 				0ABA53B52C059D4E00F35879 /* ShimmerEffect.swift in Sources */,
 				0A52D2592C9B23F8009590DB /* CustomSplashScreenContentView.swift in Sources */,
+				0A6930002E0CB0B10049ADBA /* MorphingButton.swift in Sources */,
 				0AFD27912C098F4B0031AA77 /* DummyTab.swift in Sources */,
 				0A55A1112B8A528F00FB6C1E /* CustomAlertContentView.swift in Sources */,
 				0A5EEF7B2CF8452100ABFB22 /* GradualBlurView.swift in Sources */,
