@@ -1084,6 +1084,7 @@
 		0A55A0862B89F5FD00FB6C1E /* Exploration */ = {
 			isa = PBXGroup;
 			children = (
+				0AA908F02E2040120076A541 /* AppleOnboarding */,
 				0A692FFC2E0CB0650049ADBA /* MorphingFAB */,
 				0A0248142DE22EF900B86858 /* iMessageMenu */,
 				0AA310FA2DD26F850058D07A /* PaywallStoreKit */,
@@ -1701,6 +1702,13 @@
 				0AA61C9E2D28B9A900A7A9B7 /* BackdropCarouselContentView.swift */,
 			);
 			path = BackdropCarousel;
+			sourceTree = "<group>";
+		};
+		0AA908F02E2040120076A541 /* AppleOnboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AppleOnboarding;
 			sourceTree = "<group>";
 		};
 		0AA952EC2BBFD805007E62B1 /* HoldDownButton */ = {
