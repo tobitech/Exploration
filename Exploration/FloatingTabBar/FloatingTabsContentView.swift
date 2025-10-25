@@ -36,7 +36,7 @@ struct FloatingTabsContentView: View {
 						//						.toolbarVisibility(.hidden, for: .tabBar)
 					}
 				} else {
-					/// But iOS 17 didn't work like the way iOs 18 works, let me show you an example of that.
+					/// But iOS 17 didn't work like the way iOS 18 works, let me show you an example of that.
 					/// The tab bar is initially hidden, but when we update it using custom tab bars,
 					/// it becomes visible again at the bottom. Let me show you.
 					TabView(selection: $activeTab) {
@@ -60,16 +60,16 @@ struct FloatingTabsContentView: View {
 							.tag(FloatingTab.settings)
 						
 					}
-					// .overlay {
+					.overlay {
 					/// As you can see, this is the issue I'm referring to. I believe it has existed since iOS 17.3/4.
 					/// To completely remove the tab bar in iOS 17 versions, we must first locate the relevant UlTabbarController, and then hide the tab bar completely.
-					//					Button {
-					//						activeTab = activeTab == .home ? .search : .home
-					//					} label: {
-					//						Text("Switch Tabs")
-					//					}
-					//					.offset(y: 100)
-					//				}
+										Button {
+											activeTab = activeTab == .home ? .search : .home
+										} label: {
+											Text("Switch Tabs")
+										}
+										.offset(y: 100)
+									}
 				}
 			}
 			
